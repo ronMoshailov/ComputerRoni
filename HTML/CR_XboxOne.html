@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> ComputeRoni </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+  <!-- css links -->
+  <link rel="stylesheet" href="../CSS/general.css" />
+  <link rel="stylesheet" href="../CSS/products.css" />
+  <link rel="stylesheet" href="../CSS/games.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="Rubix">
+
+  <!-- upper black information -->
+  <div class="container-fluid ">
+    <div class="row" id="upperField">
+      <div class="col-5 flex" id="upperFieldCol1">
+      <a href="index.html" target="_blank"> <img  class="img-fluid CorrectLogoSize" src="../assets/logo_test.png"></a>
+      <h2 id="timer"></h2>
+      </div>
+      <div class="col-7" id="upperFieldCol2">
+      <a href="tel:+972541231234"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_phone.png"></a>
+      <a href="mailto:computeRoniService@computeRoni.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_mail.png"></a>
+      <a href="https://www.facebook.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_facebook.png"></a>
+      <a href="https://www.instagram.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_instegram.png"></a>
+      <a href="https://www.youtube.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_youtube.png"></a>
+      <a href="https://web.telegram.org/a"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_telegram.png"></a>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- navigation -->
+  <nav class="desktop-nav">
+    <div class="main_menu">
+      <div class="mainMenuDiv"><a class="text-white" href="index.html">Home</a></div>
+      <div>|</div>
+      <div class="mainMenuDiv"><a class="text-white" href="CR_About.html">About</a></div>
+      <div>|</a></div>
+      <div class="mainMenuDiv text-white">Hardware<div class="dropdown-content">
+        <a href="CR_H_CPU.html" class="link_Hardware text-white">CPUs/Processors</a>
+        <a href="CR_H_Motherboard.html" class="link_Hardware text-white">Motherboards</a>
+        <a href="CR_H_HardDisk.html" class="link_Hardware text-white">Hard Disks/Storage</a>
+        <a href="CR_H_Case.html" class="link_Hardware text-white">Cases</a>
+        <a href="CR_H_RAM.html" class="link_Hardware text-white">Memory(RAM)</a>
+        <a href="CR_H_GPU.html" class="link_Hardware text-white">GPU</a>
+        <a href="CR_H_Power Supplies.html" class="link_Hardware text-white">Power Supplies</a>
+        <a href="CR_H_CPU Cooling.html" class="link_Hardware text-white">CPU Cooling</a>
+      </div>
+      </div>
+      <div>|</a></div>
+      <div class="mainMenuDiv text-white">Games
+      <div class="dropdown-content">
+        <a href="CR_PS4.html" class="link_Games text-white">Platstation 4</a>
+        <a href="CR_PS5.html" class="link_Games text-white">Platstation 5</a>
+        <a href="CR_XboxOne.html" class="link_Games text-white">Xbox One</a>
+        <a href="CR_XboxSeries.html" class="link_Games text-white">Xbox Series</a>
+        <a href="CR_NintendoSwitch.html" class="link_Games text-white">Nintendo Switch</a>
+        <a href="CR_PC.html" class="link_Games text-white">PC</a>
+      </div>
+      </div>
+    </div>
+    </nav>
+  
+    <!-- mobile navigation -->
+    <!-- <nav class="navbar">
+    <button class="navbar-toggler"> Menu </button>
+    <div class="navbar-menu" id="navbarMenu">
+      <a href="../HTML/index.html">Home</a>
+      <a href="../HTML/CR_About.html">About</a>
+      <a href="#" class="mobileHardware">Hardware</a>
+      <div class="submenu">
+      <div>
+        <a class="HardwareLink" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+        <a class="HardwareLink" href="../HTML/CR_H_HardDisk.html">Hard Disks/Storage</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Case.html">Cases</a>
+      </div>
+      <div>
+        <a class="HardwareLink" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+        <a class="HardwareLink" href="../HTML/CR_H_GPU.html">GPU</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+        <a class="HardwareLink" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+      </div>
+      </div>
+      <a href="#" class="mobileGames">Games</a>
+      <div class="submenu">
+      <div>
+        <a class="GamesLink" href="../HTML/CR_PS4.html">Platstation 4</a>
+        <a class="GamesLink" href="../HTML/CR_PS5.html">Platstation 5</a>
+        <a class="GamesLink" href="../HTML/CR_XboxOne.html">Xbox One</a>
+      </div>
+      <div>
+        <a class="GamesLink" href="../HTML/CR_XboxSeries.html">Xbox Series</a>
+        <a class="GamesLink" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+        <a class="GamesLink" href="../HTML/CR_PC.html">PC</a>
+      </div>
+      </div>
+    </div>
+    </nav> -->
+  
+  
+    
+  
+    <nav class="mobile-nav" style="display: flex;">
+      <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
+      <a class="mobileHome" href="index.html">Home</a>
+      <a class="mobileAbout" href="CR_About.html">About</a>
+      <div class="A text-white text-center"> <p>Hardware</p>
+           <a class="firstMobile HardwareLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_HardDisk.html">Hard Disks/ Storage</a>
+            <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Case.html">Cases</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_GPU.html">GPU</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+      </div>
+      <div class="text-white text-center"> <p>Games</p>
+           <a class="firstMobile GamesLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_PS4.html">PS4</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_PS5.html">PS5</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_XboxOne.html">Xbox One</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_XboxSeries.html">Xbox Series</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
+      </div>
+    </nav>
+  
+  
+  
+  
+      
+      
+      <!-- Cart -->
+      <div class="container-fluid"  style="background-color: black;">
+        <div class="row">
+          <div class="col-3">
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+      </div>
+    </div>
+
+  
+  <br>
+
+  <!-- all the table -->
+  <div class="container ">
+
+    <!-- row 0 -->
+    <div class="row">
+    <!-- navigation path -->
+    <div class="Rubix" id="direction">
+      <a class="nonTextDecoration" href="index.html">Home</a>
+      <i id="arrowRight"></i>
+      <a class="nonTextDecoration" id="rightDirection" href="CR_XboxOne.html">Xbox One</a>
+    </div>
+    </div>
+    <br>
+
+    <div class="row">
+  
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonXboxOne" id="btnLowToHigh">Sort By Price: Low -> High</button>
+      </div>
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonXboxOne" id="btnHighToLow">Sort By Price: High -> Low</button>
+      </div>
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonXboxOne" id="btnScoreLowToHigh">Sort By Score: Low -> High</button>
+      </div>
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonXboxOne" id="btnScoreHighToLow">Sort By Score: High -> Low</button>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+          Min Score: <input type="text" id="minScoreFilter" placeholder="Min score" oninput="filterXboxOneProducts()" />
+      </div>
+      <div class="col-6">
+          Max Score: <input type="text" id="maxScoreFilter" placeholder="Max score" oninput="filterXboxOneProducts()" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 my-4">
+          Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterXboxOneProducts()" />
+      </div>
+      <div class="col-6 my-4">
+          Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterXboxOneProducts()" />
+      </div>
+    </div>
+  
+  </div>
+    <br>
+
+  <div class="container allGames">
+  <!-- row 1 -->
+  <div data-price=30 data-score=7 class="row firstProductXboxOne AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Ameican Ninja Warrior</p>
+      <p class="largFont">
+      <b>Age:</b> 9+<br>
+      <b>Score:</b> 7/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 30$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+      American Ninja Warrior" is an exhilarating and challenging game that brings the 
+      excitement of the popular TV show to your gaming console. Step into the shoes of 
+      elite athletes as you navigate and conquer a series of demanding obstacle courses 
+      inspired by the real-life challenges from the show.
+      </p>
+      <div> <img src="../assets/gamingcorpslogo.jpeg" class="standartSize_lg"></div>
+      <div>
+      <a href="https://www.metacritic.com/game/xbox-one/american-ninja-warrior-challenge" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+      </div>
+    </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One Ameican Ninja Warrior.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Ameican Ninja Warrior</p>
+      <p class="largFont">
+      <b>Age:</b> 9+<br>
+      <b>Score:</b> 7/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 30$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      American Ninja Warrior" is an exhilarating and challenging game that brings the 
+      excitement of the popular TV show to your gaming console. Step into the shoes of 
+      elite athletes as you navigate and conquer a series of demanding obstacle courses 
+      inspired by the real-life challenges from the show.
+    </p>
+    <div> <img src="../assets/gamingcorpslogo.jpeg" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/american-ninja-warrior-challenge" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One Ameican Ninja Warrior.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Ameican Ninja Warrior</p>
+      <p>
+      Step into the shoes of 
+      elite athletes as you navigate and conquer a series of demanding obstacle courses 
+      inspired by the real-life challenges from the show.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 30$</div>
+        <a href="https://www.metacritic.com/game/xbox-one/american-ninja-warrior-challenge" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One Ameican Ninja Warrior.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 1 -->
+  </div>
+
+
+  <!-- row 2 -->
+  <div data-price=30 data-score=8 class="row AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Attack On Titan 2</p>
+      <p class="largFont">
+      <b>Age:</b> 14+<br>
+      <b>Score:</b> 8/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 30$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+      "Attack on Titan 2" is an action-packed game based on the popular anime and manga series. 
+      Step into the shoes of a Scout Regiment member and fight against giant, humanoid creatures 
+      known as Titans. Experience the thrilling story of the anime with intense combat, vertical 
+      maneuvering gear, and the ability to team up with friends in cooperative multiplayer mode. 
+      </p>
+      <div> <img src="../assets/Omega_force_Logo_black.png" class="standartSize_lg"></div>
+      <div>
+      <a href="https://www.metacritic.com/game/xbox-one/attack-on-titan-2" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+      </div>
+    </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One Attack On Titan 2.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Attack On Titan 2</p>
+      <p class="largFont">
+      <b>Age:</b> 14+<br>
+      <b>Score:</b> 8/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 30$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Step into the shoes of a Scout Regiment member and fight against giant, humanoid creatures 
+      known as Titans. Experience the thrilling story of the anime with intense combat, vertical 
+      maneuvering gear, and the ability to team up with friends in cooperative multiplayer mode. 
+    </p>
+    <div> <img src="../assets/Omega_force_Logo_black.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/attack-on-titan-2" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One Attack On Titan 2.jpg" width="100%"  height="220px" >
+    </div>
+
+     <!-- col 1+2 - sm -->
+     <div class="col-7 d-md-none">
+     <div class="flexColumn height100">
+       <p class="title">Attack On Titan 2</p>
+       <p>
+      Step into the shoes of a Scout Regiment member and fight against giant, humanoid creatures 
+      known as Titans.
+       </p>
+       <div class="justify-content-space-between flex marginTopAuto" >
+       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+       <div class="flexColumn">
+         <div class="title nonTextDecoration"> <b>price:</b> 30$</div>
+         <a href="https://www.metacritic.com/game/xbox-one/attack-on-titan-2" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+       </div>
+       </div>
+     </div>
+     </div>
+  
+
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One Attack On Titan 2.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 2 -->
+  </div>
+
+
+
+
+
+  <!-- row 3 -->
+  <div data-price=40 data-score=10 class="row AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Batman Arkham Knight</p>
+      <p class="largFont">
+      <b>Age:</b> 12+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 40$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      Battle against a 
+      formidable lineup of villains, including the enigmatic Arkham Knight, in a stunning open-world 
+      environment. Utilize Batman's advanced gadgets, combat skills, and the Batmobile to navigate 
+      the city and engage in intense battles. With its immersive storyline, stunning graphics, and 
+      gripping gameplay, "Batman: Arkham Knight" offers an unforgettable experience for fans of the 
+      Dark Knight and superhero games.
+    </p>
+    <div> <img src="../assets/Rocksteady Studios.png" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/batman-arkham-knight" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One Batman Arkham Knight.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Batman Arkham Knight</p>
+      <p class="largFont">
+      <b>Age:</b> 12+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 40$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Battle against a 
+      formidable lineup of villains, including the enigmatic Arkham Knight, in a stunning open-world 
+      environment. Utilize Batman's advanced gadgets, combat skills, and the Batmobile to navigate 
+      the city and engage in intense battles.
+    </p>
+    <div> <img src="../assets/Rocksteady Studios.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/batman-arkham-knight" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One Batman Arkham Knight.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+     <div class="flexColumn height100">
+     <p class="title">Batman Arkham Knight</p>
+     <p>
+      Battle against a formidable lineup of villains, including the enigmatic Arkham Knight, in 
+      a stunning open-world environment.
+     </p>
+     <div class="justify-content-space-between flex marginTopAuto" >
+       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+       <div class="flexColumn">
+       <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
+       <a href="https://www.metacritic.com/game/xbox-one/batman-arkham-knight" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+       </div>
+     </div>
+     </div>
+   </div>
+
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One Batman Arkham Knight.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 3 -->
+  </div>
+
+
+
+
+
+  <!-- row 4 -->
+  <div data-price=25 data-score=5 class="row AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Battlefield 2042</p>
+      <p class="largFont">
+      <b>Age:</b> 12+<br>
+      <b>Score:</b> 5/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 25$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      Engage in massive-scale battles with up to 128 players, utilizing 
+      cutting-edge weaponry, vehicles, and dynamic environments. With its stunning graphics, 
+      intense gameplay, and a wide range of multiplayer modes, "Battlefield 2042" offers an 
+      adrenaline-fueled experience that pushes the boundaries of modern warfare. Join the fight 
+      and experience the chaos and excitement of a war-torn future.
+    </p>
+    <div> <img src="../assets/DICE.jpeg" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+    <div>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One Battlefield 2042.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Battlefield 2042</p>
+      <p class="largFont">
+      <b>Age:</b> 12+<br>
+      <b>Score:</b> 5/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 25$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Engage in massive-scale battles with up to 128 players, utilizing 
+      cutting-edge weaponry, vehicles, and dynamic environments. With its stunning graphics, 
+      intense gameplay, and a wide range of multiplayer modes, "Battlefield 2042" offers an 
+      adrenaline-fueled experience that pushes the boundaries of modern warfare.
+    </p>
+    <div> <img src="../assets/DICE.jpeg" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+    <div>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One Battlefield 2042.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Battlefield 2042</p>
+      <p>
+      Engage in massive-scale battles with up to 128 players, utilizing 
+      cutting-edge weaponry, vehicles, and dynamic environments.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 25$</div>
+        <a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+  
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One Battlefield 2042.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 4 -->
+  </div>
+
+
+
+  <!-- row 5 -->
+  <div data-price=45 data-score=9 class="row AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Dishonored 2</p>
+      <p class="largFont">
+      <b>Age:</b> 10+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 45$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      "Dishonored 2" is a thrilling stealth-action game that puts players in the shoes of 
+      supernatural assassins in a dystopian world. Choose to play as Empress Emily Kaldwin or 
+      Corvo Attano, each with their own unique abilities and playstyles, as you navigate a stunning 
+      and immersive city filled with political intrigue. Engage in a mix of stealth, combat, and 
+      exploration to uncover the truth and decide the fate of the empire.
+    </p>
+    <div> <img src="../assets/Arkane Studio.jpg" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/dishonored-2" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One Dishonored 2.jpeg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Dishonored 2</p>
+      <p class="largFont">
+      <b>Age:</b> 10+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 45$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Choose to play as Empress Emily Kaldwin or 
+      Corvo Attano, each with their own unique abilities and playstyles, as you navigate a stunning 
+      and immersive city filled with political intrigue. Engage in a mix of stealth, combat, and 
+      exploration to uncover the truth and decide the fate of the empire.
+    </p>
+    <div> <img src="../assets/Arkane Studio.jpg" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/dishonored-2" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One Dishonored 2.jpeg" width="100%"  height="220px" >
+    </div>
+
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Dishonored 2</p>
+      <p>
+      Choose to play as Empress Emily Kaldwin or 
+      Corvo Attano, each with their own unique abilities and playstyles.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 45$</div>
+        <a href="https://www.metacritic.com/game/xbox-one/dishonored-2" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One Dishonored 2.jpeg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 5 -->
+  </div>
+
+
+
+
+  <!-- row 6 -->
+  <div data-price=60 data-score=10 class="row AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Forza Horizon 5</p>
+      <p class="largFont">
+      <b>Age:</b> 9+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      "Forza Horizon 5" is an exhilarating open-world racing game that takes players on a 
+      breathtaking journey through the vibrant and diverse landscapes of Mexico. Experience the 
+      thrill of high-speed races, explore a vast and detailed world, and showcase your driving 
+      skills in a variety of exciting events. With its stunning visuals, extensive car roster, and 
+      dynamic weather system, "Forza Horizon 5" offers an immersive and thrilling racing experience.
+    </p>
+    <div> <img src="../assets/playground-games_logo_4_rgb.jpg" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/forza-horizon-5" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One Forza Horizon 5.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Forza Horizon 5</p>
+      <p class="largFont">
+      <b>Age:</b> 9+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Experience the thrill of high-speed races, explore a vast and detailed world, and showcase 
+      your driving skills in a variety of exciting events. With its stunning visuals, extensive 
+      car roster, and dynamic weather system, "Forza Horizon 5" offers an immersive and 
+      thrilling racing experience.
+    </p>
+    <div> <img src="../assets/playground-games_logo_4_rgb.jpg" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/forza-horizon-5" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One Forza Horizon 5.jpg" width="100%"  height="220px" >
+    </div>
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Forza Horizon 5</p>
+      <p>
+      Experience the thrill of high-speed races, explore a vast and detailed world, and showcase 
+      your driving skills in a variety of exciting events.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+        <a href="https://www.metacritic.com/game/xbox-one/forza-horizon-5" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One Forza Horizon 5.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 6 -->
+  </div>
+
+
+
+
+
+  <!-- row 7 -->
+  <div data-price=20 data-score=7 class="row AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">GTA V</p>
+      <p class="largFont">
+      <b>Age:</b> 6+<br>
+      <b>Score:</b> 7/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 20$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      "GTA V" is an action-packed open-world game that takes place in the sprawling city of Los 
+      Santos. Step into the shoes of three protagonists as they navigate a world filled with 
+      heists, missions, and a vast array of activities. With its immersive storyline, stunning 
+      graphics, and a massive open world to explore, "GTA V" offers players an unparalleled 
+      experience of freedom and mayhem.
+    </p>
+    <div> <img src="../assets/Rockstar.png" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/grand-theft-auto-v" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One GTA V.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">GTA V</p>
+      <p class="largFont">
+      <b>Age:</b> 6+<br>
+      <b>Score:</b> 7/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 20$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Step into the shoes of three protagonists as they navigate a world filled with 
+      heists, missions, and a vast array of activities. With its immersive storyline, stunning 
+      graphics, and a massive open world to explore, "GTA V" offers players an unparalleled 
+      experience of freedom and mayhem.
+    </p>
+    <div> <img src="../assets/Rockstar.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/grand-theft-auto-v" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One GTA V.jpg" width="100%"  height="220px" >
+    </div>
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">GTA V</p>
+      <p>
+      Step into the shoes of three protagonists as they navigate a world filled with 
+      heists, missions, and a vast array of activities.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 20$</div>
+        <a href="https://www.metacritic.com/game/xbox-one/grand-theft-auto-v" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One GTA V.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 7 -->
+  </div>
+
+
+
+
+
+    <!-- row 8 -->
+    <div data-price=80 data-score=9 class="row AllProductsBorderXboxOne normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Mortal Kombat 11 Ultimate</p>
+        <p class="largFont">
+        <b>Age:</b> 15+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 80$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        MK returns with an enhanced version of the beloved franchise, offering Custom Character
+        Variations that grant players extensive control over their fighters.
+        The upgraded graphics engine delivers stunning visuals, immersing players in the intense
+        and visceral combat. With a mix of familiar and fresh fighters, the game's cinematic story
+        mode continues the epic narrative that has been unfolding for over two decades in Mortal
+        Kombat.
+      </p>
+      <div> <img src="../assets/WB.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-one/mortal-kombat-11-ultimate" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox One Mortal Kombat 11 Ultimate Edition.png" width="100%"  height="220px">
+      </div>
+  
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Mortal Kombat 11</p>
+        <p class="largFont">
+        <b>Age:</b> 15+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 80$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        MK returns with an enhanced version of the beloved franchise, offering Custom Character
+        Variations that grant players extensive control over their fighters.
+        The upgraded graphics engine delivers stunning visuals, immersing players in the intense
+        and visceral combat.
+      </p>
+      <div> <img src="../assets/WB.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-one/mortal-kombat-11-ultimate" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox One Mortal Kombat 11 Ultimate Edition.png" width="100%"  height="220px" >
+      </div>
+  
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Mortal Kombat 11</p>
+        <p>
+        MK returns with an enhanced version of the beloved franchise, offering Custom Character
+        Variations that grant players extensive control over their fighters.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 80$</div>
+          <a href="https://www.metacritic.com/game/xbox-one/mortal-kombat-11-ultimate" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+          
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox One Mortal Kombat 11 Ultimate Edition.png" width="100%"  height="220px" >
+      </div>
+  
+      <!-- end of row 8 -->
+    </div>
+
+
+
+
+
+  <!-- row 9 -->
+  <div data-price=60 data-score=9 class="row AllProductsBorderXboxOne normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Red Dead Redemption 2</p>
+      <p class="largFont">
+      <b>Age:</b> 13+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      "Red Dead Redemption 2" is an epic open-world adventure set in the rugged and unforgiving 
+      American frontier. Step into the boots of Arthur Morgan, a member of the Van der Linde gang, 
+      as he navigates a world filled with outlaws, gunfights, and dramatic encounters. With its 
+      immersive storytelling, stunning visuals, and dynamic gameplay, "Red Dead Redemption 2" offers 
+      players a sprawling and immersive experience where their choices shape the fate of the gang 
+      and the world around them.
+    </p>
+    <div> <img src="../assets/Rockstar.png" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/red-dead-redemption-2" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/Xbox One Red Dead Redemption 2.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Red Dead Redemption 2</p>
+      <p class="largFont">
+      <b>Age:</b> 13+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Step into the boots of Arthur Morgan, a member of the Van der Linde gang, 
+      as he navigates a world filled with outlaws, gunfights, and dramatic encounters. With its 
+      immersive storytelling, stunning visuals, and dynamic gameplay, "Red Dead Redemption 2" offers 
+      players a sprawling and immersive experience.
+    </p>
+    <div> <img src="../assets/Rockstar.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/xbox-one/red-dead-redemption-2" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/Xbox One Red Dead Redemption 2.jpg" width="100%"  height="220px" >
+    </div>
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Red Dead Redemption 2</p>
+      <p>
+      Step into the boots of Arthur Morgan, a member of the Van der Linde gang, 
+      as he navigates a world filled with outlaws, gunfights, and dramatic encounters.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+        <a href="https://www.metacritic.com/game/xbox-one/red-dead-redemption-2" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/Xbox One Red Dead Redemption 2.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 9 -->
+  </div>
+
+
+
+
+
+    <!-- row 10 -->
+    <div data-price=40 data-score=9 class="row AllProductsBorderXboxOne normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">The Witcher 3 Wild Hunt</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        "The Witcher 3: Wild Hunt" is an epic open-world RPG that immerses players in a dark and 
+        expansive fantasy universe. Step into the boots of Geralt of Rivia, a skilled monster 
+        hunter, as you embark on a perilous journey to track down the Child of Prophecy and unravel 
+        a captivating story filled with intriguing characters and morally challenging choices. With 
+        its breathtaking visuals, immersive gameplay, and richly detailed world, "The Witcher 3: 
+        Wild Hunt" offers an unforgettable adventure.
+      </p>
+      <div> <img src="../assets/CD_Projekt_logo.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-one/the-witcher-3-wild-hunt" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox One The Witcher 3.png" width="100%"  height="220px">
+      </div>
+  
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">The Witcher 3 Wild Hunt</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Step into the boots of Geralt of Rivia, a skilled monster 
+        hunter, as you embark on a perilous journey to track down the Child of Prophecy and unravel 
+        a captivating story filled with intriguing characters and morally challenging choices.
+      </p>
+      <div> <img src="../assets/CD_Projekt_logo.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-one/the-witcher-3-wild-hunt" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox One The Witcher 3.png" width="100%"  height="220px" >
+      </div>
+
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">The Witcher 3 Wild Hunt</p>
+        <p>
+        Step into the boots of Geralt of Rivia, a skilled monster 
+        hunter, as you embark on a perilous journey to track down the Child of Prophecy.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
+          <a href="https://www.metacritic.com/game/xbox-one/the-witcher-3-wild-hunt" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox One The Witcher 3.png" width="100%"  height="220px" >
+      </div>
+  
+      <!-- end of row 10 -->
+    </div>
+  </div>
+
+  <!-- JS links -->
+  <script src="../JavaScript/JS_Product.js"></script>
+  <script src="../JavaScript/JS_General.js"></script>
+</body>
+
+<!--    Fotter   -->
+<footer class="footerStyle blackBackgrond">
+  <div class="container-fluid">
+    <div class="row justify-content-space-between blackBackgrond">
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+        </ul>
+        </div>
+        <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Customer Service</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Download our app</b></li>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col">
+            <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+            <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+            </div>
+            <div class="col">
+              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</html>

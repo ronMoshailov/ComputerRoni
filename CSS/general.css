@@ -1,0 +1,660 @@
+
+/* upper field */
+#upperField{
+  height: auto;
+  width: auto;
+  background-color: black;
+  border-bottom: solid 1px rgb(38, 0, 255);
+  max-height: 85px;
+}
+
+.CorrectLogoSize{
+  height: 9vh !important;
+  width: auto !important;
+  margin: auto;
+  max-height: 75px;
+}
+.CorrectLogoIcon{
+  height: 6vh !important;
+  width: auto !important;
+  padding-right: 5px ;
+  max-height: 45px;
+}
+.img-fluid:hover{
+cursor: pointer;
+}
+
+#upperFieldCol1{
+  height: auto;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+#upperFieldCol2{
+  height: auto;
+  display: flex; 
+  justify-content: right; 
+  margin-top:auto;
+  margin-bottom:auto;
+}
+#timer {
+  display: block;
+  color:#fff;
+  margin: auto;
+}
+
+.myCart{
+  height: 10vw; 
+  max-height: 50px; 
+  width: auto; 
+  margin-left: 60%;
+}
+/* upper field */
+
+/* main menu */
+.hamburger{
+  display: none;
+}
+
+nav{
+  color:rgb(0, 21, 255);
+  background-color: black;
+}
+
+.main_menu {
+  display: flex; /*make it horizontal*/
+  font-size: 18px;
+  justify-content: space-around;
+  border-bottom: solid 1px rgb(0, 21, 255);
+}
+
+.main_menu a {                          /*control the Main/About/Hardware/Games*/
+  text-decoration: none;              /*remove the underline*/
+  color: rgb(0, 0, 0);                       /*color*/
+  display: block;                     /*make the list vertical*/
+} 
+.main_menu a:hover {                          /*control the Main/About/Hardware/Games*/
+  text-decoration: underline;              /*remove the underline*/
+} 
+
+.mainMenuDiv{
+  margin:0px 4VW;
+  max-width: 100vw;
+  
+}
+
+.mainMenuDiv:hover .dropdown-content {
+  display: block;                 /*show the list*/
+}
+
+.link_Hardware{               /*The list*/
+  width:160px;
+  padding:3px;
+  border: solid 1px;
+  background-color: black;
+  border: solid 1px rgb(0, 30, 255);
+}
+
+.link_Games{               /*The list*/
+width:140px;
+padding:3px;
+background-color: black;
+border: solid 1px rgb(0, 30, 255);
+}
+
+.dropdown-content {
+  background-color: white;
+  color:black;
+  display: none;                  /*make the list invisible*/
+  position: absolute;             /*not throwing the right tbn*/
+  z-index: 3;
+  transform: translateX(-20%);
+}
+/* main menu */
+
+/* footer */
+#footerFrame{
+  width:100% ;
+  height: 213px;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.footerStyle{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.appDesign{
+  width: 100px; 
+  height: 30px;
+}
+
+#barcodeDesign{
+  width: 95px; 
+  height: 95px
+}
+
+footer ul{
+  margin-top: 20px;
+}
+
+.footerColumn{
+  list-style: none; /*remove the bullet points that has there*/
+  padding: 0 40px;
+  text-align: center;
+  color:aliceblue;
+}
+
+.app{
+  margin-bottom: 10px;
+}
+
+.app:hover{
+ cursor:pointer;
+}
+
+.icon{
+  width: 35px; 
+  height: 35px; 
+  float: right; 
+  margin: 10px 5px;
+
+}  
+
+.icon:hover{
+  cursor: pointer;
+}
+
+.footerHover:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* footer */
+
+/* mobile nav */
+/* .navbar {
+  background-image: url(../assets/backgroundMobile.jpg);
+  background-repeat: no-repeat;
+  background-size:cover; 
+  height: 100%;
+}
+
+.navbar-toggler{
+  background-color: #000000 !important;
+  border: solid 1px white !important;
+  font-size: 20px !important;
+  color: #fff !important; 
+  text-align: center !important;
+  box-shadow: 1px 3px #000000;
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+}
+
+.navbar-menu {
+  display: none;
+  flex-direction:row;
+}
+
+.navbar{
+  padding-bottom: 40px !important;
+  margin-bottom: 0px !important;
+  border-bottom: 1px solid blue !important;
+}
+.navbar-menu.active {
+  display: flex;
+}
+
+.navbar-menu a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #000000 !important;
+  border: solid 1px rgb(255, 255, 255) !important;
+  font-size: 15px !important;
+  color: #fff !important; 
+  border-radius: 15px;
+}
+
+.HardwareLink{
+  display: none;
+  font-size: larger !important;
+}
+
+.GamesLink{
+  display: none;
+}
+
+.mobileHardware:active + .HardwareLink,
+.mobileHardware.active + .submenu .HardwareLink {
+  display: block;
+}
+
+.mobileGames:active + .GamesLink,
+.mobileGames.active + .submenu .GamesLink {
+  display: block;
+}
+
+.submenu{
+  position: absolute;
+  display: flex;
+  margin-top:50px;
+}
+
+.submenu a{
+  border-radius: 0px !important;
+}
+
+.mobileLogo{
+  width: 15vw;
+  height: auto;
+} */
+/* mobile nav */
+
+/* mobile */
+.hamburger, .hamburgerClose{
+  width:40px !important;
+  cursor:pointer;
+  border:none;
+  z-index:5;
+}
+.hamburger{
+  background-color: rgb(71, 46, 211);
+}
+
+.mobile-nav{
+justify-content: space-around ;
+}
+.hamburger .bar,.hamburger:after,.hamburger:before,.hamburgerClose .bar,.hamburgerClose:after,.hamburgerClose:before {
+  content:'' !important;
+  display:block !important;
+  height:5px !important;
+  background-color:#FFF;
+  margin:5px 2px !important;
+  transition:0.5s;
+}
+  
+.hamburger.is-active:before{
+  transform:rotate(45deg) translate(8px, 6px)
+} 
+
+.hamburger.is-active:after{
+  transform:rotate(-45deg) translate(9px, -8px)
+}
+
+.hamburgerClose:after{
+  transform:rotate(-45deg) translate(4px, -3px);
+}
+.hamburgerClose:before{
+  transform:rotate(45deg) translate(5px, 3px);
+}
+
+.hamburger.is-active .bar{
+  opacity:0
+}
+  
+  .mobile-nav{
+  position:fixed;
+  top:0;
+  left:100%;
+  width:100%;
+  min-height:100vh;
+  z-index:4;
+  background-color:#12002F;
+  padding-top:30px;
+  transition:0.5s;
+  overflow-y: scroll;
+}
+  
+.mobile-nav.is-active{
+  left:0
+}
+  
+.mobile-nav a, .mobile-nav div{
+  display:block;
+  width:100%;
+  max-width:200px;
+  margin:0 auto 16px;
+  text-align:center;
+  padding:12px 16px;
+  background-color:#1f103F;
+  color:#FFF;
+  text-decoration:none;
+}
+  
+.firstMobile{
+margin-top: 30px !important;
+}
+
+.mobileHome, .mobileAbout{
+max-height: 60px;
+}
+
+
+.mobile-nav a:hover{
+  background-color:#311a63;
+  color:white;
+}
+
+/* .GamesLink:hover , .HardwareLink:hover{
+border: 1px solid black;
+} */
+
+
+
+/********************************************************************/
+/* general style */
+/********************************************************************/
+
+.flex{
+  display: flex !important;
+}
+
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+.BorderWhite{
+  border: solid 1px rgb(255, 255, 255);
+}
+
+.Rubix{
+  font-family: Rubik !important; 
+}
+
+h2{
+  margin: 0;
+}
+
+.fontSize18{
+  font-size: 18px;
+}
+
+.overridePaddingTo0{
+  padding: 0 !important;
+}
+
+.justify-content-space-between{
+  justify-content: space-between;
+}
+
+.height100{
+  height: 100%;
+}
+
+.width100{
+  width: 100%;
+}
+
+.height100{
+  height: 100%;
+}
+
+.positionRelative{
+  position: relative
+}
+
+.hideOverflow{
+  overflow:hidden;
+}
+
+.FontSize17px{
+  font-size: 17px;
+}
+
+.largFont{
+  font-size: large;
+}
+
+.title{
+  font-weight:bold; 
+  font-size: large;
+  text-decoration: underline;
+}
+
+.nonTextDecoration{
+  text-decoration: none;
+}
+
+.marginTopAuto{
+  margin-top: auto;
+}
+
+.normalPointer:hover{
+  cursor:auto;
+  text-decoration: none !important;
+}
+
+.blackBackgrond{
+  background-color: rgb(0, 0, 0) !important; 
+}
+
+.textAlignCenter{
+  text-align: center;
+}
+
+.centerDiv{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/********************************************************************/
+/* bootstrap style */
+/********************************************************************/
+
+
+
+
+
+/********************************************************************/
+/* Custom sizes */
+/********************************************************************/
+
+@media(max-width:880px){
+
+  .dropdown-content{
+    transform: translateX(-40%)
+  }
+
+}
+
+
+@media(max-width:570px){
+
+  .dropdown-content{
+    transform: translateX(-50%)
+  }
+  .myCart{
+    height: 45px !important;
+    width: 45px !important;
+    }
+}
+
+
+    @media(max-width: 450px) {
+
+  /* upper field */
+  .CorrectLogoSize{
+    height: 6vh !important;
+  }
+  .CorrectLogoIcon{
+    height: 4vh !important;
+  }
+  .detailsAboutTheGame{
+    font-size: 15px;
+  }
+  #timer{
+    font-size: 17px;
+  }
+  .myCart{
+  height: 40px !important;
+  width: 40px !important;
+  }
+}
+
+@media(max-width: 380px) {
+
+  .myCart{
+    height: 37px !important;
+    width: 37px !important;
+  }
+  
+}
+
+@media(max-width: 350px) {
+
+.myCart{
+  height: 38px !important;
+  width: 40px !important;
+  margin-left: 45%;
+}
+
+
+}
+
+@media(max-width: 300px) {
+
+  /* upper field */
+  /* .CorrectLogoSize{
+    height: 80% !important;
+  } */
+
+  .CorrectLogoIcon{
+    height: 100% !important;
+  }
+
+#timer{
+  font-size: 15px;
+}
+
+.myCart{
+  margin-left: 36% !important;
+  height: auto !important;
+}
+}
+
+
+
+@media(max-width:270px){
+
+  /* .CorrectLogoSize{
+    height: 100% !important;
+  } */
+
+  .navbar-menu a {
+    padding: 8px;
+    font-size: 13px !important;
+    border-radius: 13px;
+  }
+
+  .navbar-toggler{
+    padding: 10px;
+    font-size: 16px !important;
+  }
+
+  .myCart{
+    margin-left: 32% !important;
+  }
+}
+
+
+@media(max-width: 250px) {
+
+  /* upper field */
+  .CorrectLogoSize{
+    height: 100% !important;
+  }
+  .CorrectLogoIcon{
+    height: 80% !important;
+    width: auto !important;
+  }
+.detailsAboutTheGame{
+  font-size: 13px;
+}
+}
+
+
+@media(max-width:230px){
+
+  .navbar-menu a {
+    padding: 6px;
+    font-size: 11px !important;
+    border-radius: 11px;
+  }
+
+  .navbar-toggler{
+    padding: 7px;
+    font-size: 14px !important;
+  }
+
+
+  #timer{
+    font-size: 12px;
+  }
+
+  .CorrectLogoSize{
+    display:none;
+  }
+
+  .myCart{
+    min-height: 36px;
+    min-width: 36px;
+    margin-left: auto !important;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+         
+@media(max-width: 830px){
+  .mobile-nav a, .mobile-nav div{
+    width:90%;
+    max-width:150px;
+    padding:12px 2px;
+}
+}
+
+@media(max-width: 630px){
+  .mobile-nav a, .mobile-nav div{
+    font-size: 11px;
+    max-width:120px;
+    max-height:40px;
+    font-size: 10px;
+  }
+    
+    .GamesLink , .HardwareLink{
+      margin-top: 5px;
+      border-top: none !important;
+    }
+
+    .A div{
+      background-color: none !important;
+    }
+
+}
+
+
+@media(max-width: 500px){
+  .mobile-nav a, .mobile-nav div{
+    max-width:100px;
+    font-size: 8px;
+  }
+
+  .desktop-nav{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+
+
+}
+

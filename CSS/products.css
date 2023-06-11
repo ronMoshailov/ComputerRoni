@@ -1,0 +1,129 @@
+
+/* Games */
+.developerAndMetacritic{
+    display: flex; 
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+/* Games & Hardware */
+  #direction{
+    display:flex;
+    font-size: large;
+  }
+  
+  #arrowRight{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    height: 2px; 
+    margin: 10px 10px;
+  }
+  
+  #rightDirection{
+    margin-left: 6px;
+  }
+
+.AddToCartButton {
+  padding: 10px 15px;
+  max-height: 40px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: #2dcd0d !important;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 3px #000000;
+  transition: background-color 1s ease; /* Transition with 1s duration */
+}
+.AddToCartButton:hover {
+  background-color: #ff69b4 !important; /* Use !important to override specificity */
+}
+
+.AddToCartButton:active {
+  background-color: #0a6d94 !important;
+  box-shadow: 0 2px #042735 !important;
+  transform: translateY(2px);
+}
+
+
+.AddToCartButtonSP {
+  padding: 10px 15px;
+  max-height: 40px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: #2dcd0d !important;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 3px #000000;
+  transition: background-color 1s ease; /* Transition with 1s duration */
+}
+.AddToCartButtonSP:hover {
+  background-color: #ff69b4 !important; /* Use !important to override specificity */
+}
+
+.AddToCartButtonSP:active {
+  background-color: #0a6d94 !important;
+  box-shadow: 0 2px #042735 !important;
+  transform: translateY(2px);
+}
+
+/* Cart */
+.reset {
+  padding: 15px 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  background-color: #000000 !important;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 3px #000000;
+}
+.reset:hover {
+  background-color: #170b0b !important; /* Use !important to override specificity */
+}
+.reset:active {
+  background-color: #363636 !important;
+  box-shadow: 0 2px #042735 !important;
+  transform: translateY(2px);
+}
+
+.checkout {
+  padding: 15px 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff2121 !important;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 3px #000000;
+  margin-right: 10px;
+}
+.checkout:hover {
+  background-color: #820000 !important; /* Use !important to override specificity */
+}
+
+.checkout:active {
+  background-color: #00a40b !important;
+  box-shadow: 0 2px #042735 !important;
+  transform: translateY(2px);
+}
+
+/* Product image */
+.productDisplay{
+    width: 100%; 
+    height: auto;
+  }
+
+  #brandFilter , #minPriceFilter , #maxPriceFilter , #minScoreFilter , #maxScoreFilter{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+  }

@@ -1,0 +1,99 @@
+
+/* presentation */
+#aboutUs{
+    padding: 0px 4vw;
+	margin-top: 20px;
+}
+#shopPresentation{
+    font-size: 17px;
+    word-spacing: 2px;
+}
+.aboutUsTitle{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 30px;
+}
+#aboutUsImages{
+    width: 30vw;
+    margin-top: 55px;
+}
+#aboutUsImages img {
+    margin-top: 10px; /* Adjust the value as per your preference */
+}
+.validationStyle{
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: url(../assets/ValidationBackground2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+.card{
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)
+}
+.blue-text{
+    color: #00BCD4
+}
+.form-control-label{
+    margin-bottom: 0
+}
+input, textarea, button{
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300;
+}
+#requestButton,textarea,input{
+    padding: 8px 15px !important;
+}
+input:focus, textarea:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+.btn-block{
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;height: 43px;
+    cursor: pointer
+}
+.btn-block:hover{
+    color: #fff !important
+}
+button:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+
+/********************************************************************/
+
+
+#teamDiv{
+    padding: 0px 3vw;
+	margin-top: 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	font-size: large;
+}
+table {
+	width: 93vw;
+	margin: auto;
+	margin-top: 10px;
+}
+thead{
+	background: linear-gradient(0deg, #e2e2e2, #aeaeaeb1);
+}
+th,td {
+	padding: 15px;
+}
+

@@ -1,0 +1,89 @@
+/* CPU */
+.borderForRowCPU {
+    border-top: dashed #0d10c4cb 2px;
+}
+
+/* Motherboard */
+.borderForRowMotherboard {
+    border-top: dashed #0d93c4cb 2px;
+}
+
+/* Storage */
+.borderForRowStorage {
+    border-top: dashed #d77a00 2px;
+}
+
+/* Case */
+.borderForRowCases {
+    border-top: dashed #00daa7 2px;
+}
+
+/* RAM */
+.borderForRowRAM {
+    border-top: dashed #000000cb 2px;
+}
+
+/* GPU */
+.borderForRowGPU {
+    border-top: dashed #ff0000 2px;
+}
+
+/* Power Supply */
+.borderForRowPS{
+    border-top: dashed #2a3539cb 2px;
+}
+
+/* CPUcooling */
+.borderForRowCPUcooling {
+    border-top: dashed #7500f1e3 2px;
+}
+
+/* general for all the hardware */
+.imageOfTheProduct{
+    width: 100%; height: 0; padding-bottom: 100%; position: relative;
+}
+
+
+/* sortButtonHardware */
+.sortButtonHardware {
+    padding: 10px 15px;
+    max-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 3px rgb(70, 0, 0);
+  }
+  .sortButtonHardware:hover {
+    background-color: rgb(45, 45, 45)
+  }
+  .sortButtonHardware:active {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 2px black;
+  transform: translateY(2px);
+  }
+
+  .productPortfolioDisplay{
+    width: 100%;
+    height: 100%;
+    max-height: 170px;
+  }
+
+
+
+  @media (max-width: 767px) and (min-width: 200px) {
+
+    .modal-dialog{
+      margin: auto !important;  
+      margin-top: 150px !important;
+      width: 70vw !important;
+      height: auto !important;
+  
+      -webkit-transform: none !important; /*override*/
+      -ms-transform: none !important; /*override*/
+      -o-transform: none !important; /*override*/
+      transform: none !important; /*override*/
+    }
+  }

@@ -1,0 +1,354 @@
+
+  /* Cart */
+  .AllProductsBorderCart{
+  border: #000000 1px solid;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+ .AllProductsBorderCartSP{
+  border:solid #000000cb 1px ;
+} 
+
+  /*ps4*/
+  .firstProductPS4{
+    padding-bottom: 10px;
+  }
+  .lastProductPS4{
+    border-top:solid #0d1aabcb 2px ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .AllProductsBorderPS4{
+    border-top:solid #0d1aabcb 2px ;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .sortButtonPS4 {
+    padding: 10px 15px;
+    max-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #071ff9;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 3px #000000;
+  }
+  .sortButtonPS4:hover {
+    background-color: #000e87
+  }
+  .sortButtonPS4:active {
+  background-color: #00095a;
+  box-shadow: 0 2px #000e87;
+  transform: translateY(2px);
+  }
+
+  /*ps5*/
+  .firstProductPS5{
+    border-top:solid #11a3e2cb 2px ;
+  }
+  .lastProductPS5{
+    border-top:solid #11a3e2cb 2px ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .AllProductsBorderPS5{
+    border-top:solid #11a3e2cb 2px ;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .sortButtonPS5 {
+    padding: 10px 15px;
+    max-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #00b3ff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 3px rgb(0, 0, 0);
+  }
+  .sortButtonPS5:hover {
+    background-color: #0c668ccb
+  }
+  .sortButtonPS5:active {
+  background-color: #064560cb;
+  box-shadow: 0 2px black;
+  transform: translateY(2px);
+  }
+
+  /* Xbox One*/
+  .firstProductXboxOne{
+    border-top:solid #198d1fe9 2px ;
+  }
+  .lastProductXboxOne{
+    border-top:solid #198d1fe9 2px ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .AllProductsBorderXboxOne{
+    border-top:solid #198d1fe9 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sortButtonXboxOne {
+    padding: 10px 15px;
+    max-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #198d1fe9;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 3px rgb(0, 0, 0);
+  }
+  .sortButtonXboxOne:hover {
+    background-color: #09670ee9
+  }
+  
+  .sortButtonXboxOne:active {
+  background-color: #0a460de9;
+  box-shadow: 0 2px black;
+  transform: translateY(2px);
+  }
+
+
+    /* Xbox Series */
+    .firstProductXboxSeries{
+      padding-bottom: 10px;
+    }
+    .lastProductXboxSeries{
+      border-top:solid #02ae58e9 2px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .AllProductsBorderXboxSeries{
+      border-top:solid #02ae58e9 2px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .sortButtonXboxSeries {
+      padding: 10px 15px;
+      max-height: 40px;
+      font-size: 12px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #02ae58e9;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 3px rgb(0, 0, 0);
+    }
+    .sortButtonXboxSeries:hover {
+      background-color: #006733e9
+    }
+    .sortButtonXboxSeries:active {
+    background-color: #003f20e9;
+    box-shadow: 0 2px black;
+    transform: translateY(2px);
+    }
+
+
+    /* Nintendo switch */
+    .AllProductsBorderSwitch{
+      border-top:solid red 2px ;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .sortButtonSwitch {
+      padding: 10px 15px;
+      max-height: 40px;
+      font-size: 12px;
+      text-align: center;
+      color: #ffffff;
+      background-color: red;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 3px rgb(70, 0, 0);
+    }
+    .sortButtonSwitch:hover {
+      background-color: rgb(145, 0, 0)
+    }
+    .sortButtonSwitch:active {
+      background-color: rgb(79, 0, 0);
+      box-shadow: 0 2px black;
+      transform: translateY(2px);
+    }
+
+    /* PC */
+     .firstProductPC{
+      padding-bottom: 10px;
+    }
+    .lastProductPC{
+      border-top:solid #000000e9 2px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .AllProductsBorderPC{
+      border-top:solid #000000e9 2px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .sortButtonPC {
+      padding: 10px 15px;
+      max-height: 40px;
+      font-size: 12px;
+      text-align: center;
+      color: #ffffff;
+      background-color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 3px rgb(0, 0, 0);
+    }
+    .sortButtonPC:hover {
+      background-color: rgb(53, 53, 53)
+    }
+    .sortButtonPC:active {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px black;
+    transform: translateY(2px);
+    }
+
+  /* companies */
+  .metacritic_lg{
+    height: 60px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .metacritic_md{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .metacritic_sm{
+    height: 30px;
+    width: auto;
+  }
+
+  .standartSize_lg{
+    height: 60px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  .standartSize_md{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  #valve_lg{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  #valve_md{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  #NaughtyDog_lg{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  #NaughtyDog_md{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  #fromSoftware_lg{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  #fromSoftware_md{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+@media(max-width: 380px) and (min-width:260px){
+
+.sortButtonPS4{
+  font-size: 10px;
+}
+.sortButtonPS5{
+  font-size: 10px;
+}
+.sortButtonXboxOne{
+  font-size: 10px;
+}
+.sortButtonXboxSeries{
+  font-size: 10px;
+}
+.sortButtonSwitch{
+  font-size: 10px;
+}
+.sortButtonPC{
+  font-size: 10px;
+}
+}
+
+@media(max-width:300px){
+  .fixSmallimg img{
+    height: 160px !important;
+    margin: auto;
+  }
+}
+@media(max-width: 260px) and (min-width:200px){
+
+  .sortButtonPS4{
+    font-size: 8px;
+  }
+  .sortButtonPS5{
+    font-size: 8px;
+  }
+  .sortButtonXboxOne{
+    font-size: 8px;
+  }
+  .sortButtonXboxSeries{
+    font-size: 8px;
+  }
+  .sortButtonSwitch{
+    font-size: 8px;
+  }
+  .sortButtonPC{
+    font-size: 8px;
+  }
+
+}
+
+@media(max-width: 199px){
+  
+  .sortButtonPS4{
+    font-size: 6px;
+  }
+  .sortButtonPS5{
+    font-size: 6px;
+  }
+  .sortButtonXboxOne{
+    font-size: 6px;
+  }
+  .sortButtonXboxSeries{
+    font-size: 6px;
+  }
+  .sortButtonSwitch{
+    font-size: 6px;
+  }
+  .sortButtonPC{
+    font-size: 6px;
+  }
+}

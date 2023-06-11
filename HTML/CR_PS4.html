@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> ComputeRoni </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+  <!-- css links -->
+  <link rel="stylesheet" href="../CSS/general.css" />
+  <link rel="stylesheet" href="../CSS/products.css" />
+  <link rel="stylesheet" href="../CSS/games.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="Rubix">
+
+  <!-- upper black information -->
+  <div class="container-fluid ">
+    <div class="row" id="upperField">
+      <div class="col-5 flex" id="upperFieldCol1">
+      <a href="index.html" target="_blank"> <img  class="img-fluid CorrectLogoSize" src="../assets/logo_test.png"></a>
+      <h2 id="timer"></h2>
+      </div>
+      <div class="col-7" id="upperFieldCol2">
+      <a href="tel:+972541231234"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_phone.png"></a>
+      <a href="mailto:computeRoniService@computeRoni.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_mail.png"></a>
+      <a href="https://www.facebook.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_facebook.png"></a>
+      <a href="https://www.instagram.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_instegram.png"></a>
+      <a href="https://www.youtube.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_youtube.png"></a>
+      <a href="https://web.telegram.org/a"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_telegram.png"></a>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- navigation -->
+  <nav class="desktop-nav">
+    <div class="main_menu">
+      <div class="mainMenuDiv"><a class="text-white" href="index.html">Home</a></div>
+      <div>|</div>
+      <div class="mainMenuDiv"><a class="text-white" href="CR_About.html">About</a></div>
+      <div>|</a></div>
+      <div class="mainMenuDiv text-white">Hardware<div class="dropdown-content">
+        <a href="CR_H_CPU.html" class="link_Hardware text-white">CPUs/Processors</a>
+        <a href="CR_H_Motherboard.html" class="link_Hardware text-white">Motherboards</a>
+        <a href="CR_H_HardDisk.html" class="link_Hardware text-white">Hard Disks/Storage</a>
+        <a href="CR_H_Case.html" class="link_Hardware text-white">Cases</a>
+        <a href="CR_H_RAM.html" class="link_Hardware text-white">Memory(RAM)</a>
+        <a href="CR_H_GPU.html" class="link_Hardware text-white">GPU</a>
+        <a href="CR_H_Power Supplies.html" class="link_Hardware text-white">Power Supplies</a>
+        <a href="CR_H_CPU Cooling.html" class="link_Hardware text-white">CPU Cooling</a>
+      </div>
+      </div>
+      <div>|</a></div>
+      <div class="mainMenuDiv text-white">Games
+      <div class="dropdown-content">
+        <a href="CR_PS4.html" class="link_Games text-white">Platstation 4</a>
+        <a href="CR_PS5.html" class="link_Games text-white">Platstation 5</a>
+        <a href="CR_XboxOne.html" class="link_Games text-white">Xbox One</a>
+        <a href="CR_XboxSeries.html" class="link_Games text-white">Xbox Series</a>
+        <a href="CR_NintendoSwitch.html" class="link_Games text-white">Nintendo Switch</a>
+        <a href="CR_PC.html" class="link_Games text-white">PC</a>
+      </div>
+      </div>
+    </div>
+    </nav>
+  
+    <!-- mobile navigation -->
+    <!-- <nav class="navbar">
+    <button class="navbar-toggler"> Menu </button>
+    <div class="navbar-menu" id="navbarMenu">
+      <a href="../HTML/index.html">Home</a>
+      <a href="../HTML/CR_About.html">About</a>
+      <a href="#" class="mobileHardware">Hardware</a>
+      <div class="submenu">
+      <div>
+        <a class="HardwareLink" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+        <a class="HardwareLink" href="../HTML/CR_H_HardDisk.html">Hard Disks/Storage</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Case.html">Cases</a>
+      </div>
+      <div>
+        <a class="HardwareLink" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+        <a class="HardwareLink" href="../HTML/CR_H_GPU.html">GPU</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+        <a class="HardwareLink" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+      </div>
+      </div>
+      <a href="#" class="mobileGames">Games</a>
+      <div class="submenu">
+      <div>
+        <a class="GamesLink" href="../HTML/CR_PS4.html">Platstation 4</a>
+        <a class="GamesLink" href="../HTML/CR_PS5.html">Platstation 5</a>
+        <a class="GamesLink" href="../HTML/CR_XboxOne.html">Xbox One</a>
+      </div>
+      <div>
+        <a class="GamesLink" href="../HTML/CR_XboxSeries.html">Xbox Series</a>
+        <a class="GamesLink" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+        <a class="GamesLink" href="../HTML/CR_PC.html">PC</a>
+      </div>
+      </div>
+    </div>
+    </nav> -->
+  
+  
+    
+  
+    <nav class="mobile-nav" style="display: flex;">
+      <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
+      <a class="mobileHome" href="index.html">Home</a>
+      <a class="mobileAbout" href="CR_About.html">About</a>
+      <div class="A text-white text-center"> <p>Hardware</p>
+           <a class="firstMobile HardwareLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_HardDisk.html">Hard Disks/ Storage</a>
+            <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Case.html">Cases</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_GPU.html">GPU</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+      </div>
+      <div class="text-white text-center"> <p>Games</p>
+           <a class="firstMobile GamesLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_PS4.html">PS4</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_PS5.html">PS5</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_XboxOne.html">Xbox One</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_XboxSeries.html">Xbox Series</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
+      </div>
+    </nav>
+  
+  
+  
+  
+      
+      
+      <!-- Cart -->
+      <div class="container-fluid"  style="background-color: black;">
+        <div class="row">
+          <div class="col-3">
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+      </div>
+    </div>
+
+  
+  <br>
+  <!-- all the table -->
+  <div class="container ">
+
+  <!-- row 0 -->
+  <div class="row">
+    <!-- navigation path -->
+    <div class="Rubix" id="direction">
+    <a class="nonTextDecoration" href="index.html">Home</a>
+    <i id="arrowRight"></i>
+    <a class="nonTextDecoration" id="rightDirection" href="CR_PS4.html">PS4</a>
+    </div>
+  </div>
+  <br>
+
+    <div class="row">
+
+    <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonPS4" id="btnLowToHigh">Sort By Price: Low -> High</button>
+    </div>
+    <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonPS4" id="btnHighToLow">Sort By Price: High -> Low</button>
+    </div>
+    <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonPS4" id="btnScoreLowToHigh">Sort By Score: Low -> High</button>
+    </div>
+    <div class="col-lg-3 col-6 py-2 textAlignCenter">
+      <button class="sortButtonPS4" id="btnScoreHighToLow">Sort By Score: High -> Low</button>
+    </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+          Min Score: <input type="text" id="minScoreFilter" placeholder="Min score" oninput="filterPS4Products()" />
+      </div>
+      <div class="col-6">
+          Max Score: <input type="text" id="maxScoreFilter" placeholder="Max score" oninput="filterPS4Products()" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 my-4">
+          Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterPS4Products()" />
+      </div>
+      <div class="col-6 my-4">
+          Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterPS4Products()" />
+      </div>
+    </div>
+    <br>
+
+  </div>
+  
+  <div class="container allGames">
+  <!-- row 1 -->
+  <div data-price=60 data-score=9 class="row firstProductPS4 AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">The Last Of Us Part 2</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+      Follow the journey of Ellie as she navigates a brutal and unforgiving landscape, facing 
+      challenging moral choices and dangerous enemies. With its immersive storytelling, stunning 
+      visuals, and intense gameplay, "The Last of Us Part II" delivers a riveting and 
+      unforgettable experience that explores themes of survival, loss, and the human spirit.
+      </p>
+      <div> <img src="../assets/NaughtyDog.png" id="NaughtyDog_lg"></div>
+      <div>
+      <a href="https://www.metacritic.com/game/playstation-4/the-last-of-us-part-ii" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+      </div>
+    </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_TLOF2.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">The Last Of Us Part 2</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Ellie and Joel, who survived a pandemic, enjoy a peaceful
+      life until an act of violence disrupts their community. Ellie sets out on a
+      relentless mission to seek justice and closure for the incident, facing the
+      harsh consequences of her actions along the way.
+    </p>
+    <div> <img src="../assets/NaughtyDog.png" id="NaughtyDog_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/the-last-of-us-part-ii" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_TLOF2.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">The Last Of Us Part 2</p>
+      <p class="detailsAboutTheGame">
+      Ellie sets out on a
+      relentless mission to seek justice and closure for the incident, facing the
+      harsh consequences of her actions along the way.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+        <a href="https://www.metacritic.com/game/playstation-4/the-last-of-us-part-ii" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_TLOF2.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 1 -->
+  </div>
+
+
+  <!-- row 2 -->
+  <div data-price=60 data-score=9 class="row AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Mortal Kombat 11</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+      MK returns with an enhanced version of the beloved franchise, offering Custom Character
+      Variations that grant players extensive control over their fighters.
+      The upgraded graphics engine delivers stunning visuals, immersing players in the intense
+      and visceral combat. With a mix of familiar and fresh fighters, the game's cinematic story
+      mode continues the epic narrative that has been unfolding for over two decades in Mortal
+      Kombat.
+      </p>
+      <div> <img src="../assets/WB.png" class="standartSize_lg"></div>
+      <div>
+      <a href="https://www.metacritic.com/game/playstation-4/mortal-kombat-11-ultimate" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+      </div>
+    </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_MK11.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Mortal Kombat 11</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      MK returns with an enhanced version of the beloved franchise, offering Custom Character
+      Variations that grant players extensive control over their fighters.
+      The upgraded graphics engine delivers stunning visuals, immersing players in the intense
+      and visceral combat.
+    </p>
+    <div> <img src="../assets/WB.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/mortal-kombat-11-ultimate" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_MK11.jpg" width="100%"  height="220px" >
+    </div>
+
+     <!-- col 1+2 - sm -->
+     <div class="col-7 d-md-none">
+     <div class="flexColumn height100">
+       <p class="title">Mortal Kombat 11</p>
+       <p class="detailsAboutTheGame">
+      MK returns with an enhanced version of the beloved franchise, offering Custom Character
+      Variations that grant players extensive control over their fighters.
+       </p>
+       <div class="justify-content-space-between flex marginTopAuto" >
+       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+       <div class="flexColumn">
+         <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+         <a href="https://www.metacritic.com/game/playstation-4/mortal-kombat-11-ultimate" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+       </div>
+       </div>
+     </div>
+     </div>
+  
+
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_MK11.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- end of row 2 -->
+  </div>
+
+
+
+
+
+  <!-- row 3 -->
+  <div data-price=60 data-score=10 class="row AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">BloodBorne</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      Hunt your nightmares A lone traveller. A cursed town. A deadly mystery that swallows
+      everything it touches. Face your fears as you enter the decaying city of Yharnam, a
+      forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest
+      shadows, fight for your life with blades and guns and discover secrets that will
+      make your blood run cold but just might save your skin...
+    </p>
+    <div> <img src="../assets/FromSoftware.png" id="fromSoftware_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/bloodborne" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_BloodBorne.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">BloodBorne</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Hunt your nightmares A lone traveller. A cursed town. A deadly mystery that swallows
+      everything it touches. Face your fears as you enter the decaying city of Yharnam, a
+      forsaken place ravaged by a terrible, all-consuming illness.
+    </p>
+    <div> <img src="../assets/FromSoftware.png" id="fromSoftware_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/bloodborne" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_BloodBorne.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+     <div class="flexColumn height100">
+     <p class="title">BloodBorne</p>
+     <p class="detailsAboutTheGame">
+      A deadly mystery that swallows
+      everything it touches. Face your fears as you enter the decaying city of Yharnam, fight 
+      for your life with blades and guns and discover secrets.
+     </p>
+     <div class="justify-content-space-between flex marginTopAuto" >
+       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+       <div class="flexColumn">
+       <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+       <a href="https://www.metacritic.com/game/playstation-4/bloodborne" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+       </div>
+     </div>
+     </div>
+   </div>
+
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_BloodBorne.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 3 -->
+  </div>
+
+
+
+
+
+  <!-- row 4 -->
+  <div data-price=50 data-score=9 class="row AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Devil may cry 5</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 50$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      The ultimate Devil Hunter is back in style, A brand new entry in the legendary action
+      series. Devil May Cry 5 brings together its signature blend of high-octane action and
+      other worldly original characters with the latest Capcom gaming technology to deliver
+      a graphically groundbreaking action-adventure masterpiece.
+    </p>
+    <div> <img src="../assets/Capcom.png" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/devil-may-cry-5" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_DMC5.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Devil may cry 5</p>
+      <p class="largFont">
+      <b>Age:</b> 15+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 50$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      The ultimate Devil Hunter is back in style, A brand new entry in the legendary action
+      series, Devil May Cry 5 brings together its signature blend of high-octane action and
+      other worldly original characters with the latest Capcom gaming technology.
+    </p>
+    <div> <img src="../assets/Capcom.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/devil-may-cry-5" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_DMC5.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Devil may cry 5</p>
+      <p class="detailsAboutTheGame">
+      Devil May Cry 5 brings together its signature blend of high-octane action and
+      other worldly original characters.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+        <a href="https://www.metacritic.com/game/playstation-4/devil-may-cry-5" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+  
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_DMC5.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 4 -->
+  </div>
+
+
+
+  <!-- row 5 -->
+  <div data-price=50 data-score=10 class="row AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Marvel's Spider-Man</p>
+      <p class="largFont">
+      <b>Age:</b> 10+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 50$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      In Marvel’s Spider-Man, the worlds of Peter Parker and Spider-Man collide in an
+      original action-packed story. Play as an experienced Peter Parker, fighting big crime
+      and iconic villains in Marvel’s New York. Web-swing through vibrant neighborhoods and
+      defeat villains with epic.
+    </p>
+    <div> <img src="../assets/insomniac.jpg" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/marvels-spider-man" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_Spiderman.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Marvel's Spider-Man</p>
+      <p class="largFont">
+      <b>Age:</b> 10+<br>
+      <b>Score:</b> 10/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 50$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      In Marvel’s Spider-Man, the worlds of Peter Parker and Spider-Man collide in an
+      original action-packed story. Play as an experienced Peter Parker, fighting big crime
+      and iconic villains in Marvel’s New York. Web-swing through vibrant neighborhoods and
+      defeat villains with epic.
+    </p>
+    <div> <img src="../assets/insomniac.jpg" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/marvels-spider-man" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_Spiderman.jpg" width="100%"  height="220px" >
+    </div>
+
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Marvel's Spider-Man</p>
+      <p class="detailsAboutTheGame">
+      In Marvel’s Spider-Man, the worlds of Peter Parker and Spider-Man collide in an
+      original action-packed story.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+        <a href="https://www.metacritic.com/game/playstation-4/marvels-spider-man" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_Spiderman.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 5 -->
+  </div>
+
+
+
+
+  <!-- row 6 -->
+  <div data-price=30 data-score=9 class="row AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Tomb Raider</p>
+      <p class="largFont">
+      <b>Age:</b> 13+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 30$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young
+      woman to a hardened survivor.
+      Armed with only the raw instincts and physical ability to push beyond the limits of
+      human endurance, Tomb Raider delivers an intense and gritty story into the origins of
+      Lara Croft and her ascent from a frightened young woman to a hardened survivor.
+    </p>
+    <div> <img src="../assets/crystalDynamics.png" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/tomb-raider-definitive-edition" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_Tomb Raider.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Tomb Raider</p>
+      <p class="largFont">
+      <b>Age:</b> 13+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 30$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      Armed with only the raw instincts and physical ability to push beyond the limits of
+      human endurance, Tomb Raider delivers an intense and gritty story into the origins of
+      Lara Croft and her ascent from a frightened young woman to a hardened survivor.
+    </p>
+    <div> <img src="../assets/crystalDynamics.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/tomb-raider-definitive-edition" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_Tomb Raider.jpg" width="100%"  height="220px" >
+    </div>
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Tomb Raider</p>
+      <p class="detailsAboutTheGame">
+      Armed with only the raw instincts and physical ability to push beyond the limits of
+      human endurance.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 30$</div>
+        <a href="https://www.metacritic.com/game/playstation-4/tomb-raider-definitive-edition" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_Tomb Raider.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 6 -->
+  </div>
+
+
+
+
+
+  <!-- row 7 -->
+  <div data-price=50 data-score=9 class="row AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Control</p>
+      <p class="largFont">
+      <b>Age:</b> 13+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 50$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      A corruptive presence has invaded the Federal Bureau of Control…Only you have the power to
+      stop it. The world is now your weapon in an epic fight to annihilate an ominous enemy through
+      deep and unpredictable environments. Containment has failed, humanity is at stake. Will you
+      regain control?
+    </p>
+    <div> <img src="../assets/remedyEntertainment.jpg" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/control" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_Control.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Control</p>
+      <p class="largFont">
+      <b>Age:</b> 13+<br>
+      <b>Score:</b> 9/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 50$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      A corruptive presence has invaded the Federal Bureau of Control…Only you have the power to
+      stop it. The world is now your weapon in an epic fight to annihilate an ominous enemy through
+      deep and unpredictable environments. Containment has failed, humanity is at stake. Will you
+      regain control?
+    </p>
+    <div> <img src="../assets/remedyEntertainment.jpg" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/control" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_Control.jpg" width="100%"  height="220px" >
+    </div>
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Control</p>
+      <p class="detailsAboutTheGame">
+      A corruptive presence has invaded the Federal Bureau of Control…Only you have the power to
+      stop it.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+        <a href="https://www.metacritic.com/game/playstation-4/control" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_Control.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 7 -->
+  </div>
+
+
+
+
+
+    <!-- row 8 -->
+    <div data-price=50 data-score=10 class="row AllProductsBorderPS4 normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">It Takes Two</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        Embark on the craziest journey of your life in It Takes Two. Invite a friend to join for
+        free with Friend’s Pass and work together across a huge variety of gleefully disruptive
+        gameplay challenges. Winner of GAME OF THE YEAR at the Game Awards 2021.
+      </p>
+      <div> <img src="../assets/hazelightStudios.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/playstation-4/it-takes-two" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/PS4_It Takes Two.jpg" width="100%"  height="220px">
+      </div>
+  
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">It Takes Two</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Embark on the craziest journey of your life in It Takes Two. Invite a friend to join for
+        free with Friend’s Pass and work together across a huge variety of gleefully disruptive
+        gameplay challenges. Winner of GAME OF THE YEAR at the Game Awards 2021.
+      </p>
+      <div> <img src="../assets/hazelightStudios.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/playstation-4/it-takes-two" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/PS4_It Takes Two.jpg" width="100%"  height="220px" >
+      </div>
+  
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">It Takes Two</p>
+        <p class="detailsAboutTheGame">
+        Embark on the craziest journey of your life in It Takes Two. Invite a friend to join for
+        free with Friend’s Pass and work together across a huge disruptive gameplay challenges.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+          <a href="https://www.metacritic.com/game/playstation-4/it-takes-two" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+          
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/PS4_It Takes Two.jpg" width="100%"  height="220px" >
+      </div>
+  
+      <!-- end of row 8 -->
+    </div>
+
+
+
+
+
+      <!-- row 9 -->
+  <div data-price=60 data-score=8 class="row AllProductsBorderPS4 normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
+    <div>
+      <p class="title">Assassin's Creed Valhalla</p>
+      <p class="largFont">
+      <b>Age:</b> 12+<br>
+      <b>Score:</b> 8/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
+    <p>
+      Step into the shoes of Eivor, a legendary Viking warrior, and lead your clan in a quest 
+      for glory and settlement in England. Immerse yourself in a vast open-world filled with 
+      breathtaking landscapes, intense combat, and intriguing political alliances, as you shape 
+      the destiny of your people in this captivating and immersive Viking saga.
+    </p>
+    <div> <img src="../assets/ubisoftMontreal.png" class="standartSize_lg"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/assassins-creed-valhalla" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_lg">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - lg -->
+    <div class="d-none d-lg-flex col-lg-2">
+    <img src="../assets/PS4_Assassin's Creed Valhalla.jpg" width="100%"  height="220px">
+    </div>
+
+    <!-- col 1 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+    <div>
+      <p class="title">Assassin's Creed Valhalla</p>
+      <p class="largFont">
+      <b>Age:</b> 12+<br>
+      <b>Score:</b> 8/10<br>
+      </p>
+    </div>
+    <div class="marginTopAuto">
+      <p>
+      <b>Price:</b> 60$<br>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
+    </div>
+
+    <!-- col 2 - md -->
+    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+    <p>
+      A legendary Viking warrior, and lead your clan in a quest for 
+      glory and settlement. Immerse yourself in a vast open-world filled with 
+      breathtaking landscapes, intense combat, and intriguing political alliances, as you shape the 
+      destiny of your people in this captivating and immersive Viking saga.
+    </p>
+    <div> <img src="../assets/ubisoftMontreal.png" class="standartSize_md"></div>
+    <div>
+      <a href="https://www.metacritic.com/game/playstation-4/assassins-creed-valhalla" target="_blank">
+      <img src="../assets/metacritic.png" class="metacritic_md">
+      </a>
+    </div>
+  </div>
+
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <img src="../assets/PS4_Assassin's Creed Valhalla.jpg" width="100%"  height="220px" >
+    </div>
+
+
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
+    <div class="flexColumn height100">
+      <p class="title">Assassin's Creed Valhalla</p>
+      <p class="detailsAboutTheGame">
+      Step into the shoes of Eivor, a legendary Viking warrior, and lead your clan in a 
+      quest for glory and settlement in England.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+      <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+        <a href="https://www.metacritic.com/game/playstation-4/assassins-creed-valhalla" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+        
+    <!-- col 3 - sm -->
+    <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PS4_Assassin's Creed Valhalla.jpg" width="100%"  height="220px" >
+    </div>
+
+    <!-- end of row 9 -->
+  </div>
+
+
+
+
+
+    <!-- row 10 -->
+    <div data-price=40 data-score=8 class="row AllProductsBorderPS4 normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">FIFA 2023</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 8/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        In FIFA 23, cross-play will be available at launch in FUT Division Rivals
+        (except Co-Op), FUT Champions, FUT Ultimate Online Draft, FUT Online Friendlies
+        (except Co-Op), FUT Play a Friend, Online Friendlies,
+      </p>
+      <div> <img src="../assets/EA.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/playstation-4/fifa-23" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/PS4_Fifa23.jpeg" width="100%"  height="220px">
+      </div>
+  
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">FIFA 2023</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 8/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+  
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        In FIFA 23, cross-play will be available at launch in FUT Division Rivals
+        (except Co-Op), FUT Champions, FUT Ultimate Online Draft, FUT Online Friendlies
+        (except Co-Op), FUT Play a Friend, Online Friendlies,
+      </p>
+      <div> <img src="../assets/EA.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/playstation-4/fifa-23" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+  
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/PS4_Fifa23.jpeg" width="100%"  height="220px" >
+      </div>
+
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">FIFA 2023</p>
+        <p class="detailsAboutTheGame">
+        In FIFA 23, cross-play will be available at launch in FUT Division Rivals
+        (except Co-Op).
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
+          <a href="https://www.metacritic.com/game/playstation-4/fifa-23" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/PS4_Fifa23.jpeg" width="100%"  height="220px" >
+      </div>
+  
+      <!-- end of row 10 -->
+    </div>
+  </div>
+
+  <!-- JS links -->
+  <script src="../JavaScript/JS_Product.js"></script>
+  <script src="../JavaScript/JS_General.js"></script>
+</body>
+
+<!--    Fotter   -->
+<footer class="footerStyle blackBackgrond">
+  <div class="container-fluid">
+    <div class="row justify-content-space-between blackBackgrond">
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+        </ul>
+        </div>
+        <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Customer Service</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Download our app</b></li>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col">
+            <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+            <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+            </div>
+            <div class="col">
+              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+
+
+</html>
+
+
+
+
+</div>

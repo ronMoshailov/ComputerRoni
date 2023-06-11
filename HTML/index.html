@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ComputeRoni</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+  <!-- css links -->
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <link rel="stylesheet" href="../CSS/general.css" />
+  <link rel="stylesheet" href="../CSS/products.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<!-- Body -->
+<body class="Rubix">
+
+  <!-- upper black information -->
+  <div class="container-fluid ">
+    <div class="row" id="upperField">
+      <div class="col-5 flex" id="upperFieldCol1">
+      <a href="index.html" target="_blank"> <img  class="img-fluid CorrectLogoSize" src="../assets/logo_test.png"></a>
+      <h2 id="timer"></h2>
+      </div>
+      <div class="col-7" id="upperFieldCol2">
+      <a href="tel:+972541231234"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_phone.png"></a>
+      <a href="mailto:computeRoniService@computeRoni.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_mail.png"></a>
+      <a href="https://www.facebook.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_facebook.png"></a>
+      <a href="https://www.instagram.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_instegram.png"></a>
+      <a href="https://www.youtube.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_youtube.png"></a>
+      <a href="https://web.telegram.org/a"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_telegram.png"></a>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- navigation -->
+  <nav class="desktop-nav">
+  <div class="main_menu">
+    <div class="mainMenuDiv"><a class="text-white" href="index.html">Home</a></div>
+    <div>|</div>
+    <div class="mainMenuDiv"><a class="text-white" href="CR_About.html">About</a></div>
+    <div>|</a></div>
+    <div class="mainMenuDiv text-white">Hardware<div class="dropdown-content">
+      <a href="CR_H_CPU.html" class="link_Hardware text-white">CPUs/Processors</a>
+      <a href="CR_H_Motherboard.html" class="link_Hardware text-white">Motherboards</a>
+      <a href="CR_H_HardDisk.html" class="link_Hardware text-white">Hard Disks/Storage</a>
+      <a href="CR_H_Case.html" class="link_Hardware text-white">Cases</a>
+      <a href="CR_H_RAM.html" class="link_Hardware text-white">Memory(RAM)</a>
+      <a href="CR_H_GPU.html" class="link_Hardware text-white">GPU</a>
+      <a href="CR_H_Power Supplies.html" class="link_Hardware text-white">Power Supplies</a>
+      <a href="CR_H_CPU Cooling.html" class="link_Hardware text-white">CPU Cooling</a>
+    </div>
+    </div>
+    <div>|</a></div>
+    <div class="mainMenuDiv text-white">Games
+    <div class="dropdown-content">
+      <a href="CR_PS4.html" class="link_Games text-white">Platstation 4</a>
+      <a href="CR_PS5.html" class="link_Games text-white">Platstation 5</a>
+      <a href="CR_XboxOne.html" class="link_Games text-white">Xbox One</a>
+      <a href="CR_XboxSeries.html" class="link_Games text-white">Xbox Series</a>
+      <a href="CR_NintendoSwitch.html" class="link_Games text-white">Nintendo Switch</a>
+      <a href="CR_PC.html" class="link_Games text-white">PC</a>
+    </div>
+    </div>
+  </div>
+  </nav>
+
+  <!-- mobile navigation -->
+  <!-- <nav class="navbar">
+  <button class="navbar-toggler"> Menu </button>
+  <div class="navbar-menu" id="navbarMenu">
+    <a href="../HTML/index.html">Home</a>
+    <a href="../HTML/CR_About.html">About</a>
+    <a href="#" class="mobileHardware">Hardware</a>
+    <div class="submenu">
+    <div>
+      <a class="HardwareLink" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+      <a class="HardwareLink" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+      <a class="HardwareLink" href="../HTML/CR_H_HardDisk.html">Hard Disks/Storage</a>
+      <a class="HardwareLink" href="../HTML/CR_H_Case.html">Cases</a>
+    </div>
+    <div>
+      <a class="HardwareLink" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+      <a class="HardwareLink" href="../HTML/CR_H_GPU.html">GPU</a>
+      <a class="HardwareLink" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+      <a class="HardwareLink" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+    </div>
+    </div>
+    <a href="#" class="mobileGames">Games</a>
+    <div class="submenu">
+    <div>
+      <a class="GamesLink" href="../HTML/CR_PS4.html">Platstation 4</a>
+      <a class="GamesLink" href="../HTML/CR_PS5.html">Platstation 5</a>
+      <a class="GamesLink" href="../HTML/CR_XboxOne.html">Xbox One</a>
+    </div>
+    <div>
+      <a class="GamesLink" href="../HTML/CR_XboxSeries.html">Xbox Series</a>
+      <a class="GamesLink" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+      <a class="GamesLink" href="../HTML/CR_PC.html">PC</a>
+    </div>
+    </div>
+  </div>
+  </nav> -->
+
+
+  
+
+  <nav class="mobile-nav" style="display: flex;">
+    <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
+		<a class="mobileHome" href="index.html">Home</a>
+		<a class="mobileAbout" href="CR_About.html">About</a>
+		<div class="A text-white text-center"> <p>Hardware</p>
+         <a class="firstMobile HardwareLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+         <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+         <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_HardDisk.html">Hard Disks/ Storage</a>
+          <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Case.html">Cases</a>
+         <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+         <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_GPU.html">GPU</a>
+         <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+         <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+    </div>
+    <div class="text-white text-center"> <p>Games</p>
+         <a class="firstMobile GamesLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_PS4.html">PS4</a>
+         <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_PS5.html">PS5</a>
+         <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+         <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_XboxOne.html">Xbox One</a>
+         <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_XboxSeries.html">Xbox Series</a>
+         <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
+    </div>
+	</nav>
+
+
+
+
+    
+    
+    <!-- Cart -->
+    <div class="container-fluid"  style="background-color: black;">
+      <div class="row">
+        <div class="col-3">
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+    </div>
+  </div>
+
+
+  
+  <!-- Header "Track your order" -->
+  <div id="trackOrder">
+    <div class="text-center py-5 text-white">
+    <h1 class="text-primary text-center mb-4 fontSizesm" style="font-size: 4vw;">Safe & Fast</h1>
+    <h1 class="text-white text-center display-3 mb-5 fontSizesm" style="font-size: 5vw;">Track your order</h1>
+    <br>
+      <div class="input-group flex justify-content-center deactivePostitionInitial test">
+      <input type="text" class="form-control border-light trackOrderInputText deactivePostitionInitial" placeholder="Tracking">
+      <div class="input-group-append">
+      <button class="btn btn-primary px-3 trackOrderInputButton deactivePostitionInitial">Search</button>
+      </div>
+    </div>
+    <div>
+      <p class="text-white text-center trackOrderSubText">
+      The responsibility for the delivery applies to the courier company, for any damage/defect
+      please contact them by phone: +972-2221111.
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <h2 class="text-primary mb-4 text-center" id="PortfolioTitle"> <u>Portfolio</u></h2>
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_1" src="../assets/PC_1.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_2" src="../assets/PC_2.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_3" src="../assets/PC_3.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_4" src="../assets/PC_4.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_5" src="../assets/PC_5.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_6" src="../assets/PC_6.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_7" src="../assets/PC_7.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_8" src="../assets/PC_8.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_9" src="../assets/PC_9.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_10" src="../assets/PC_10.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_11" src="../assets/PC_11.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_12" src="../assets/PC_12.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_13" src="../assets/PC_13.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_14" src="../assets/PC_14.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_15" src="../assets/PC_15.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_16" src="../assets/PC_16.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_17" src="../assets/PC_17.jpg">
+    </div>
+    <div class="col-lg-2 col-md-4 col-6 my-2">
+    <img class="productPortfolioDisplay hoverBorder" data-toggle="modal" data-target="#PC_18" src="../assets/PC_18.jpg">
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+
+
+  <!-- stay updated -->
+  <div id="StayUpdatedBackground">
+  <div class="text-center py-5 text-white">
+    <h1 class="stayUpdatedTitle1">It is important to us that you stay updated!</h1>
+    <h5 class="stayUpdatedTitle2">Leave here you email adress and we will send you updates</h5>
+    <div class="input-group flex justify-content-center deactivePostitionInitial">
+    <input type="text" class="form-control border-light trackOrderInputText deactivePostitionInitial" placeholder="Your email address">
+    <div class="input-group-append">
+      <button class="btn btn-primary px-3 trackOrderInputButton deactivePostitionInitial">Send</button>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Special Offers -->
+  <h2 class="text-primary mb-4 text-center" id="titleSpecialOffer"> <u>Special Offers</u></h2>
+  <!-- all the table -->
+  <div class="container">
+
+  <!-- row 1 -->
+  <div class="row borderBelow">
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_01.jpg" id="specialOffer1"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Powerful PC gaming:</u></b><br>
+        <br>
+        Processor: Ryzen 5 3600.<br>
+        Ram: 8GB.<br>
+        Disc: 500GB.<br>
+        GPU: Geforce GT210.<br>
+        OP: Windows 11.<br>
+        Case:Innovation ATX.<br>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">1130.00$</div>
+      <div>930.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_02.jpg" id="specialOffer2"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Pokemon games bundle:</u></b><br>
+        <br>
+        Pokemon violet & Pokemon Scarlet.
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">120.00$</div>
+      <div>90.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+  </div>
+
+  <!-- row 2 -->
+  <div class="row borderBelow">
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_04.jpg" id="specialOffer4"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>TLOU 2 Collector's Edition:</u></b><br>
+        <br>
+        Disc of the game & Steelbook.<br>
+        Ellie statue 12 inch.<br>
+        Art book with 48 pages.<br>
+        Ellie's bracelet.<br>
+        Set of 5 stickers.<br>
+        Set of 6 enamels pins.<br>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">230.00$</div>
+      <div>199.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_03.jpg" id="specialOffer3"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Powerful PC gaming:</u></b><br>
+        <br>
+        Processor: Ryzen 5995WX.<br>
+        Ram: 64GB.<br>
+        Disc: 4TB SSD NVME.<br>
+        GPU: RTX 4090.<br>
+        OP: Win 11.<br>
+        Case: Corsair 7000X.<br>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">1130.00$</div>
+      <div>930.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- row 3 -->
+  <div class="row borderBelow">
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_05.jpg" id="specialOffer5"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Nintendo Switch:</u></b><br>
+        <br>
+        Pokemon Scarlet & violet Edition.
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">120.00$</div>
+      <div>90.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_06.jpg" id="specialOffer6"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Super mario bos:</u></b><br>
+        <br>
+        Physical copy of the<br>
+        original game Super mario bros.
+        <br>
+        <br>
+        <b class="Limited">Limited: 3.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">2000.00$</div>
+      <div>1700.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+  </div>
+
+  <!-- row 4 -->
+  <div class="row borderBelow">
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_07.jpg" id="specialOffer7"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Metal Slug 3:</u></b><br>
+        <br>
+        The original Metal Slug 3 in the original box.<br>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">1200.00$</div>
+      <div>999.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_08.jpg" id="specialOffer8"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Worms world party:</u></b><br>
+        <br>
+        Worms World Party artillery turn-based tactics video game.<br>
+        <br>
+        <br>
+        <b class="Limited">Limited: 2.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">120.00$</div>
+      <div>99.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- row 5 -->
+  <div class="row borderBelow">
+
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_09.jpg" id="specialOffer9"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>MU Online:</u></b><br>
+        <br>
+        MU Online is MMORPG game, players create a character among nine different classes like warrior, wizard,
+        elf, etc.
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">6000.00$</div>
+      <div>5700.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_10.jpg" id="specialOffer10"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Fallout 76:</u></b><br>
+        <br>
+        Fallout 76 is an online action role-playing video game developed by Bethesda Game Studios.
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">60.00$</div>
+      <div>3.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+  </div>
+  <!-- row 6 -->
+  <div class="row borderBelow">
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_11.jpg" id="specialOffer11"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Blip & Blop:</u></b><br>
+        <br>
+        The brothers Blip & Blop found out that their creator Gargamel was killed by the Smurfs. so they set out
+        on a killing spree where they would avenge Gargamel's death.<br>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">400.00$</div>
+      <div>339.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_12.jpg" id="specialOffer1"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Ice tower:</u></b><br>
+        <br>
+        A video game where the goal is to reach as high a floor as possible while as time passes the level will
+        become more difficult.
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">500.00$</div>
+      <div>200.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+  </div>
+
+  <!-- row 7 -->
+  <div class="row borderBelow">
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_13.jpg" id="specialOffer13"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Mega Man X:</u></b><br>
+        <br>
+        Mega Man X is an action-platform video game for the Super Nintendo Entertainment System (SNES).<br> Mega
+        <br>
+        <b class="Limited">Limited: 1.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">1000.00$</div>
+      <div>989.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_14.jpg" id="specialOffer14"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Teenage Mutant Ninja Turtles IV: Turtles in Time:</u></b><br>
+        <br>
+        TMNT IV: Turtles in Time is a beat them up game that let you play against the most famous villains of
+        the turtles.<br>
+        <b class="Limited">Limited: 2.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">1000.00$</div>
+      <div>899.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- row 8 -->
+  <div class="row borderBelow">
+
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_15.jpg" id="specialOffer15"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Donkey Kong Country:</u></b><br>
+        <br>
+        Platform game that follows the gorilla Donkey Kong and his nephew Diddy Kong as they set out to recover
+        their stolen banana.
+        <br>
+        <b class="Limited">Limited: 4.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">900.00$</div>
+      <div>799.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_16.jpg" id="specialOffer16"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Pokemon Fire Red:</u></b><br>
+        <br>
+        Pokemon Fire Red focused on the 1st generation and let us become the biggest pokemon trainer in the world.
+        <br>
+        <b class="Limited">Limited: 5.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">600.00$</div>
+      <div>529.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+  </div>
+
+  <!-- row 9 -->
+  <div class="row borderBelow">
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_17.jpg" id="specialOffer17"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Pokemon Emerald:</u></b><br>
+        <br>
+        Pokemon Emerald focused on the 3rd generation and let us become the biggest pokemon trainer in the world.
+        <br>
+        <b class="Limited">Limited: 5.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">600.00$</div>
+      <div>529.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_18.jpg" id="specialOffer18"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>Digimon battle spirit 2:</u></b><br>
+        <br>
+        Digimon battle spirit 2 is a fighting game with a lot of characters from season 4 of the anime Digimon.
+        <br>
+        <b class="Limited">Limited: 8.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">1130.00$</div>
+      <div>930.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+  </div>
+
+  <!-- row 10 -->
+  <div class="row borderBelow">
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_19.jpg" id="specialOffer19"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Metroid Fusions:</u></b><br>
+        <br>
+        Investigates a space station infected with shapeshifting parasites known as X.
+        <br>
+        <b class="Limited">Limited: 3.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">800.00$</div>
+      <div>689.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_20.jpg" id="specialOffer20"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText fitForSmallest">
+        <b><u>The Legend of Zelda: A Link to the Past:</u></b><br>
+        <br>
+        The player assumes the role of Link as he journeys to save the princess zelda, defeat the demon king
+        Ganon.
+        <br>
+        <b class="Limited">Limited: 1.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">3000.00$</div>
+      <div>2799.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- row 11 -->
+  <div class="row ">
+
+    <div class="SOproduct col-lg-6 col-12 leftBorderDashed">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_21.jpg" id="specialOffer21"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText AriaOfSorrowFitText fitForSmallest">
+        <b><u>Castlevania: Aria of Sorrow:</u></b>
+        <br>
+        Aria of Sorrow is an adventure about a teenager who gains power by becoming the vessel of Dracula. He will
+        engage in battles against demons and absorb their powers.<br>
+        <br>
+        <b class="Limited">Limited: 2.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">900.00$</div>
+      <div>799.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+
+    <!-- col 1 -->
+    <div class="SOproduct col-lg-6 col-12">
+    <!-- row 1 in column -->
+    <div class="SpecialOfferRowOfCol">
+      <!-- image -->
+      <div><img src="../assets/Discount_03.jpg" id="specialOffer19"></div>
+      <!-- text -->
+      <div>
+      <p class="SpecialOfferDetailsText">
+        <b><u>Metroid Fusions:</u></b><br>
+        <br>
+        Investigates a space station infected with shapeshifting parasites known as X.
+        <br>
+        <b class="Limited">Limited: 3.</b>
+      </p>
+      </div>
+    </div>
+    <!-- row 2 in column -->
+    <div class="SpecialOfferRowOfCol priceDisplayCenter">
+      <div class="oldPrice">800.00$</div>
+      <div>689.00$</div>
+    </div>
+    <!-- row 3 in column -->
+    <div class="displayButton">
+      <button class="AddToCartButtonSP">Add To Cart</button><br><br>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../JavaScript/JS_index.js"></script>
+  <script src="../JavaScript/JS_General.js"></script>
+</body>
+
+
+
+<!--    Fotter   -->
+<footer class="footerStyle blackBackgrond">
+  <div class="container-fluid">
+    <div class="row justify-content-space-between blackBackgrond">
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+        </ul>
+        </div>
+        <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Customer Service</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Download our app</b></li>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col">
+            <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+            <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+            </div>
+            <div class="col">
+              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

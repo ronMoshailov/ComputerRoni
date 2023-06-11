@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> ComputeRoni </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+  <!-- css links -->
+  <link rel="stylesheet" href="../CSS/general.css" />
+  <link rel="stylesheet" href="../CSS/products.css" />
+  <link rel="stylesheet" href="../CSS/Hardware.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="Rubix">
+
+  <!-- upper black information -->
+  <div class="container-fluid ">
+    <div class="row" id="upperField">
+      <div class="col-5 flex" id="upperFieldCol1">
+      <a href="index.html" target="_blank"> <img  class="img-fluid CorrectLogoSize" src="../assets/logo_test.png"></a>
+      <h2 id="timer"></h2>
+      </div>
+      <div class="col-7" id="upperFieldCol2">
+      <a href="tel:+972541231234"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_phone.png"></a>
+      <a href="mailto:computeRoniService@computeRoni.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_mail.png"></a>
+      <a href="https://www.facebook.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_facebook.png"></a>
+      <a href="https://www.instagram.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_instegram.png"></a>
+      <a href="https://www.youtube.com"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_youtube.png"></a>
+      <a href="https://web.telegram.org/a"  target="_blank"> <img  class="img-fluid CorrectLogoIcon" src="../assets/icon_telegram.png"></a>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- navigation -->
+  <nav class="desktop-nav">
+    <div class="main_menu">
+      <div class="mainMenuDiv"><a class="text-white" href="index.html">Home</a></div>
+      <div>|</div>
+      <div class="mainMenuDiv"><a class="text-white" href="CR_About.html">About</a></div>
+      <div>|</a></div>
+      <div class="mainMenuDiv text-white">Hardware<div class="dropdown-content">
+        <a href="CR_H_CPU.html" class="link_Hardware text-white">CPUs/Processors</a>
+        <a href="CR_H_Motherboard.html" class="link_Hardware text-white">Motherboards</a>
+        <a href="CR_H_HardDisk.html" class="link_Hardware text-white">Hard Disks/Storage</a>
+        <a href="CR_H_Case.html" class="link_Hardware text-white">Cases</a>
+        <a href="CR_H_RAM.html" class="link_Hardware text-white">Memory(RAM)</a>
+        <a href="CR_H_GPU.html" class="link_Hardware text-white">GPU</a>
+        <a href="CR_H_Power Supplies.html" class="link_Hardware text-white">Power Supplies</a>
+        <a href="CR_H_CPU Cooling.html" class="link_Hardware text-white">CPU Cooling</a>
+      </div>
+      </div>
+      <div>|</a></div>
+      <div class="mainMenuDiv text-white">Games
+      <div class="dropdown-content">
+        <a href="CR_PS4.html" class="link_Games text-white">Platstation 4</a>
+        <a href="CR_PS5.html" class="link_Games text-white">Platstation 5</a>
+        <a href="CR_XboxOne.html" class="link_Games text-white">Xbox One</a>
+        <a href="CR_XboxSeries.html" class="link_Games text-white">Xbox Series</a>
+        <a href="CR_NintendoSwitch.html" class="link_Games text-white">Nintendo Switch</a>
+        <a href="CR_PC.html" class="link_Games text-white">PC</a>
+      </div>
+      </div>
+    </div>
+    </nav>
+  
+    <!-- mobile navigation -->
+    <!-- <nav class="navbar">
+    <button class="navbar-toggler"> Menu </button>
+    <div class="navbar-menu" id="navbarMenu">
+      <a href="../HTML/index.html">Home</a>
+      <a href="../HTML/CR_About.html">About</a>
+      <a href="#" class="mobileHardware">Hardware</a>
+      <div class="submenu">
+      <div>
+        <a class="HardwareLink" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+        <a class="HardwareLink" href="../HTML/CR_H_HardDisk.html">Hard Disks/Storage</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Case.html">Cases</a>
+      </div>
+      <div>
+        <a class="HardwareLink" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+        <a class="HardwareLink" href="../HTML/CR_H_GPU.html">GPU</a>
+        <a class="HardwareLink" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+        <a class="HardwareLink" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+      </div>
+      </div>
+      <a href="#" class="mobileGames">Games</a>
+      <div class="submenu">
+      <div>
+        <a class="GamesLink" href="../HTML/CR_PS4.html">Platstation 4</a>
+        <a class="GamesLink" href="../HTML/CR_PS5.html">Platstation 5</a>
+        <a class="GamesLink" href="../HTML/CR_XboxOne.html">Xbox One</a>
+      </div>
+      <div>
+        <a class="GamesLink" href="../HTML/CR_XboxSeries.html">Xbox Series</a>
+        <a class="GamesLink" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+        <a class="GamesLink" href="../HTML/CR_PC.html">PC</a>
+      </div>
+      </div>
+    </div>
+    </nav> -->
+  
+  
+    
+  
+    <nav class="mobile-nav" style="display: flex;">
+      <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
+      <a class="mobileHome" href="index.html">Home</a>
+      <a class="mobileAbout" href="CR_About.html">About</a>
+      <div class="A text-white text-center"> <p>Hardware</p>
+           <a class="firstMobile HardwareLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_H_CPU.html">CPUs/Processors</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Motherboard.html">Motherboards</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_HardDisk.html">Hard Disks/ Storage</a>
+            <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Case.html">Cases</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_RAM.html">Memory(RAM)</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_GPU.html">GPU</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_Power Supplies.html">Power Supplies</a>
+           <a class="HardwareLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_H_CPU Cooling.html">CPU Cooling</a>
+      </div>
+      <div class="text-white text-center"> <p>Games</p>
+           <a class="firstMobile GamesLink"  style="cursor: none; text-decoration: none;border-top: 2px solid black;" href="../HTML/CR_PS4.html">PS4</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_PS5.html">PS5</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_NintendoSwitch.html">Nintendo Switch</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="../HTML/CR_XboxOne.html">Xbox One</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_XboxSeries.html">Xbox Series</a>
+           <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
+      </div>
+    </nav>
+  
+  
+  
+  
+      
+      
+      <!-- Cart -->
+      <div class="container-fluid"  style="background-color: black;">
+        <div class="row">
+          <div class="col-3">
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+      </div>
+    </div>
+
+  <br>
+
+  <!-- all the table -->
+  <div class="container ">
+
+    <!-- row 0 -->
+    <div class="row">
+      <!-- navigation path -->
+      <div class="Rubix" id="direction">
+      <a class="nonTextDecoration" href="index.html">Home</a>
+      <i id="arrowRight"></i>
+      <a class="nonTextDecoration" id="rightDirection" href="CR_H_CPU Cooling.html">CPU cooling</a>
+      </div>
+    </div>
+    <br>
+      <div class="row">
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
+      </div>
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
+      </div>
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
+      </div>
+      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
+      </div>
+      </div>
+      <br>
+      <div class="row ">
+        <div class="col-sm-4 col-12">
+            Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterCPUcoolingProducts()" />
+        </div>
+        <div class="col-sm-4 col-12">
+            Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterCPUcoolingProducts()" />
+        </div>
+        <div class="col-sm-4 col-12">
+            Min price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterCPUcoolingProducts()" />
+        </div>
+      </div>
+
+    <br>
+  </div>
+  
+  <div class="container allHardware">
+    <!-- row 1 -->
+    <div data-price=79 data-brand="2E" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+        <p class="title">2E Gaming Air Cool</p>
+        <br>
+        Brand : 2E<br>
+        Model : GAMING AIR COOL<br>
+        Socket: LGA775 / 115X / 1200 / 1700, AMDFM1 / FM2 / AM2 / AM2+ / AM3 / AM3+ / AM4 / AM5<br>
+        Noise (dbA): 8-20±10% dB(A)<br>
+        Fan Bearing: Hydraulic Bearing<br>
+        Fan Size: 93x130x75mm<br>
+        Materials: Aluminium<br>
+        Lights: Auto RGB<br>
+        Warranty: 1 Year [p/n AC90D4-RGB]<br>
+        <br>
+        <br>
+        <br>
+        price: 79.00$<br>
+        <br>
+        <button class="AddToCartButton">Add To Cart</button>
+        </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_01.jpg" class="productDisplay">
+        </div>
+      </div>
+    </div>
+
+    <!-- row 2 -->
+    <div data-price=20 data-brand="Spire" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Spire VOYAGER</p>
+          <br>
+          Brand : Spire<br>
+          Model : VOYAGER<br>
+          Socket: 1200/1150/1155/1156 & 775<br>
+          Noise (dbA): 26dBA<br>
+          Fan Bearing: Sleeve Bearing<br>
+          Fan Size: 95 x 95 x 25mm<br>
+          Materials: Aluminium<br>
+          Lights: No<br>
+          Warranty: No<br>
+          <br>
+          <br>
+          <br>
+          price: 20.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_02.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- row 3 -->
+    <div data-price=69 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman CNPS7600 RGB 1700</p>
+          <br>
+          Brand : Zalman<br>
+          Model : CNPS7600 A-RGB<br>
+          Socket: 1700 / 1200 / 115X / 775 CPUs AMD : AM4 / AM3 CPUs<br>
+          Noise (dbA): 32dB(A) ±10%<br>
+          Fan Bearing: Hydraulic Bearing<br>
+          Fan Size: 1 x 92 mm<br>
+          Materials: Pure Aluminum, Pure Copper<br>
+          Lights: Auto RGB<br>
+          Warranty: 1 Year [p/n CNPS7600RGB]<br>
+          <br>
+          <br>
+          <br>
+          price: 69.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_03.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- row 4 -->
+    <div data-price=99 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman CNPS9X OPTIMA RGB</p>
+          <br>
+          Brand : Zalman<br>
+          Model : CNPS9X OPTIMA RGB<br>
+          Socket: Intel : LGA 1700 / 1200/115X CPUs AMD : AM4 CPUs<br>
+          Noise (dbA): 26dba<br>
+          Fan Bearing: Rifle Bearing<br>
+          Fan Size: 93x130x75mm<br>
+          Materials: Pure Copper, Aluminium<br>
+          Lights: Auto RGB<br>
+          Warranty: 1 Year [p/n AC90D4-RGB]<br>
+          <br>
+          <br>
+          <br>
+          price: 99.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_04.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- row 5 -->
+    <div data-price=119 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman CNPS10X Optima II WHITE RGB</p>
+          <br>
+          Brand : Zalman<br>
+          Model : CNPS10X Optima II WHITE (RGB)<br>
+          Socket: Intel: LGA2066/2011-V3/2011/1200/115X/1366 CPUs/ AMD: AM4/AM3+/AM3/FM2+/FM2 CPUs<br>
+          Noise (dbA): 27 dB(A) n 10%<br>
+          Fan Bearing: Hydraulic Bearing<br>
+          Fan Size: 120*120*25(H)mm<br>
+          Materials: Pure Copper, Pure Aluminum, Plastic<br>
+          Lights: RGB<br>
+          Warranty: 1 Year [p/n CNPS10X OPTIMA II White RGB]<br>
+          <br>
+          <br>
+          <br>
+          price: 119.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_05.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- row 6 -->
+    <div data-price=239 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman CNPS16X White</p>
+          <br>
+          Brand : Zalman<br>
+          Model : CNPS16X White<br>
+          Socket: Intel : LGA2066/2011-V3/2011/1200/115X CPUs; AMD : AM4/AM3+/AM3 CPUs<br>
+          Noise (dbA): 27.0 dB<br>
+          Fan Bearing: EBR Bearing<br>
+          Fan Size: 140x100x165mm<br>
+          Materials: Pure Copper, Pure Aluminum, ABS<br>
+          Lights: RGB<br>
+          Warranty: 1 Year [p/n CNPS16X/White]<br>
+          <br>
+          <br>
+          <br>
+          price: 239.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_06.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- row 7 -->
+    <div data-price=199 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman CNPS16X Black</p>
+          <br>
+          Brand : Zalman<br>
+          Model : CNPS16X Black<br>
+          Socket: LGA1200/2066/2011-V3/2011/115X, AM4/AM3+<br>
+          Noise (dbA): 27 dBA<br>
+          Fan Bearing: EBR Bearing<br>
+          Fan Size: 120mm<br>
+          Materials: Pure Copper, ABS Pure Aluminum<br>
+          Lights: Auto RGB<br>
+          Warranty: 1 Year [p/n AC90D4-RGB]<br>
+          <br>
+          <br>
+          <br>
+          price: 199.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_07.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- row 8 -->
+    <div data-price=279 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman CNPS20X</p>
+          <br>
+          Brand : Zalman<br>
+          Model : CNPS20X<br>
+          Socket: LGA1200/2066/2011-V3/2011/115X, AM4/AM3+<br>
+          Noise (dbA): 29 dBA<br>
+          Fan Bearing: FDB (Fluid Dynamic Bearing)<br>
+          Fan Size: 140mm<br>
+          Materials: Pure Copper, Pure Aluminum<br>
+          Lights: Auto RGB<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          <br>
+          price: 279.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_09.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- row 9 -->
+    <div data-price=199 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman CNPS17X</p>
+          <br>
+          Brand : Zalman<br>
+          Model : CNPS17X<br>
+          Socket: LGA1200/2066/2011-V3/2011/115X, AM4/AM3+/AM3<br>
+          Noise (dbA): 29 dBA<br>
+          Fan Bearing: FDB (Fluid Dynamic Bearing)<br>
+          Fan Size: 140mm<br>
+          Materials: Pure Copper, Pure Aluminum<br>
+          Lights: Auto RGB<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          <br>
+          price: 199.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/Power_Supplies_09.jpg" class="productDisplay">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- row 10 -->
+    <div data-price=359 data-brand="Zalman" class="row borderForRowCPUcooling normalProd">
+      <div class="col-8">
+        <p>
+          <p class="title">Zalman ALPHA 36 Black</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ALPHA 36 Black<br>
+          Socket: LGA 2066/2011-V3/2011/1700/1200/115X AMD : AM4/AM3<br>
+          Noise (dbA): 33dB(A) ±10%<br>
+          Fan Bearing: Long Life Bearing<br>
+          Fan Size: 120×120×25(h)mm<br>
+          Materials: ABS,PC,PPS,Pure Copper<br>
+          Lights: Addressable RGB<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          <br>
+          price: 359.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+      </div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/CPU_Cooling_10.jpg" class="productDisplay">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS links -->
+<script src="../JavaScript/JS_Hardware.js"></script>
+<script src="../JavaScript/JS_General.js"></script>
+</body>
+
+<!--    Fotter   -->
+<footer class="footerStyle blackBackgrond">
+  <div class="container-fluid">
+    <div class="row justify-content-space-between blackBackgrond">
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+          <li class="footer_title"><b>Customer Service</b></li>
+          <br>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <ul class="footerColumn">
+          <li class="footer_title"><b>Download our app</b></li>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col">
+              <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+              <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+            </div>
+            <div class="col">
+              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+
+</html>
