@@ -4,14 +4,10 @@
 <head>
   <title> ComputeRoni </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-  <!-- css links -->
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/products.css" />
   <link rel="stylesheet" href="../CSS/games.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../CSS/bootstrap.css" />
 </head>
 
 <body class="Rubix">
@@ -65,7 +61,6 @@
       </div>
     </div>
     </nav>
-
     <!-- mobile nav -->
     <nav class="mobile-nav" style="display: flex;">
       <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
@@ -90,11 +85,6 @@
            <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
       </div>
   	</nav>
-
-
-
-    
-    
     <!-- Cart -->
     <div class="container-fluid"  style="background-color: black;">
       <div class="row">
@@ -105,1121 +95,455 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
   
-<main>
-  <br>
-  <!-- all the table -->
-  <div class="container ">
-
-    <!-- row 0 -->
-    <div class="row">
-    <!-- navigation path -->
-    <div class="Rubix" id="direction">
-      <a class="nonTextDecoration" href="index.html">Home</a>
-      <i id="arrowRight"></i>
-      <a class="nonTextDecoration" id="rightDirection" href="CR_NintendoSwitch.html">Nintendo Switch</a>
-    </div>
-    </div>
+  <main>
     <br>
-
-    <div class="row">
-  
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonSwitch" id="btnLowToHigh">Sort By Price: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonSwitch" id="btnHighToLow">Sort By Price: High -> Low</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonSwitch" id="btnScoreLowToHigh">Sort By Score: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonSwitch" id="btnScoreHighToLow">Sort By Score: High -> Low</button>
-      </div>
-  
-    </div>
-    <br>
-
-    <div class="row">
-      <div class="col-6">
-          Min Score: <input type="text" id="minScoreFilter" placeholder="Min score" oninput="filterNintendoSwitchProducts()" />
-      </div>
-      <div class="col-6">
-          Max Score: <input type="text" id="maxScoreFilter" placeholder="Max score" oninput="filterNintendoSwitchProducts()" />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6 my-4">
-          Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterNintendoSwitchProducts()" />
-      </div>
-      <div class="col-6 my-4">
-          Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterNintendoSwitchProducts()" />
-      </div>
-    </div>
-    <br>
-
-  </div>
-
-  <div class="container allGames">
-  <!-- row 1 -->
-  <div data-price=40 data-score=10 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Celeste</p>
-      <p class="largFont">
-      <b>Age:</b> 12+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 40$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-      <p>
-      Celeste" is a critically acclaimed indie platforming game that offers a challenging and 
-      heartfelt experience. Join Madeline, a determined young woman, on her journey to conquer 
-      the treacherous Celeste Mountain.<br>
-      Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, 
-      in this super-tight platformer from the creators of TowerFall. Brave hundreds of 
-      hand-crafted challenges, uncover devious secrets, and piece together the mystery of the 
-      mountain.
-      </p>
-      <div> <img src="../assets/MaddyThorson.png" class="standartSize_lg"></div>
-      <div>
-      <a href="https://www.metacritic.com/game/switch/celeste" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-      </div>
-    </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch Celeste.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Celeste</p>
-      <p class="largFont">
-      <b>Age:</b> 12+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 40$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, 
-      in this super-tight platformer from the creators of TowerFall. Brave hundreds of 
-      hand-crafted challenges, uncover devious secrets, and piece together the mystery of the 
-      mountain.
-    </p>
-    <div> <img src="../assets/MaddyThorson.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/celeste" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch Celeste.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Celeste</p>
-      <p>
-      Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, 
-      in this super-tight platformer from the creators of TowerFall..
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
-        <a href="https://www.metacritic.com/game/switch/celeste" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+    <!-- all the table -->
+    <div class="container ">
+      <!-- row 0 -->
+      <div class="row">
+      <!-- navigation path -->
+      <div class="Rubix" id="direction">
+        <a class="nonTextDecoration" href="index.html">Home</a>
+        <i id="arrowRight"></i>
+        <a class="nonTextDecoration" id="rightDirection" href="CR_NintendoSwitch.html">Nintendo Switch</a>
       </div>
       </div>
-    </div>
-    </div>
-
-
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch Celeste.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 1 -->
-  </div>
-
-
-  <!-- row 2 -->
-  <div data-price=50 data-score=10 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Luigi's Mansion 3</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-      <p>
-      Luigi's Mansion 3" is a charming and spooky adventure that stars Mario's timid brother, 
-      Luigi. Join Luigi as he sets out on a ghost-hunting mission in a haunted hotel, armed 
-      with his trusty Poltergust G-00 vacuum cleaner. Explore multiple floors filled with clever 
-      puzzles, hidden gems, and mischievous ghosts, all while searching for Mario and his friends.
-      </p>
-      <div> <img src="../assets/NextLevelGamesLogo.png" class="standartSize_lg"></div>
-      <div>
-      <a href="https://www.metacritic.com/game/switch/luigis-mansion-3" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-      </div>
-    </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch Luigi's Mansion 3.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Luigi's Mansion 3</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Luigi's Mansion 3" is a charming and spooky adventure that stars Mario's timid brother, 
-      Luigi. Join Luigi as he sets out on a ghost-hunting mission in a haunted hotel, armed 
-      with his trusty Poltergust G-00 vacuum cleaner. Explore multiple floors filled with clever 
-      puzzles, hidden gems, and mischievous ghosts, all while searching for Mario and his friends.
-    </p>
-    <div> <img src="../assets/NextLevelGamesLogo.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/luigis-mansion-3" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch Luigi's Mansion 3.jpg" width="100%"  height="220px" >
-    </div>
-
-     <!-- col 1+2 - sm -->
-     <div class="col-7 d-md-none">
-     <div class="flexColumn height100">
-       <p class="title">Luigi's Mansion 3</p>
-       <p>
-       Luigi's Mansion 3," players guide Luigi through a haunted hotel to save Mario and friends, 
-       using a vacuum cleaner to capture ghosts and solve puzzles.
-       </p>
-       <div class="justify-content-space-between flex marginTopAuto" >
-       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-       <div class="flexColumn">
-         <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
-         <a href="https://www.metacritic.com/game/switch/luigis-mansion-3" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-       </div>
-       </div>
-     </div>
-     </div>
-  
-
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch Luigi's Mansion 3.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 2 -->
-  </div>
-
-
-
-
-
-  <!-- row 3 -->
-  <div data-price=50 data-score=9 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Poekmon let's go pikachu</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      Pokémon Let's Go Pikachu" is a charming and nostalgic adventure game for the Nintendo Switch. 
-      Join Pikachu as your companion on a journey through the Kanto region, capturing Pokémon, 
-      battling trainers, and exploring locations. With its modernized gameplay and captivating 
-      storyline, this game offers an experience for both fans and newcomers to the Pokémon franchise. 
-      Immerse yourself in the magical world of Pokémon and embark on an unforgettable journey in 
-      "Pokémon Let's Go Pikachu.
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-lets-go-pikachu!" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch Poekmon let's go pikachu.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Poekmon let's go pikachu</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Pikachu will join as your companion on a journey through the Kanto region, capturing Pokémon, 
-      battling trainers, and exploring locations. With its modernized gameplay and captivating 
-      storyline, this game offers an experience. 
-      Immerse yourself in the magical world of Pokémon and embark on an unforgettable journey in 
-      "Pokémon Let's Go Pikachu.
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-lets-go-pikachu!" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch Poekmon let's go pikachu.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-     <div class="flexColumn height100">
-     <p class="title">Poekmon let's go pikachu</p>
-     <p>
-       Pikachu will join as your companion on a journey through the Kanto region, capturing Pokémon, 
-       battling trainers, and exploring locations.
-     </p>
-     <div class="justify-content-space-between flex marginTopAuto" >
-       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-       <div class="flexColumn">
-       <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
-       <a href="https://www.metacritic.com/game/switch/pokemon-lets-go-pikachu!" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-       </div>
-     </div>
-     </div>
-   </div>
-
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch Poekmon let's go pikachu.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 3 -->
-  </div>
-
-
-
-
-
-  <!-- row 4 -->
-  <div data-price=50 data-score=9 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Pokemon Legend Arceus</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      Pokémon Legends: Arceus is an upcoming open-world action RPG set in the ancient Hisui region. 
-      Players take on the role of a Pokémon trainer and researcher, exploring a vast and untamed 
-      landscape while encountering a diverse range of Pokémon in their natural habitats. With its 
-      innovative gameplay and immersive setting, "Pokémon Legends: Arceus" offers a fresh and 
-      exciting experience that allows players to create their own legend in the Pokémon world.
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-legends-arceus" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch Pokemon Legend Arceus.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Pokemon Legend Arceus</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Pokémon Legends: Arceus is an open-world action RPG set in the Hisui region. 
-      Players take on the role of a Pokémon trainer and researcher, exploring a vast
-      landscape while encountering a diverse range of Pokémon in their natural habitats. With its 
-      innovative gameplay, "Pokémon Legends: Arceus" offers a fresh experience that allows 
-      players to create their own legend in the Pokémon world.
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-legends-arceus" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch Pokemon Legend Arceus.jpg" width="100%"  height="220px" >
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Pokemon Legend Arceus</p>
-      <p>
-      Players take on the role of a Pokémon trainer and researcher, exploring a vast
-      landscape while encountering a diverse range of Pokémon in their natural habitats.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
-        <a href="https://www.metacritic.com/game/switch/pokemon-legends-arceus" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-  
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch Pokemon Legend Arceus.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 4 -->
-  </div>
-
-
-
-  <!-- row 5 -->
-  <div data-price=60 data-score=8 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Pokemon Scarlet</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 8/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      Pokémon Scarlet are the first open-world RPGs in the Pokémon series. 
-      As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
-      and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
-      Learn new details about Sprigatito, Fuecoco, and Quaxly—the three Pokémon from which you'll 
-      choose your first partner—along with other wonderful new Pokémon, including the Legendary 
-      Pokémon Koraidon and Miraidon!
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-scarlet" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch Pokemon Scarlet.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Pokemon Scarlet</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 8/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Pokémon Scarlet are the first open-world RPGs in the Pokémon series. 
-      As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
-      and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
-      Learn new details about the three Pokémon from which you'll 
-      choose your first partner along with other wonderful new Pokémon!
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-scarlet" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch Pokemon Scarlet.jpg" width="100%"  height="220px" >
-    </div>
-
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Pokemon Scarlet</p>
-      <p>
-      As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
-      and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-        <a href="https://www.metacritic.com/game/switch/pokemon-scarlet" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch Pokemon Scarlet.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 5 -->
-  </div>
-
-
-
-
-  <!-- row 6 -->
-  <div data-price=60 data-score=9 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Pokemon Violet</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      Pokémon Violet are the first open-world RPGs in the Pokémon series. 
-      As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
-      and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
-      Learn new details about Sprigatito, Fuecoco, and Quaxly—the three Pokémon from which you'll 
-      choose your first partner—along with other wonderful new Pokémon, including the Legendary 
-      Pokémon Koraidon and Miraidon!
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-violet" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch Pokemon Violet.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Pokemon Violet</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Pokémon Violet are the first open-world RPGs in the Pokémon series. 
-      As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
-      and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
-      Learn new details about the three Pokémon from which you'll 
-      choose your first partner along with other wonderful new Pokémon!
-    </p>
-    <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/pokemon-violet" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch Pokemon Violet.jpg" width="100%"  height="220px" >
-    </div>
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Pokemon Violet</p>
-      <p>
-      As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
-      and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-        <a href="https://www.metacritic.com/game/switch/pokemon-violet" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch Pokemon Violet.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 6 -->
-  </div>
-
-
-
-
-
-  <!-- row 7 -->
-  <div data-price=40 data-score=9 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Ring Fit Adventure</p>
-      <p class="largFont">
-      <b>Age:</b> 8+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 40$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      Explore more than 100 levels in over 20 vibrant worlds in your quest to defeat a bodybuilding 
-      dragon and his minions using real-life exercises! Traverse grass-swept plains by jogging in 
-      place, attack enemies with overhead shoulder presses, and refill your health meter by striking 
-      some yoga poses.
-    </p>
-    <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/ring-fit-adventure" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch Ring Fit Adventure.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Ring Fit Adventure</p>
-      <p class="largFont">
-      <b>Age:</b> 8+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 40$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Explore more than 100 levels in over 20 vibrant worlds in your quest to defeat a bodybuilding 
-      dragon and his minions using real-life exercises! Traverse grass-swept plains by jogging in 
-      place, attack enemies with overhead shoulder presses, and refill your health meter by striking 
-      some yoga poses.
-    </p>
-    <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/ring-fit-adventure" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch Ring Fit Adventure.jpg" width="100%"  height="220px" >
-    </div>
-
-
-      <!-- col 1+2 - sm -->
-      <div class="col-7 d-md-none">
-        <div class="flexColumn height100">
-        <p class="title">Ring Fit Adventure</p>
-        <p>
-          Explore more than 100 levels in over 20 vibrant worlds in your quest to defeat a bodybuilding 
-          dragon and his minions using real-life exercises!
-        </p>
-          <div class="justify-content-space-between flex marginTopAuto" >
-          <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-          <div class="flexColumn">
-          <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
-          <a href="https://www.metacritic.com/game/switch/ring-fit-adventure" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-          </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonSwitch" id="btnLowToHigh">Sort By Price: Low -> High</button>
         </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonSwitch" id="btnHighToLow">Sort By Price: High -> Low</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonSwitch" id="btnScoreLowToHigh">Sort By Score: Low -> High</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonSwitch" id="btnScoreHighToLow">Sort By Score: High -> Low</button>
         </div>
       </div>
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch Ring Fit Adventure.jpg" width="100%"  height="220px" >
+      <br>
+      <div class="row">
+        <div class="col-6">
+            Min Score: <input type="text" id="minScoreFilter" placeholder="Min score" oninput="filterNintendoSwitchProducts()" />
+        </div>
+        <div class="col-6">
+            Max Score: <input type="text" id="maxScoreFilter" placeholder="Max score" oninput="filterNintendoSwitchProducts()" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 my-4">
+            Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterNintendoSwitchProducts()" />
+        </div>
+        <div class="col-6 my-4">
+            Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterNintendoSwitchProducts()" />
+        </div>
+      </div>
+      <br>
     </div>
-
-    <!-- end of row 7 -->
-  </div>
-
-
-
-
-
-    <!-- row 8 -->
-    <div data-price=50 data-score=10 class="row AllProductsBorderSwitch normalProd">
+    <div class="container allGames">
+    <!-- row 1 -->
+    <div data-price=40 data-score=10 class="row AllProductsBorderSwitch normalProd">
       <!-- col 1 - lg -->
       <div class="d-none d-lg-flex col-lg-2 flexColumn">
       <div>
-        <p class="title">Super Mario Odyssey</p>
+        <p class="title">Celeste</p>
         <p class="largFont">
-        <b>Age:</b> 6+<br>
+        <b>Age:</b> 12+<br>
         <b>Score:</b> 10/10<br>
         </p>
       </div>
       <div class="marginTopAuto">
         <p>
-        <b>Price:</b> 50$<br>
+        <b>Price:</b> 40$<br>
         </p>
         <button class="AddToCartButton">Add To Cart</button>
       </div>
       </div>
-  
       <!-- col 2 - lg -->
       <div class="d-none d-lg-block col-lg-8 positionRelative">
-      <p>
-        Super Mario Odyssey" is a critically acclaimed platforming adventure exclusively for the 
-        Nintendo Switch. Join Mario on a globe-trotting journey as he embarks on a mission to 
-        rescue Princess Peach from Bowser's clutches. Explore diverse and imaginative kingdoms, 
-        use Mario's new ability to possess objects and creatures with his sentient hat companion, 
-        Cappy, and engage in thrilling platforming challenges.
-      </p>
-      <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
-      <div>
-        <a href="https://www.metacritic.com/game/switch/super-mario-odyssey" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
+        <p>
+        Celeste" is a critically acclaimed indie platforming game that offers a challenging and 
+        heartfelt experience. Join Madeline, a determined young woman, on her journey to conquer 
+        the treacherous Celeste Mountain.<br>
+        Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, 
+        in this super-tight platformer from the creators of TowerFall. Brave hundreds of 
+        hand-crafted challenges, uncover devious secrets, and piece together the mystery of the 
+        mountain.
+        </p>
+        <div> <img src="../assets/MaddyThorson.png" class="standartSize_lg"></div>
+        <div>
+        <a href="https://www.metacritic.com/game/switch/celeste" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
         </a>
+        </div>
       </div>
-    </div>
-  
       <!-- col 3 - lg -->
       <div class="d-none d-lg-flex col-lg-2">
-      <img src="../assets/Nintendo Switch Super Mario Odyssey.jpg" width="100%"  height="220px">
+      <img src="../assets/Nintendo Switch Celeste.jpg" width="100%"  height="220px">
       </div>
-  
       <!-- col 1 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
       <div>
-        <p class="title">Super Mario Odyssey</p>
+        <p class="title">Celeste</p>
         <p class="largFont">
-        <b>Age:</b> 6+<br>
+        <b>Age:</b> 12+<br>
         <b>Score:</b> 10/10<br>
         </p>
       </div>
       <div class="marginTopAuto">
         <p>
-        <b>Price:</b> 50$<br>
+        <b>Price:</b> 40$<br>
         </p>
         <button class="AddToCartButton">Add To Cart</button>
       </div>
       </div>
-  
       <!-- col 2 - md -->
       <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
       <p>
-        Super Mario Odyssey" is a platforming adventure exclusively for the 
-        Nintendo Switch. Join Mario on a globe-trotting journey as he embarks on a mission to 
-        rescue Princess Peach from Bowser's clutches. Explore diverse and imaginative kingdoms, 
-        use Mario's new ability to possess objects and creatures with his sentient hat companion, 
-        Cappy, and engage in thrilling platforming challenges.
+        Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, 
+        in this super-tight platformer from the creators of TowerFall. Brave hundreds of 
+        hand-crafted challenges, uncover devious secrets, and piece together the mystery of the 
+        mountain.
       </p>
-      <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
+      <div> <img src="../assets/MaddyThorson.png" class="standartSize_md"></div>
       <div>
-        <a href="https://www.metacritic.com/game/switch/super-mario-odyssey" target="_blank">
+        <a href="https://www.metacritic.com/game/switch/celeste" target="_blank">
         <img src="../assets/metacritic.png" class="metacritic_md">
         </a>
       </div>
     </div>
-  
       <!-- col 3 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 ">
-      <img src="../assets/Nintendo Switch Super Mario Odyssey.jpg" width="100%"  height="220px" >
+      <img src="../assets/Nintendo Switch Celeste.jpg" width="100%"  height="220px" >
       </div>
-  
       <!-- col 1+2 - sm -->
       <div class="col-7 d-md-none">
       <div class="flexColumn height100">
-        <p class="title">Super Mario Odyssey</p>
+        <p class="title">Celeste</p>
         <p>
-        Super Mario Odyssey" is a platforming adventure exclusively for the 
-        Nintendo Switch. Join Mario on a globe-trotting journey as he embarks on a mission to 
-        rescue Princess Peach from Bowser's clutches.<br>
+        Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, 
+        in this super-tight platformer from the creators of TowerFall..
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
+          <a href="https://www.metacritic.com/game/switch/celeste" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Nintendo Switch Celeste.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 1 -->
+    </div>
+    <!-- row 2 -->
+    <div data-price=50 data-score=10 class="row AllProductsBorderSwitch normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Luigi's Mansion 3</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+        <p>
+        Luigi's Mansion 3" is a charming and spooky adventure that stars Mario's timid brother, 
+        Luigi. Join Luigi as he sets out on a ghost-hunting mission in a haunted hotel, armed 
+        with his trusty Poltergust G-00 vacuum cleaner. Explore multiple floors filled with clever 
+        puzzles, hidden gems, and mischievous ghosts, all while searching for Mario and his friends.
+        </p>
+        <div> <img src="../assets/NextLevelGamesLogo.png" class="standartSize_lg"></div>
+        <div>
+        <a href="https://www.metacritic.com/game/switch/luigis-mansion-3" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+        </div>
+      </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Nintendo Switch Luigi's Mansion 3.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Luigi's Mansion 3</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Luigi's Mansion 3" is a charming and spooky adventure that stars Mario's timid brother, 
+        Luigi. Join Luigi as he sets out on a ghost-hunting mission in a haunted hotel, armed 
+        with his trusty Poltergust G-00 vacuum cleaner. Explore multiple floors filled with clever 
+        puzzles, hidden gems, and mischievous ghosts, all while searching for Mario and his friends.
+      </p>
+      <div> <img src="../assets/NextLevelGamesLogo.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/luigis-mansion-3" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Nintendo Switch Luigi's Mansion 3.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Luigi's Mansion 3</p>
+        <p>
+        Luigi's Mansion 3," players guide Luigi through a haunted hotel to save Mario and friends, 
+        using a vacuum cleaner to capture ghosts and solve puzzles.
         </p>
         <div class="justify-content-space-between flex marginTopAuto" >
         <button class="AddToCartButton marginTopAuto">Add To Cart</button>
         <div class="flexColumn">
           <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
-          <a href="https://www.metacritic.com/game/switch/super-mario-odyssey" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+          <a href="https://www.metacritic.com/game/switch/luigis-mansion-3" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
         </div>
         </div>
       </div>
       </div>
-          
       <!-- col 3 - sm -->
       <div class="d-md-none col-5 d-flex fixSmallimg">
-      <img src="../assets/Nintendo Switch Super Mario Odyssey.jpg" width="100%"  height="220px" >
+      <img src="../assets/Nintendo Switch Luigi's Mansion 3.jpg" width="100%"  height="220px" >
       </div>
-  
-      <!-- end of row 8 -->
+      <!-- end of row 2 -->
     </div>
-
-
-
-
-
-  <!-- row 9 -->
-  <div data-price=60 data-score=10 class="row AllProductsBorderSwitch normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">The Legend Of Zelda: Breath Of The Wild</p>
-      <p class="largFont">
-      <b>Age:</b> 8+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      The Legend of Zelda: Breath of the Wild" is an epic open-world adventure that redefines the 
-      beloved Zelda franchise. Embark on an immersive journey as Link, awakening from a century-long 
-      slumber, to save the kingdom of Hyrule from the menacing Calamity Ganon. Explore a vast and 
-      breathtaking world filled with stunning landscapes, challenging puzzles, and thrilling combat 
-      encounters.
-    </p>
-    <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Nintendo Switch The Legend Of Zelda Breath Of The WIld.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">The Legend Of Zelda: Breath Of The Wild</p>
-      <p class="largFont">
-      <b>Age:</b> 8+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      The Legend of Zelda: Breath of the Wild" is an epic open-world adventure that redefines the 
-      beloved Zelda franchise. Embark on an immersive journey as Link, awakening from a century-long 
-      slumber, to save the kingdom of Hyrule from the menacing Calamity Ganon. Explore a vast and 
-      breathtaking world filled with stunning landscapes, challenging puzzles, and thrilling combat 
-      encounters.
-    </p>
-    <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Nintendo Switch The Legend Of Zelda Breath Of The WIld.jpg" width="100%"  height="220px" >
-    </div>
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">The Legend Of Zelda: Breath Of The Wild</p>
-      <p>
-      Embark on an immersive journey as Link, awakening from a century-long 
-      slumber, to save the kingdom of Hyrule from the menacing Calamity Ganon.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-        <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Nintendo Switch The Legend Of Zelda Breath Of The WIld.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 9 -->
-  </div>
-
-
-
-
-
-    <!-- row 10 -->
-    <div data-price=60 data-score=10 class="row AllProductsBorderSwitch normalProd">
+    <!-- row 3 -->
+    <div data-price=50 data-score=9 class="row AllProductsBorderSwitch normalProd">
       <!-- col 1 - lg -->
       <div class="d-none d-lg-flex col-lg-2 flexColumn">
       <div>
-        <p class="title">The Legend Of Zelda: Link's Awakening</p>
+        <p class="title">Poekmon let's go pikachu</p>
         <p class="largFont">
-        <b>Age:</b> 7+<br>
-        <b>Score:</b> 10/10<br>
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 9/10<br>
         </p>
       </div>
       <div class="marginTopAuto">
         <p>
-        <b>Price:</b> 60$<br>
+        <b>Price:</b> 50$<br>
         </p>
         <button class="AddToCartButton">Add To Cart</button>
       </div>
       </div>
-  
       <!-- col 2 - lg -->
       <div class="d-none d-lg-block col-lg-8 positionRelative">
       <p>
-        The Legend of Zelda: Link's Awakening" is a classic action-adventure game that has been 
-        reimagined for the Nintendo Switch. Follow the hero, Link, as he embarks on a mysterious 
-        journey to awaken the Wind Fish and escape the dreamlike Koholint Island. Explore dungeons, 
-        solve puzzles, and encounter charming characters in this captivating and nostalgic quest.
+        Pokémon Let's Go Pikachu" is a charming and nostalgic adventure game for the Nintendo Switch. 
+        Join Pikachu as your companion on a journey through the Kanto region, capturing Pokémon, 
+        battling trainers, and exploring locations. With its modernized gameplay and captivating 
+        storyline, this game offers an experience for both fans and newcomers to the Pokémon franchise. 
+        Immerse yourself in the magical world of Pokémon and embark on an unforgettable journey in 
+        "Pokémon Let's Go Pikachu.
       </p>
-      <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
       <div>
-        <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-links-awakening" target="_blank">
+        <a href="https://www.metacritic.com/game/switch/pokemon-lets-go-pikachu!" target="_blank">
         <img src="../assets/metacritic.png" class="metacritic_lg">
         </a>
       </div>
     </div>
-  
       <!-- col 3 - lg -->
       <div class="d-none d-lg-flex col-lg-2">
-      <img src="../assets/Nintendo Switch The Legend Of Zelda Link's Awakening.jpg" width="100%"  height="220px">
+      <img src="../assets/Nintendo Switch Poekmon let's go pikachu.jpg" width="100%"  height="220px">
       </div>
-  
       <!-- col 1 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
       <div>
-        <p class="title">The Legend Of Zelda: Link's Awakening</p>
+        <p class="title">Poekmon let's go pikachu</p>
         <p class="largFont">
-        <b>Age:</b> 7+<br>
-        <b>Score:</b> 10/10<br>
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Pikachu will join as your companion on a journey through the Kanto region, capturing Pokémon, 
+        battling trainers, and exploring locations. With its modernized gameplay and captivating 
+        storyline, this game offers an experience. 
+        Immerse yourself in the magical world of Pokémon and embark on an unforgettable journey in 
+        "Pokémon Let's Go Pikachu.
+      </p>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/pokemon-lets-go-pikachu!" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Nintendo Switch Poekmon let's go pikachu.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+      <p class="title">Poekmon let's go pikachu</p>
+      <p>
+        Pikachu will join as your companion on a journey through the Kanto region, capturing Pokémon, 
+        battling trainers, and exploring locations.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+        <a href="https://www.metacritic.com/game/switch/pokemon-lets-go-pikachu!" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+      </div>
+      </div>
+    </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Nintendo Switch Poekmon let's go pikachu.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 3 -->
+    </div>
+    <!-- row 4 -->
+    <div data-price=50 data-score=9 class="row AllProductsBorderSwitch normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Pokemon Legend Arceus</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        Pokémon Legends: Arceus is an upcoming open-world action RPG set in the ancient Hisui region. 
+        Players take on the role of a Pokémon trainer and researcher, exploring a vast and untamed 
+        landscape while encountering a diverse range of Pokémon in their natural habitats. With its 
+        innovative gameplay and immersive setting, "Pokémon Legends: Arceus" offers a fresh and 
+        exciting experience that allows players to create their own legend in the Pokémon world.
+      </p>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/pokemon-legends-arceus" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Nintendo Switch Pokemon Legend Arceus.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Pokemon Legend Arceus</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Pokémon Legends: Arceus is an open-world action RPG set in the Hisui region. 
+        Players take on the role of a Pokémon trainer and researcher, exploring a vast
+        landscape while encountering a diverse range of Pokémon in their natural habitats. With its 
+        innovative gameplay, "Pokémon Legends: Arceus" offers a fresh experience that allows 
+        players to create their own legend in the Pokémon world.
+      </p>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/pokemon-legends-arceus" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Nintendo Switch Pokemon Legend Arceus.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Pokemon Legend Arceus</p>
+        <p>
+        Players take on the role of a Pokémon trainer and researcher, exploring a vast
+        landscape while encountering a diverse range of Pokémon in their natural habitats.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+          <a href="https://www.metacritic.com/game/switch/pokemon-legends-arceus" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Nintendo Switch Pokemon Legend Arceus.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 4 -->
+    </div>
+    <!-- row 5 -->
+    <div data-price=60 data-score=8 class="row AllProductsBorderSwitch normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Pokemon Scarlet</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 8/10<br>
         </p>
       </div>
       <div class="marginTopAuto">
@@ -1229,104 +553,617 @@
         <button class="AddToCartButton">Add To Cart</button>
       </div>
       </div>
-  
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        Pokémon Scarlet are the first open-world RPGs in the Pokémon series. 
+        As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
+        and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
+        Learn new details about Sprigatito, Fuecoco, and Quaxly—the three Pokémon from which you'll 
+        choose your first partner—along with other wonderful new Pokémon, including the Legendary 
+        Pokémon Koraidon and Miraidon!
+      </p>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/pokemon-scarlet" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Nintendo Switch Pokemon Scarlet.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Pokemon Scarlet</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 8/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
       <!-- col 2 - md -->
       <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
       <p>
-        The Legend of Zelda: Link's Awakening" is a classic action-adventure game that has been 
-        reimagined for the Nintendo Switch. Follow the hero, Link, as he embarks on a mysterious 
-        journey to awaken the Wind Fish and escape the dreamlike Koholint Island. Explore dungeons, 
-        solve puzzles, and encounter charming characters in this captivating and nostalgic quest.
+        Pokémon Scarlet are the first open-world RPGs in the Pokémon series. 
+        As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
+        and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
+        Learn new details about the three Pokémon from which you'll 
+        choose your first partner along with other wonderful new Pokémon!
       </p>
-      <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
       <div>
-        <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-links-awakening" target="_blank">
+        <a href="https://www.metacritic.com/game/switch/pokemon-scarlet" target="_blank">
         <img src="../assets/metacritic.png" class="metacritic_md">
         </a>
       </div>
     </div>
-  
       <!-- col 3 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 ">
-      <img src="../assets/Nintendo Switch The Legend Of Zelda Link's Awakening.jpg" width="100%"  height="220px" >
+      <img src="../assets/Nintendo Switch Pokemon Scarlet.jpg" width="100%"  height="220px" >
       </div>
-
       <!-- col 1+2 - sm -->
       <div class="col-7 d-md-none">
       <div class="flexColumn height100">
-        <p class="title">The Legend Of Zelda: Link's Awakening</p>
+        <p class="title">Pokemon Scarlet</p>
         <p>
-        Follow the hero, Link, as he embarks on a mysterious 
-        journey to awaken the Wind Fish and escape the dreamlike Koholint Island.
+        As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
+        and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
         </p>
         <div class="justify-content-space-between flex marginTopAuto" >
         <button class="AddToCartButton marginTopAuto">Add To Cart</button>
         <div class="flexColumn">
           <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-          <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-links-awakening" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+          <a href="https://www.metacritic.com/game/switch/pokemon-scarlet" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
         </div>
         </div>
       </div>
       </div>
-
-
       <!-- col 3 - sm -->
       <div class="d-md-none col-5 d-flex fixSmallimg">
-      <img src="../assets/Nintendo Switch The Legend Of Zelda Link's Awakening.jpg" width="100%"  height="220px" >
+      <img src="../assets/Nintendo Switch Pokemon Scarlet.jpg" width="100%"  height="220px" >
       </div>
-  
-      <!-- end of row 10 -->
+      <!-- end of row 5 -->
     </div>
-  </div>
-</main>
-
-<!--    Fotter   -->
-<footer class="footerStyle blackBackgrond">
-  <div class="container-fluid">
-    <div class="row justify-content-space-between blackBackgrond">
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
-        </ul>
-        </div>
-        <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Customer Service</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
-        </ul>
+    <!-- row 6 -->
+    <div data-price=60 data-score=9 class="row AllProductsBorderSwitch normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Pokemon Violet</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
       </div>
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Download our app</b></li>
-          <br>
-          <br>
-          <div class="row">
-            <div class="col">
-            <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
-            <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
-            </div>
-            <div class="col">
-              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        Pokémon Violet are the first open-world RPGs in the Pokémon series. 
+        As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
+        and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
+        Learn new details about Sprigatito, Fuecoco, and Quaxly—the three Pokémon from which you'll 
+        choose your first partner—along with other wonderful new Pokémon, including the Legendary 
+        Pokémon Koraidon and Miraidon!
+      </p>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/pokemon-violet" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Nintendo Switch Pokemon Violet.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Pokemon Violet</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Pokémon Violet are the first open-world RPGs in the Pokémon series. 
+        As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
+        and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
+        Learn new details about the three Pokémon from which you'll 
+        choose your first partner along with other wonderful new Pokémon!
+      </p>
+      <div> <img src="../assets/gameFreak.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/pokemon-violet" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Nintendo Switch Pokemon Violet.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Pokemon Violet</p>
+        <p>
+        As you enjoy the hallmarks of the series—meeting, teaming up with, battling, training, 
+        and trading Pokémon—you'll be able to immerse yourself in a newly evolved adventure.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+          <a href="https://www.metacritic.com/game/switch/pokemon-violet" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Nintendo Switch Pokemon Violet.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 6 -->
+    </div>
+    <!-- row 7 -->
+    <div data-price=40 data-score=9 class="row AllProductsBorderSwitch normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Ring Fit Adventure</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        Explore more than 100 levels in over 20 vibrant worlds in your quest to defeat a bodybuilding 
+        dragon and his minions using real-life exercises! Traverse grass-swept plains by jogging in 
+        place, attack enemies with overhead shoulder presses, and refill your health meter by striking 
+        some yoga poses.
+      </p>
+      <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/ring-fit-adventure" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Nintendo Switch Ring Fit Adventure.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Ring Fit Adventure</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Explore more than 100 levels in over 20 vibrant worlds in your quest to defeat a bodybuilding 
+        dragon and his minions using real-life exercises! Traverse grass-swept plains by jogging in 
+        place, attack enemies with overhead shoulder presses, and refill your health meter by striking 
+        some yoga poses.
+      </p>
+      <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/ring-fit-adventure" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Nintendo Switch Ring Fit Adventure.jpg" width="100%"  height="220px" >
+      </div>
+        <!-- col 1+2 - sm -->
+        <div class="col-7 d-md-none">
+          <div class="flexColumn height100">
+          <p class="title">Ring Fit Adventure</p>
+          <p>
+            Explore more than 100 levels in over 20 vibrant worlds in your quest to defeat a bodybuilding 
+            dragon and his minions using real-life exercises!
+          </p>
+            <div class="justify-content-space-between flex marginTopAuto" >
+            <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+            <div class="flexColumn">
+            <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
+            <a href="https://www.metacritic.com/game/switch/ring-fit-adventure" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
             </div>
           </div>
-        </ul>
+          </div>
+        </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Nintendo Switch Ring Fit Adventure.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 7 -->
+    </div>
+      <!-- row 8 -->
+      <div data-price=50 data-score=10 class="row AllProductsBorderSwitch normalProd">
+        <!-- col 1 - lg -->
+        <div class="d-none d-lg-flex col-lg-2 flexColumn">
+        <div>
+          <p class="title">Super Mario Odyssey</p>
+          <p class="largFont">
+          <b>Age:</b> 6+<br>
+          <b>Score:</b> 10/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 50$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - lg -->
+        <div class="d-none d-lg-block col-lg-8 positionRelative">
+        <p>
+          Super Mario Odyssey" is a critically acclaimed platforming adventure exclusively for the 
+          Nintendo Switch. Join Mario on a globe-trotting journey as he embarks on a mission to 
+          rescue Princess Peach from Bowser's clutches. Explore diverse and imaginative kingdoms, 
+          use Mario's new ability to possess objects and creatures with his sentient hat companion, 
+          Cappy, and engage in thrilling platforming challenges.
+        </p>
+        <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/switch/super-mario-odyssey" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - lg -->
+        <div class="d-none d-lg-flex col-lg-2">
+        <img src="../assets/Nintendo Switch Super Mario Odyssey.jpg" width="100%"  height="220px">
+        </div>
+        <!-- col 1 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+        <div>
+          <p class="title">Super Mario Odyssey</p>
+          <p class="largFont">
+          <b>Age:</b> 6+<br>
+          <b>Score:</b> 10/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 50$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - md -->
+        <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+        <p>
+          Super Mario Odyssey" is a platforming adventure exclusively for the 
+          Nintendo Switch. Join Mario on a globe-trotting journey as he embarks on a mission to 
+          rescue Princess Peach from Bowser's clutches. Explore diverse and imaginative kingdoms, 
+          use Mario's new ability to possess objects and creatures with his sentient hat companion, 
+          Cappy, and engage in thrilling platforming challenges.
+        </p>
+        <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/switch/super-mario-odyssey" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_md">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 ">
+        <img src="../assets/Nintendo Switch Super Mario Odyssey.jpg" width="100%"  height="220px" >
+        </div>
+        <!-- col 1+2 - sm -->
+        <div class="col-7 d-md-none">
+        <div class="flexColumn height100">
+          <p class="title">Super Mario Odyssey</p>
+          <p>
+          Super Mario Odyssey" is a platforming adventure exclusively for the 
+          Nintendo Switch. Join Mario on a globe-trotting journey as he embarks on a mission to 
+          rescue Princess Peach from Bowser's clutches.<br>
+          </p>
+          <div class="justify-content-space-between flex marginTopAuto" >
+          <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+          <div class="flexColumn">
+            <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+            <a href="https://www.metacritic.com/game/switch/super-mario-odyssey" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+          </div>
+          </div>
+        </div>
+        </div>
+        <!-- col 3 - sm -->
+        <div class="d-md-none col-5 d-flex fixSmallimg">
+        <img src="../assets/Nintendo Switch Super Mario Odyssey.jpg" width="100%"  height="220px" >
+        </div>
+        <!-- end of row 8 -->
+      </div>
+    <!-- row 9 -->
+    <div data-price=60 data-score=10 class="row AllProductsBorderSwitch normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">The Legend Of Zelda: Breath Of The Wild</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        The Legend of Zelda: Breath of the Wild" is an epic open-world adventure that redefines the 
+        beloved Zelda franchise. Embark on an immersive journey as Link, awakening from a century-long 
+        slumber, to save the kingdom of Hyrule from the menacing Calamity Ganon. Explore a vast and 
+        breathtaking world filled with stunning landscapes, challenging puzzles, and thrilling combat 
+        encounters.
+      </p>
+      <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
       </div>
     </div>
-  </div>
-</footer>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Nintendo Switch The Legend Of Zelda Breath Of The WIld.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">The Legend Of Zelda: Breath Of The Wild</p>
+        <p class="largFont">
+        <b>Age:</b> 8+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        The Legend of Zelda: Breath of the Wild" is an epic open-world adventure that redefines the 
+        beloved Zelda franchise. Embark on an immersive journey as Link, awakening from a century-long 
+        slumber, to save the kingdom of Hyrule from the menacing Calamity Ganon. Explore a vast and 
+        breathtaking world filled with stunning landscapes, challenging puzzles, and thrilling combat 
+        encounters.
+      </p>
+      <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Nintendo Switch The Legend Of Zelda Breath Of The WIld.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">The Legend Of Zelda: Breath Of The Wild</p>
+        <p>
+        Embark on an immersive journey as Link, awakening from a century-long 
+        slumber, to save the kingdom of Hyrule from the menacing Calamity Ganon.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+          <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Nintendo Switch The Legend Of Zelda Breath Of The WIld.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 9 -->
+    </div>
+      <!-- row 10 -->
+      <div data-price=60 data-score=10 class="row AllProductsBorderSwitch normalProd">
+        <!-- col 1 - lg -->
+        <div class="d-none d-lg-flex col-lg-2 flexColumn">
+        <div>
+          <p class="title">The Legend Of Zelda: Link's Awakening</p>
+          <p class="largFont">
+          <b>Age:</b> 7+<br>
+          <b>Score:</b> 10/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 60$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - lg -->
+        <div class="d-none d-lg-block col-lg-8 positionRelative">
+        <p>
+          The Legend of Zelda: Link's Awakening" is a classic action-adventure game that has been 
+          reimagined for the Nintendo Switch. Follow the hero, Link, as he embarks on a mysterious 
+          journey to awaken the Wind Fish and escape the dreamlike Koholint Island. Explore dungeons, 
+          solve puzzles, and encounter charming characters in this captivating and nostalgic quest.
+        </p>
+        <div> <img src="../assets/Nintendo.png" class="standartSize_lg"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-links-awakening" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - lg -->
+        <div class="d-none d-lg-flex col-lg-2">
+        <img src="../assets/Nintendo Switch The Legend Of Zelda Link's Awakening.jpg" width="100%"  height="220px">
+        </div>
+        <!-- col 1 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+        <div>
+          <p class="title">The Legend Of Zelda: Link's Awakening</p>
+          <p class="largFont">
+          <b>Age:</b> 7+<br>
+          <b>Score:</b> 10/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 60$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - md -->
+        <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+        <p>
+          The Legend of Zelda: Link's Awakening" is a classic action-adventure game that has been 
+          reimagined for the Nintendo Switch. Follow the hero, Link, as he embarks on a mysterious 
+          journey to awaken the Wind Fish and escape the dreamlike Koholint Island. Explore dungeons, 
+          solve puzzles, and encounter charming characters in this captivating and nostalgic quest.
+        </p>
+        <div> <img src="../assets/Nintendo.png" class="standartSize_md"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-links-awakening" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_md">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 ">
+        <img src="../assets/Nintendo Switch The Legend Of Zelda Link's Awakening.jpg" width="100%"  height="220px" >
+        </div>
+        <!-- col 1+2 - sm -->
+        <div class="col-7 d-md-none">
+        <div class="flexColumn height100">
+          <p class="title">The Legend Of Zelda: Link's Awakening</p>
+          <p>
+          Follow the hero, Link, as he embarks on a mysterious 
+          journey to awaken the Wind Fish and escape the dreamlike Koholint Island.
+          </p>
+          <div class="justify-content-space-between flex marginTopAuto" >
+          <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+          <div class="flexColumn">
+            <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+            <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-links-awakening" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+          </div>
+          </div>
+        </div>
+        </div>
+        <!-- col 3 - sm -->
+        <div class="d-md-none col-5 d-flex fixSmallimg">
+        <img src="../assets/Nintendo Switch The Legend Of Zelda Link's Awakening.jpg" width="100%"  height="220px" >
+        </div>
+        <!-- end of row 10 -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footerStyle blackBackgrond">
+    <div class="container-fluid">
+      <div class="row justify-content-space-between blackBackgrond">
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+          </ul>
+          </div>
+          <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Customer Service</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Download our app</b></li>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col">
+              <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+              <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+              </div>
+              <div class="col">
+                <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- JS links -->
+  <script src="../JavaScript/JS_JQuery.js"></script>
+  <script src="../JavaScript/JS_JQuery2.js"></script>
   <script src="../JavaScript/JS_Product.js"></script>
   <script src="../JavaScript/JS_General.js"></script>
 </body>
-
-
-
 </html>

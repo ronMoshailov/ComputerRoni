@@ -4,14 +4,10 @@
 <head>
   <title> ComputeRoni </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-  <!-- css links -->
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/Hardware.css" />
   <link rel="stylesheet" href="../CSS/products.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../CSS/bootstrap.css" />
 </head>
 
 <body class="Rubix">
@@ -65,7 +61,6 @@
       </div>
     </div>
     </nav>
-
     <!-- mobile nav -->
     <nav class="mobile-nav" style="display: flex;">
       <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
@@ -90,11 +85,6 @@
            <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
       </div>
   	</nav>
-
-
-
-    
-    
     <!-- Cart -->
     <div class="container-fluid"  style="background-color: black;">
       <div class="row">
@@ -105,370 +95,344 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
-    </div>
-  </div>
-</header>
-
-<main>
-  <br>
-  <!-- all the table -->
-  <div class="container ">
-
-    <!-- row 0 -->
-    <div class="row">
-      <!-- navigation path -->
-      <div class="Rubix" id="direction">
-      <a class="nonTextDecoration" href="index.html">Home</a>
-      <i id="arrowRight"></i>
-      <a class="nonTextDecoration" id="rightDirection" href="CR_H_Motherboard.html">Motherboard</a>
       </div>
     </div>
+  </header>
+
+  <main>
     <br>
+    <!-- all the table -->
+    <div class="container ">
+      <!-- row 0 -->
       <div class="row">
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
-      </div>
+        <!-- navigation path -->
+        <div class="Rubix" id="direction">
+        <a class="nonTextDecoration" href="index.html">Home</a>
+        <i id="arrowRight"></i>
+        <a class="nonTextDecoration" id="rightDirection" href="CR_H_Motherboard.html">Motherboard</a>
+        </div>
       </div>
       <br>
-      <div class="row ">
-        <div class="col-sm-4 col-12">
-            Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterMotherboardProducts()" />
+        <div class="row">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
         </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterMotherboardProducts()" />
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
         </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterMotherboardProducts()" />
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
         </div>
-      </div>
-
-    </div>
-    <br>
-  
-  <div class="container allHardware">
-    <!-- row 1 -->
-    <div data-price=199 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asrock H510M-HVS R2.0 LGA1200</p>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
+        </div>
+        </div>
         <br>
-        <br>
-        Brand : Asrock<br>
-        Memory Type: DDR4/DIMM<br>
-        Memory Slots: 2<br>
-        Max Memory: 64GB<br>
-        Generation of Processor: Supports 10th and 11th Gen Intel Core Processors.<br>
-        <br>
-        price: 199.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_01.jpg" class="productDisplay">
+        <div class="row ">
+          <div class="col-sm-4 col-12">
+              Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterMotherboardProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterMotherboardProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterMotherboardProducts()" />
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- row 2 -->
-    <div data-price=239 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asrock H610M-HVS/M.2 R2.0 LGA1700</p>
-        <br>
-        <br>
-        Brand : Asrock<br>
-        Memory Type: DDR4/DIMM<br>
-        Memory Slots: 2<br>
-        Max Memory: 64GB<br>
-        Generation of Processor: Supports 13th Gen and 12th Gen Intel Core Processors<br>
-        <br>
-        price: 239.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_02.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-    <!-- row 3 -->
-    <div data-price=749 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asrock Z690 Steel Legend/D5 LGA1700</p>
-        <br>
-        <br>
-        Brand : Asrock<br>
-        Gen: 12<br>
-        Memory Type: DDR5/DIMM<br>
-        Memory Slots: 4<br>
-        Max Memory: 128GB<br>
-        Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors
-        (Requires Bios Update)<br>
-        <br>
-        price: 749.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_03.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 4 -->
-    <div data-price=199 data-brand="Gigabyte" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Gigabyte H510M H LGA1200 M.2.</p>
-        <br>
-        <br>
-        Brand : Gigabyte<br>
-        Memory Type: DDR4/DIMM<br>
-        Memory Slots: 2<br>
-        Max Memory: 64GB<br>
-        Generation of Processor: Supports 10th Gen Intel Core Processors and 11th Gen Intel Core Processors<br>
-        <br>
-        price: 199.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_04.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 5 -->
-    <div data-price=599 data-brand="Asus" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asus TUF Gaming B660M-PLUS D4 LGA1700</p>
-        <br>
-        <br>
-        Brand : Asus<br>
-        Memory Type: DDR4/DIMM<br>
-        Memory Slots: 4<br>
-        Max Memory: 128GB<br>
-        Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors.<br>
-        <br>
-        price: 599.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_05.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 6 -->
-    <div data-price=799 data-brand="Asus" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asus TUF Gaming Z690-PLUS D4 LGA1700</p>
-        <br>
-        <br>
-        Brand : Asus<br>
-        Memory Type: DDR4/DIMM<br>
-        Memory Slots: 4<br>
-        Max Memory: 128GB<br>
-        Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors<br>
-        <br>
-        price: 799.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_06.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 7 -->
-    <div data-price=999 data-brand="Asus" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asus ROG Strix Z690-G Gaming WI-FI LGA1700</p>
-        <br>
-        <br>
-        Brand : Asus<br>
-        Memory Type: DDR5/DIMM<br>
-        Memory Slots: 4<br>
-        Max Memory: 128GB<br>
-        Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors<br>
-        <br>
-        price: 999.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_07.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-    <!-- row 8 -->
-    <div data-price=699 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asrock H510M-HVS R2.0 LGA1400</p>
-        <br>
-        <br>
-        Brand : Asrock<br>
-        Memory Type: DDR4/DIMM<br>
-        Memory Slots: 4<br>
-        Max Memory: 128GB<br>
-        Generation of Processor: Supports 10th and 11th Gen Intel Core Processors<br>
-        <br>
-        price: 699.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_08.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-    <!-- row 9 -->
-    <div data-price=1299 data-brand="Asrock" class="row borderForRowMotherboard normalProd ">
-      <div class="col-8">
-        <p>
-        <p class="title">Asrock X670E Steel Legend AM5</p>
-        <br>
-        <br>
-        Brand : Asrock<br>
-        Memory Type: DDR5/DIMM<br>
-        Memory Slots: 4<br>
-        Max Memory: 128GB<br>
-        Generation of Processor: AMD Ryzen 7000 Series Processors. <br>
-        <br>
-        price: 1,299.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_09.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 10 -->
-    <div data-price=609 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Asrock B650M PG Riptide AM5</p>
-        <br>
-        <br>
-        Brand : Asrock<br>
-        Memory Type: DDR5/DIMM<br>
-        Memory Slots: 4<br>
-        Max Memory: 128GB<br>
-        Generation of Processor: Supports AMD Ryzen 7000 Series Processors.<br>
-        <br>
-        price: 609.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class="hideOverflow imageOfTheProduct">
-          <img src="../assets/Motherboard_10.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</main>
-
-<!--    Fotter   -->
-<footer class="footerStyle blackBackgrond">
-  <div class="container-fluid">
-    <div class="row justify-content-space-between blackBackgrond">
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+      <br>
+    <div class="container allHardware">
+      <!-- row 1 -->
+      <div data-price=199 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asrock H510M-HVS R2.0 LGA1200</p>
           <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+          <br>
+          Brand : Asrock<br>
+          Memory Type: DDR4/DIMM<br>
+          Memory Slots: 2<br>
+          Max Memory: 64GB<br>
+          Generation of Processor: Supports 10th and 11th Gen Intel Core Processors.<br>
+          <br>
+          price: 199.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_01.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div data-price=239 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asrock H610M-HVS/M.2 R2.0 LGA1700</p>
+          <br>
+          <br>
+          Brand : Asrock<br>
+          Memory Type: DDR4/DIMM<br>
+          Memory Slots: 2<br>
+          Max Memory: 64GB<br>
+          Generation of Processor: Supports 13th Gen and 12th Gen Intel Core Processors<br>
+          <br>
+          price: 239.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_02.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 3 -->
+      <div data-price=749 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asrock Z690 Steel Legend/D5 LGA1700</p>
+          <br>
+          <br>
+          Brand : Asrock<br>
+          Gen: 12<br>
+          Memory Type: DDR5/DIMM<br>
+          Memory Slots: 4<br>
+          Max Memory: 128GB<br>
+          Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors
+          (Requires Bios Update)<br>
+          <br>
+          price: 749.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_03.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 4 -->
+      <div data-price=199 data-brand="Gigabyte" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Gigabyte H510M H LGA1200 M.2.</p>
+          <br>
+          <br>
+          Brand : Gigabyte<br>
+          Memory Type: DDR4/DIMM<br>
+          Memory Slots: 2<br>
+          Max Memory: 64GB<br>
+          Generation of Processor: Supports 10th Gen Intel Core Processors and 11th Gen Intel Core Processors<br>
+          <br>
+          price: 199.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_04.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 5 -->
+      <div data-price=599 data-brand="Asus" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asus TUF Gaming B660M-PLUS D4 LGA1700</p>
+          <br>
+          <br>
+          Brand : Asus<br>
+          Memory Type: DDR4/DIMM<br>
+          Memory Slots: 4<br>
+          Max Memory: 128GB<br>
+          Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors.<br>
+          <br>
+          price: 599.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_05.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 6 -->
+      <div data-price=799 data-brand="Asus" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asus TUF Gaming Z690-PLUS D4 LGA1700</p>
+          <br>
+          <br>
+          Brand : Asus<br>
+          Memory Type: DDR4/DIMM<br>
+          Memory Slots: 4<br>
+          Max Memory: 128GB<br>
+          Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors<br>
+          <br>
+          price: 799.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_06.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 7 -->
+      <div data-price=999 data-brand="Asus" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asus ROG Strix Z690-G Gaming WI-FI LGA1700</p>
+          <br>
+          <br>
+          Brand : Asus<br>
+          Memory Type: DDR5/DIMM<br>
+          Memory Slots: 4<br>
+          Max Memory: 128GB<br>
+          Generation of Processor: Supports 12th Gen Intel Core Processors & 13th Gen Intel Core Processors<br>
+          <br>
+          price: 999.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_07.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 8 -->
+      <div data-price=699 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asrock H510M-HVS R2.0 LGA1400</p>
+          <br>
+          <br>
+          Brand : Asrock<br>
+          Memory Type: DDR4/DIMM<br>
+          Memory Slots: 4<br>
+          Max Memory: 128GB<br>
+          Generation of Processor: Supports 10th and 11th Gen Intel Core Processors<br>
+          <br>
+          price: 699.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_08.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 9 -->
+      <div data-price=1299 data-brand="Asrock" class="row borderForRowMotherboard normalProd ">
+        <div class="col-8">
+          <p>
+          <p class="title">Asrock X670E Steel Legend AM5</p>
+          <br>
+          <br>
+          Brand : Asrock<br>
+          Memory Type: DDR5/DIMM<br>
+          Memory Slots: 4<br>
+          Max Memory: 128GB<br>
+          Generation of Processor: AMD Ryzen 7000 Series Processors. <br>
+          <br>
+          price: 1,299.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_09.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 10 -->
+      <div data-price=609 data-brand="Asrock" class="row borderForRowMotherboard normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Asrock B650M PG Riptide AM5</p>
+          <br>
+          <br>
+          Brand : Asrock<br>
+          Memory Type: DDR5/DIMM<br>
+          Memory Slots: 4<br>
+          Max Memory: 128GB<br>
+          Generation of Processor: Supports AMD Ryzen 7000 Series Processors.<br>
+          <br>
+          price: 609.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class="hideOverflow imageOfTheProduct">
+            <img src="../assets/Motherboard_10.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footerStyle blackBackgrond">
+    <div class="container-fluid">
+      <div class="row justify-content-space-between blackBackgrond">
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footerColumn">
+            <li class="footer_title"><b>Customer Service</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-4">
           <ul class="footerColumn">
-          <li class="footer_title"><b>Customer Service</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Download our app</b></li>
-          <br>
-          <br>
-          <div class="row">
-            <div class="col">
-              <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
-              <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+            <li class="footer_title"><b>Download our app</b></li>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col">
+                <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+                <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+              </div>
+              <div class="col">
+                <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+              </div>
             </div>
-            <div class="col">
-              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
-            </div>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
   </footer>
   
-<!-- JS links -->
-<script src="../JavaScript/JS_Hardware.js"></script>
-<script src="../JavaScript/JS_General.js"></script>
+  <!-- JS links -->
+  <script src="../JavaScript/JS_JQuery.js"></script>
+  <script src="../JavaScript/JS_JQuery2.js"></script>
+  <script src="../JavaScript/JS_Hardware.js"></script>
+  <script src="../JavaScript/JS_General.js"></script>
 </body>
 
 

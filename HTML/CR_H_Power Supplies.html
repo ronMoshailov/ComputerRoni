@@ -4,14 +4,10 @@
 <head>
   <title> ComputeRoni </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-  <!-- css links -->
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/products.css" />
   <link rel="stylesheet" href="../CSS/Hardware.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../CSS/bootstrap.css" />
 </head>
 
 <body class="Rubix">
@@ -65,7 +61,6 @@
       </div>
     </div>
     </nav>
-
     <!-- mobile nav -->
     <nav class="mobile-nav" style="display: flex;">
       <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
@@ -90,11 +85,6 @@
            <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
       </div>
   	</nav>
-
-
-
-    
-    
     <!-- Cart -->
     <div class="container-fluid"  style="background-color: black;">
       <div class="row">
@@ -105,419 +95,392 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
-    </div>
-  </div>
-</header>
-
-<main>
-  <br>
-
-  <!-- all the table -->
-  <div class="container ">
-
-    <!-- row 0 -->
-    <div class="row">
-      <!-- navigation path -->
-      <div class="Rubix" id="direction">
-      <a class="nonTextDecoration" href="index.html">Home</a>
-      <i id="arrowRight"></i>
-      <a class="nonTextDecoration" id="rightDirection" href="CR_H_Power Supplies.html">Power Supplies</a>
       </div>
     </div>
+  </header>
+
+  <main>
     <br>
+    <!-- all the table -->
+    <div class="container ">
+      <!-- row 0 -->
       <div class="row">
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
-      </div>
+        <!-- navigation path -->
+        <div class="Rubix" id="direction">
+        <a class="nonTextDecoration" href="index.html">Home</a>
+        <i id="arrowRight"></i>
+        <a class="nonTextDecoration" id="rightDirection" href="CR_H_Power Supplies.html">Power Supplies</a>
+        </div>
       </div>
       <br>
-      <div class="row">
-        <div class="col-sm-4 col-12">
-            Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterPSProducts()" />
+        <div class="row">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
         </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterPSProducts()" />
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
         </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterPSProducts()" />
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
         </div>
-      </div>
-
-    <br>
-  </div>
-  
-  <div class="container allHardware">
-    <!-- row 1 -->
-    <div data-price=1399 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM800-EBTII 800W</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM800-EBTII<br>
-        Capacity: 800W<br>
-        Modular: yes<br>
-        Motherboard Power: 1 Sense<br>
-        PCI-E: 6<br>
-        SATA Connectors: 5<br>
-        Fan Size: 135mm<br>
-        Combined Power: 792W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 1399.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_01.jpg" class="productDisplay">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
         </div>
-      </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-4 col-12">
+              Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterPSProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterPSProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterPSProducts()" />
+          </div>
+        </div>
+      <br>
     </div>
-
-    <!-- row 2 -->
-    <div data-price=179 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM550-GVII 550W</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM550-GVII<br>
-        Capacity: 550W<br>
-        Modular: No<br>
-        Motherboard Power: 1 Sense<br>
-        PCI-E: 2<br>
-        SATA Connectors: 2<br>
-        Fan Size: 120mm<br>
-        Combined Power: 540W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 179.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_02.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-    <!-- row 3 -->
-    <div data-price=159 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM600-LXII 600W</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM600-LXII<br>
-        Capacity: 600W<br>
-        Modular: No<br>
-        Motherboard Power: 1 Sense<br>
-        PCI-E: 2<br>
-        SATA Connectors: 6<br>
-        Fan Size: 120mm<br>
-        Combined Power: 522W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 159.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_03.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 4 -->
-    <div data-price=169 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM700-LXII 700W</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM700-LXII<br>
-        Capacity: 700W<br>
-        Modular: No<br>
-        Motherboard Power: 2 pin<br>
-        PCI-E: 6 + 2 pin<br>
-        SATA Connectors: 6<br>
-        Fan Size: 120mm<br>
-        Combined Power: 648W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 169.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_04.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 5 -->
-    <div data-price=145 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM500-TXII 500W</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM500-TXII<br>
-        Capacity: 500W<br>
-        Modular: No<br>
-        Motherboard Power: 1 Sense<br>
-        PCI-E: 2<br>
-        SATA Connectors: 3<br>
-        Fan Size: 120mm<br>
-        Combined Power: 450W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 145.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_05.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 6 -->
-    <div data-price=239 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM750-GVII 750W</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM750-GVII<br>
-        Capacity: 750W<br>
-        Modular: No<br>
-        Motherboard Power: 24 pin<br>
-        PCI-E: 6 + 2 pin<br>
-        SATA Connectors: 6<br>
-        Fan Size: 120mm<br>
-        Combined Power: 744W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 239.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_06.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 7 -->
-    <div data-price=169 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM600-TXII 600W</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM600-TXII<br>
-        Capacity: 600W<br>
-        Modular: No<br>
-        Motherboard Power: 1 Sense<br>
-        PCI-E: 2<br>
-        SATA Connectors: 3<br>
-        Fan Size: 120mm<br>
-        Combined Power: 540W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 169.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_07.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-    <!-- row 8 -->
-    <div data-price=89 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM400-XEII Wattbit II 400W 83+ (KR/EU)</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM400-XEII Wattbit II<br>
-        Capacity: 400W<br>
-        Modular: No<br>
-        Motherboard Power: 1 Sense<br>
-        PCI-E: -<br>
-        SATA Connectors: -<br>
-        Fan Size: 120mm<br>
-        Combined Power: 360W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 89.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_08.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-    <!-- row 9 -->
-    <div data-price=139 data-brand="Zalman" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Zalman ZM600-XEII Wattbit II 600W 83+ (KR/EU)</p>
-        <br>
-        Brand : Zalman<br>
-        Model : ZM600-XEII Non-PFC<br>
-        Capacity: 600W<br>
-        Modular: No<br>
-        Motherboard Power: -<br>
-        PCI-E: (8 pin), 4 x Sata Power, 3 x Peripheral Power<br>
-        SATA Connectors: -<br>
-        Fan Size: 120mm<br>
-        Combined Power: 540W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 139.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/Power_Supplies_09.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- row 10 -->
-    <div data-price=45 data-brand="Spire" class="row borderForRowPS normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Spire SP-ATX-420W-E12 420W</p>
-        <br>
-        Brand : Spire<br>
-        Model : SP-ATX-420W-E12 420W<br>
-        Capacity: 420W<br>
-        Modular: No<br>
-        Motherboard Power: 20+4<br>
-        PCI-E: -<br>
-        SATA Connectors: 3<br>
-        Fan Size: 120mm<br>
-        Combined Power: 230W<br>
-        Warranty: 1 Year<br>
-        <br>
-        <br>
-        price: 45.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_10.jpg" class="productDisplay">
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</main>
-
-<!--    Fotter   -->
-<footer class="footerStyle blackBackgrond">
-  <div class="container-fluid">
-    <div class="row justify-content-space-between blackBackgrond">
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+    <div class="container allHardware">
+      <!-- row 1 -->
+      <div data-price=1399 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM800-EBTII 800W</p>
           <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+          Brand : Zalman<br>
+          Model : ZM800-EBTII<br>
+          Capacity: 800W<br>
+          Modular: yes<br>
+          Motherboard Power: 1 Sense<br>
+          PCI-E: 6<br>
+          SATA Connectors: 5<br>
+          Fan Size: 135mm<br>
+          Combined Power: 792W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 1399.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_01.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div data-price=179 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM550-GVII 550W</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM550-GVII<br>
+          Capacity: 550W<br>
+          Modular: No<br>
+          Motherboard Power: 1 Sense<br>
+          PCI-E: 2<br>
+          SATA Connectors: 2<br>
+          Fan Size: 120mm<br>
+          Combined Power: 540W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 179.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_02.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 3 -->
+      <div data-price=159 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM600-LXII 600W</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM600-LXII<br>
+          Capacity: 600W<br>
+          Modular: No<br>
+          Motherboard Power: 1 Sense<br>
+          PCI-E: 2<br>
+          SATA Connectors: 6<br>
+          Fan Size: 120mm<br>
+          Combined Power: 522W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 159.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_03.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 4 -->
+      <div data-price=169 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM700-LXII 700W</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM700-LXII<br>
+          Capacity: 700W<br>
+          Modular: No<br>
+          Motherboard Power: 2 pin<br>
+          PCI-E: 6 + 2 pin<br>
+          SATA Connectors: 6<br>
+          Fan Size: 120mm<br>
+          Combined Power: 648W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 169.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_04.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 5 -->
+      <div data-price=145 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM500-TXII 500W</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM500-TXII<br>
+          Capacity: 500W<br>
+          Modular: No<br>
+          Motherboard Power: 1 Sense<br>
+          PCI-E: 2<br>
+          SATA Connectors: 3<br>
+          Fan Size: 120mm<br>
+          Combined Power: 450W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 145.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_05.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 6 -->
+      <div data-price=239 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM750-GVII 750W</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM750-GVII<br>
+          Capacity: 750W<br>
+          Modular: No<br>
+          Motherboard Power: 24 pin<br>
+          PCI-E: 6 + 2 pin<br>
+          SATA Connectors: 6<br>
+          Fan Size: 120mm<br>
+          Combined Power: 744W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 239.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_06.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 7 -->
+      <div data-price=169 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM600-TXII 600W</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM600-TXII<br>
+          Capacity: 600W<br>
+          Modular: No<br>
+          Motherboard Power: 1 Sense<br>
+          PCI-E: 2<br>
+          SATA Connectors: 3<br>
+          Fan Size: 120mm<br>
+          Combined Power: 540W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 169.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_07.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 8 -->
+      <div data-price=89 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM400-XEII Wattbit II 400W 83+ (KR/EU)</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM400-XEII Wattbit II<br>
+          Capacity: 400W<br>
+          Modular: No<br>
+          Motherboard Power: 1 Sense<br>
+          PCI-E: -<br>
+          SATA Connectors: -<br>
+          Fan Size: 120mm<br>
+          Combined Power: 360W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 89.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_08.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 9 -->
+      <div data-price=139 data-brand="Zalman" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Zalman ZM600-XEII Wattbit II 600W 83+ (KR/EU)</p>
+          <br>
+          Brand : Zalman<br>
+          Model : ZM600-XEII Non-PFC<br>
+          Capacity: 600W<br>
+          Modular: No<br>
+          Motherboard Power: -<br>
+          PCI-E: (8 pin), 4 x Sata Power, 3 x Peripheral Power<br>
+          SATA Connectors: -<br>
+          Fan Size: 120mm<br>
+          Combined Power: 540W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 139.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/Power_Supplies_09.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 10 -->
+      <div data-price=45 data-brand="Spire" class="row borderForRowPS normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Spire SP-ATX-420W-E12 420W</p>
+          <br>
+          Brand : Spire<br>
+          Model : SP-ATX-420W-E12 420W<br>
+          Capacity: 420W<br>
+          Modular: No<br>
+          Motherboard Power: 20+4<br>
+          PCI-E: -<br>
+          SATA Connectors: 3<br>
+          Fan Size: 120mm<br>
+          Combined Power: 230W<br>
+          Warranty: 1 Year<br>
+          <br>
+          <br>
+          price: 45.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_10.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footerStyle blackBackgrond">
+    <div class="container-fluid">
+      <div class="row justify-content-space-between blackBackgrond">
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footerColumn">
+            <li class="footer_title"><b>Customer Service</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-4">
           <ul class="footerColumn">
-          <li class="footer_title"><b>Customer Service</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Download our app</b></li>
-          <br>
-          <br>
-          <div class="row">
-            <div class="col">
-              <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
-              <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+            <li class="footer_title"><b>Download our app</b></li>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col">
+                <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+                <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+              </div>
+              <div class="col">
+                <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+              </div>
             </div>
-            <div class="col">
-              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
-            </div>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
   </footer>
 
-<!-- JS links -->
-<script src="../JavaScript/JS_Hardware.js"></script>
-<script src="../JavaScript/JS_General.js"></script>
+  <!-- JS links -->
+  <script src="../JavaScript/JS_JQuery.js"></script>
+  <script src="../JavaScript/JS_JQuery2.js"></script>
+  <script src="../JavaScript/JS_Hardware.js"></script>
+  <script src="../JavaScript/JS_General.js"></script>
 </body>
 
 

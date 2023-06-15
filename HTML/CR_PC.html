@@ -4,14 +4,10 @@
 <head>
   <title> ComputeRoni </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-  <!-- css links -->
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/products.css" />
   <link rel="stylesheet" href="../CSS/games.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../CSS/bootstrap.css" />
 </head>
 
 <body class="Rubix">
@@ -65,7 +61,6 @@
       </div>
     </div>
     </nav>
-
     <!-- mobile nav -->
     <nav class="mobile-nav" style="display: flex;">
       <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
@@ -90,11 +85,6 @@
            <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
       </div>
   	</nav>
-
-
-
-    
-    
     <!-- Cart -->
     <div class="container-fluid"  style="background-color: black;">
       <div class="row">
@@ -105,15 +95,14 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+      </div>
     </div>
-  </div>
-</header>
-  
-<main>
+  </header>
+
+  <main>
     <br>
     <!-- all the table -->
-  <div class="container ">
-
+    <div class="container ">
     <!-- row 0 -->
     <div class="row">
     <!-- navigation path -->
@@ -124,25 +113,21 @@
     </div>
     </div>
     <br>
-
     <div class="row">
-  
       <div class="col-lg-3 col-6 py-2 textAlignCenter">
       <button class="sortButtonPC" id="btnLowToHigh">Sort By Price: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+    </div>
+    <div class="col-lg-3 col-6 py-2 textAlignCenter">
       <button class="sortButtonPC" id="btnHighToLow">Sort By Price: High -> Low</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+    </div>
+    <div class="col-lg-3 col-6 py-2 textAlignCenter">
       <button class="sortButtonPC" id="btnScoreLowToHigh">Sort By Score: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
+    </div>
+    <div class="col-lg-3 col-6 py-2 textAlignCenter">
       <button class="sortButtonPC" id="btnScoreHighToLow">Sort By Score: High -> Low</button>
       </div>
-  
     </div>
     <br>
-
     <div class="row">
       <div class="col-6">
           Min Score: <input type="text" id="minScoreFilter" placeholder="Min score" oninput="filterPCProducts()" />
@@ -151,7 +136,6 @@
           Max Score: <input type="text" id="maxScoreFilter" placeholder="Max score" oninput="filterPCProducts()" />
       </div>
     </div>
-
     <div class="row">
       <div class="col-6 my-4">
           Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterPCProducts()" />
@@ -161,9 +145,7 @@
       </div>
     </div>
     <br>
-  
   </div>
-
   <div class="container allGames">
   <!-- row 1 -->
   <div data-price=30 data-score=10 class="row firstProductPC AllProductsBorderPC normalProd">
@@ -183,7 +165,6 @@
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
       <p>
@@ -202,12 +183,10 @@
       </a>
       </div>
     </div>
-
     <!-- col 3 - lg -->
     <div class="d-none d-lg-flex col-lg-2">
     <img src="../assets/PC - Counter Strike Condition Zero.jpg" width="100%"  height="220px">
     </div>
-
     <!-- col 1 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
     <div>
@@ -219,12 +198,11 @@
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 30$<br>
+        <b>Price:</b> 30$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - md -->
     <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
     <p>
@@ -241,20 +219,18 @@
       </a>
     </div>
   </div>
-
     <!-- col 3 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/PC - Counter Strike Condition Zero.jpg" width="100%"  height="220px" >
+      <img src="../assets/PC - Counter Strike Condition Zero.jpg" width="100%"  height="220px" >
     </div>
-
     <!-- col 1+2 - sm -->
     <div class="col-7 d-md-none">
     <div class="flexColumn height100">
       <p class="title">Counter Strike: Condition Zero</p>
       <p>
-      "Counter-Strike: 
-      Condition Zero" offers competitive multiplayer gameplay that has 
-      captivated gamers for years.
+        "Counter-Strike: 
+        Condition Zero" offers competitive multiplayer gameplay that has 
+        captivated gamers for years.
       </p>
       <div class="justify-content-space-between flex marginTopAuto" >
       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
@@ -265,17 +241,12 @@
       </div>
     </div>
     </div>
-
-
     <!-- col 3 - sm -->
     <div class="d-md-none col-5 d-flex fixSmallimg">
     <img src="../assets/PC - Counter Strike Condition Zero.jpg" width="100%"  height="220px" >
     </div>
-
     <!-- end of row 1 -->
   </div>
-
-
   <!-- row 2 -->
   <div data-price=25 data-score=10 class="row AllProductsBorderPC normalProd">
     <!-- col 1 - lg -->
@@ -285,38 +256,35 @@
       <p class="largFont">
       <b>Age:</b> 14+<br>
       <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
+    </p>
+  </div>
+  <div class="marginTopAuto">
+    <p>
       <b>Price:</b> 25$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
-    </div>
-
-    <!-- col 2 - lg -->
+  </div>
+  <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
       <p>
-      Players assume the role of a super-soldier equipped with a powerful nanosuit, granting 
-      them enhanced abilities and tactical options. Engage in intense combat scenarios across 
-      a lush and open sandbox environment, utilizing your suit's capabilities to adapt and 
+        Players assume the role of a super-soldier equipped with a powerful nanosuit, granting 
+        them enhanced abilities and tactical options. Engage in intense combat scenarios across 
+        a lush and open sandbox environment, utilizing your suit's capabilities to adapt and 
       overcome any challenge. With its impressive graphics, immersive gameplay, and dynamic 
       warfare, "Crysis" offers a thrilling and unforgettable gaming experience.
       </p>
       <div> <img src="../assets/crytek.png" class="standartSize_lg"></div>
       <div>
-      <a href="https://www.metacritic.com/game/pc/crysis" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
+        <a href="https://www.metacritic.com/game/pc/crysis" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
       </a>
       </div>
     </div>
-
     <!-- col 3 - lg -->
     <div class="d-none d-lg-flex col-lg-2">
     <img src="../assets/PC - Crysis.jpg" width="100%"  height="220px">
     </div>
-
     <!-- col 1 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
     <div>
@@ -328,12 +296,11 @@
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 25$<br>
+        <b>Price:</b> 25$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - md -->
     <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
     <p>
@@ -345,70 +312,59 @@
     <div> <img src="../assets/crytek.png" class="standartSize_md"></div>
     <div>
       <a href="https://www.metacritic.com/game/pc/crysis" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
+        <img src="../assets/metacritic.png" class="metacritic_md">
       </a>
     </div>
   </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+  <!-- col 3 - md -->
+  <div class="d-none d-md-flex d-lg-none col-md-3 ">
     <img src="../assets/PC - Crysis.jpg" width="100%"  height="220px" >
-    </div>
-
-     <!-- col 1+2 - sm -->
-     <div class="col-7 d-md-none">
+  </div>
+  <!-- col 1+2 - sm -->
+  <div class="col-7 d-md-none">
      <div class="flexColumn height100">
        <p class="title">Crysis</p>
        <p>
-      Players assume the role of a super-soldier equipped with a powerful nanosuit, granting 
-      them enhanced abilities and tactical options.
-       </p>
-       <div class="justify-content-space-between flex marginTopAuto" >
+         Players assume the role of a super-soldier equipped with a powerful nanosuit, granting 
+         them enhanced abilities and tactical options.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
        <div class="flexColumn">
          <div class="title nonTextDecoration"> <b>price:</b> 25$</div>
          <a href="https://www.metacritic.com/game/pc/crysis" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-       </div>
-       </div>
-     </div>
-     </div>
-  
-
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/PC - Crysis.jpg" width="100%"  height="220px" >
+        </div>
+      </div>
     </div>
-
+  </div>
+  <!-- col 3 - sm -->
+  <div class="d-md-none col-5 d-flex fixSmallimg">
+    <img src="../assets/PC - Crysis.jpg" width="100%"  height="220px" >
+  </div>
     <!-- end of row 2 -->
   </div>
-
-
-
-
-
   <!-- row 3 -->
   <div data-price=60 data-score=10 class="row AllProductsBorderPC normalProd">
     <!-- col 1 - lg -->
     <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Devil May Cry 4</p>
-      <p class="largFont">
+      <div>
+        <p class="title">Devil May Cry 4</p>
+        <p class="largFont">
       <b>Age:</b> 13+<br>
       <b>Score:</b> 10/10<br>
       </p>
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 60$<br>
+        <b>Price:</b> 60$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
-    </div>
-
-    <!-- col 2 - lg -->
+  </div>
+  <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      "Devil May Cry 4" is an intense and visually stunning action game that puts players in control 
+      <p>
+        "Devil May Cry 4" is an intense and visually stunning action game that puts players in control 
       of the demon hunter, Nero. Embark on a thrilling adventure filled with fast-paced combat, 
       challenging boss battles, and a gripping storyline. With its stylish and combo-driven 
       gameplay, "Devil May Cry 4" offers a satisfying and adrenaline-fueled experience that will 
@@ -417,23 +373,21 @@
     <div> <img src="../assets/Capcom.png" class="standartSize_lg"></div>
     <div>
       <a href="https://www.metacritic.com/game/pc/devil-may-cry-4" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
       </a>
     </div>
   </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
+  <!-- col 3 - lg -->
+  <div class="d-none d-lg-flex col-lg-2">
     <img src="../assets/PC - Devil May Cry 4.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+  </div>
+  <!-- col 1 - md -->
+  <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
     <div>
       <p class="title">Devil May Cry 4</p>
       <p class="largFont">
-      <b>Age:</b> 13+<br>
-      <b>Score:</b> 10/10<br>
+        <b>Age:</b> 13+<br>
+        <b>Score:</b> 10/10<br>
       </p>
     </div>
     <div class="marginTopAuto">
@@ -443,7 +397,6 @@
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - md -->
     <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
     <p>
@@ -456,46 +409,37 @@
     <div>
       <a href="https://www.metacritic.com/game/pc/devil-may-cry-4" target="_blank">
       <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
+    </a>
     </div>
   </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
+  <!-- col 3 - md -->
+  <div class="d-none d-md-flex d-lg-none col-md-3 ">
     <img src="../assets/PC - Devil May Cry 4.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- col 1+2 - sm -->
+  </div>
+  <!-- col 1+2 - sm -->
     <div class="col-7 d-md-none">
-     <div class="flexColumn height100">
-     <p class="title">Devil May Cry 4</p>
-     <p>
-      With its stylish and combo-driven 
+      <div class="flexColumn height100">
+        <p class="title">Devil May Cry 4</p>
+        <p>
+          With its stylish and combo-driven 
       gameplay, "Devil May Cry 4" offers a satisfying and adrenaline-fueled experience that will 
       keep players engaged from start to finish.
      </p>
      <div class="justify-content-space-between flex marginTopAuto" >
        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
        <div class="flexColumn">
-       <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-       <a href="https://www.metacritic.com/game/pc/devil-may-cry-4" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-       </div>
-     </div>
-     </div>
+         <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+         <a href="https://www.metacritic.com/game/pc/devil-may-cry-4" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+      </div>
+    </div>
    </div>
-
     <!-- col 3 - sm -->
     <div class="d-md-none col-5 d-flex fixSmallimg">
     <img src="../assets/PC - Devil May Cry 4.jpg" width="100%"  height="220px" >
     </div>
-
     <!-- end of row 3 -->
   </div>
-
-
-
-
-
   <!-- row 4 -->
   <div data-price=100 data-score=9 class="row AllProductsBorderPC normalProd">
     <!-- col 1 - lg -->
@@ -509,15 +453,14 @@
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 100$<br>
+        <b>Price:</b> 100$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
+      <p>
       "Lomax" is a puzzle-platformer game that originated as "Lemmings" and was later 
       released under the name "Lomax". Players guide a group of adorable 
       and clueless creatures called Lemmings through perilous levels, solving puzzles and 
@@ -534,56 +477,51 @@
     <div>
     </div>
   </div>
-
     <!-- col 3 - lg -->
     <div class="d-none d-lg-flex col-lg-2">
     <img src="../assets/PC - Lomax.png" width="100%"  height="220px">
     </div>
-
     <!-- col 1 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
     <div>
       <p class="title">Lomax</p>
       <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 9/10<br>
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 9/10<br>
       </p>
     </div>
     <div class="marginTopAuto">
       <p>
       <b>Price:</b> 100$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Players guide a group of adorable 
-      and clueless creatures called Lemmings through perilous levels, solving puzzles and 
-      avoiding hazards to reach the exit. With its charming retro graphics, addictive gameplay, 
-      and clever level design, "Lomax" offers a nostalgic and challenging gaming experience.
     </p>
-    <div> <img src="../assets/Psygnosis.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/playstation-3/lemmings" target="_blank">
+    <button class="AddToCartButton">Add To Cart</button>
+  </div>
+</div>
+<!-- col 2 - md -->
+<div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+  <p>
+    Players guide a group of adorable 
+    and clueless creatures called Lemmings through perilous levels, solving puzzles and 
+    avoiding hazards to reach the exit. With its charming retro graphics, addictive gameplay, 
+    and clever level design, "Lomax" offers a nostalgic and challenging gaming experience.
+  </p>
+  <div> <img src="../assets/Psygnosis.png" class="standartSize_md"></div>
+  <div>
+    <a href="https://www.metacritic.com/game/playstation-3/lemmings" target="_blank">
       <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
+    </a>
     </div>
     <div>
     </div>
   </div>
-
     <!-- col 3 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 ">
     <img src="../assets/PC - Lomax.png" width="100%"  height="220px" >
-    </div>
-
+  </div>
     <!-- col 1+2 - sm -->
     <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Lomax</p>
+      <div class="flexColumn height100">
+        <p class="title">Lomax</p>
       <p>
       Players guide a group of adorable 
       and clueless creatures called Lemmings through perilous levels, solving puzzles and 
@@ -597,26 +535,20 @@
       </div>
       </div>
     </div>
-    </div>
-
-  
+  </div>
     <!-- col 3 - sm -->
     <div class="d-md-none col-5 d-flex fixSmallimg">
     <img src="../assets/PC - Lomax.png" width="100%"  height="220px" >
     </div>
-
     <!-- end of row 4 -->
   </div>
-
-
-
   <!-- row 5 -->
   <div data-price=30 data-score=7 class="row AllProductsBorderPC normalProd">
     <!-- col 1 - lg -->
     <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Magicka</p>
-      <p class="largFont">
+      <div>
+        <p class="title">Magicka</p>
+        <p class="largFont">
       <b>Age:</b> 7+<br>
       <b>Score:</b> 7/10<br>
       </p>
@@ -628,7 +560,6 @@
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
     <p>
@@ -644,14 +575,12 @@
       </a>
     </div>
   </div>
-
     <!-- col 3 - lg -->
     <div class="d-none d-lg-flex col-lg-2">
     <img src="../assets/PC - Magicka.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+  </div>
+  <!-- col 1 - md -->
+  <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
     <div>
       <p class="title">Magicka</p>
       <p class="largFont">
@@ -662,11 +591,10 @@
     <div class="marginTopAuto">
       <p>
       <b>Price:</b> 30$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
+    </p>
+    <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - md -->
     <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
     <p>
@@ -681,44 +609,33 @@
       </a>
     </div>
   </div>
-
     <!-- col 3 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 ">
     <img src="../assets/PC - Magicka.jpg" width="100%"  height="220px" >
     </div>
-
-
-
     <!-- col 1+2 - sm -->
     <div class="col-7 d-md-none">
     <div class="flexColumn height100">
       <p class="title">Magicka</p>
       <p>
-      Embark on a whimsical journey through a fantasy realm, casting spells and combining elements 
-      to unleash devastating magical attacks.
+        Embark on a whimsical journey through a fantasy realm, casting spells and combining elements 
+        to unleash devastating magical attacks.
       </p>
       <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 30$</div>
-        <a href="https://www.metacritic.com/game/pc/magicka" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 30$</div>
+          <a href="https://www.metacritic.com/game/pc/magicka" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
       </div>
     </div>
     </div>
-
-        
     <!-- col 3 - sm -->
     <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/PC - Magicka.jpg" width="100%"  height="220px" >
+      <img src="../assets/PC - Magicka.jpg" width="100%"  height="220px" >
     </div>
-
     <!-- end of row 5 -->
   </div>
-
-
-
-
   <!-- row 6 -->
   <div data-price=40 data-score=9 class="row AllProductsBorderPC normalProd">
     <!-- col 1 - lg -->
@@ -732,12 +649,11 @@
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 40$<br>
+        <b>Price:</b> 40$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
     <p>
@@ -754,19 +670,17 @@
       </a>
     </div>
   </div>
-
     <!-- col 3 - lg -->
     <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/PC - Red Alert 2.jpg" width="100%"  height="220px">
+      <img src="../assets/PC - Red Alert 2.jpg" width="100%"  height="220px">
     </div>
-
     <!-- col 1 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
     <div>
       <p class="title">Red Alert 2</p>
       <p class="largFont">
-      <b>Age:</b> 10+<br>
-      <b>Score:</b> 9/10<br>
+        <b>Age:</b> 10+<br>
+        <b>Score:</b> 9/10<br>
       </p>
     </div>
     <div class="marginTopAuto">
@@ -776,7 +690,6 @@
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - md -->
     <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
     <p>
@@ -788,49 +701,37 @@
     <div> <img src="../assets/westwoodStudio.jpg" class="standartSize_md"></div>
     <div>
       <a href="https://www.metacritic.com/game/pc/command-conquer-red-alert-2" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
+        <img src="../assets/metacritic.png" class="metacritic_md">
       </a>
     </div>
   </div>
-
-    <!-- col 3 - md -->
+  <!-- col 3 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/PC - Red Alert 2.jpg" width="100%"  height="220px" >
+      <img src="../assets/PC - Red Alert 2.jpg" width="100%"  height="220px" >
     </div>
-
-
     <!-- col 1+2 - sm -->
     <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Red Alert 2</p>
+      <div class="flexColumn height100">
+        <p class="title">Red Alert 2</p>
       <p>
-      Build bases, gather resources, and deploy a diverse range of units, including 
+        Build bases, gather resources, and deploy a diverse range of units, including 
       tanks, infantry, aircraft, and powerful superweapons.
-      </p>
+    </p>
       <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
         <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
         <a href="https://www.metacritic.com/game/pc/command-conquer-red-alert-2" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
       </div>
       </div>
     </div>
     </div>
-
-
-        
     <!-- col 3 - sm -->
     <div class="d-md-none col-5 d-flex fixSmallimg">
     <img src="../assets/PC - Red Alert 2.jpg" width="100%"  height="220px" >
     </div>
-
     <!-- end of row 6 -->
   </div>
-
-
-
-
-
   <!-- row 7 -->
   <div data-price=20 data-score=7 class="row AllProductsBorderPC normalProd">
     <!-- col 1 - lg -->
@@ -838,22 +739,21 @@
     <div>
       <p class="title">Sonic R</p>
       <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 7/10<br>
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 7/10<br>
       </p>
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 20$<br>
+        <b>Price:</b> 20$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
-    </div>
-
-    <!-- col 2 - lg -->
+  </div>
+  <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      "Sonic R" is a fast-paced racing game where players take control of Sonic the Hedgehog 
+      <p>
+        "Sonic R" is a fast-paced racing game where players take control of Sonic the Hedgehog 
       and his friends in a quest for victory. Race through colorful and imaginative tracks, 
       collect power-ups, and outmaneuver opponents to cross the finish line first. With its iconic 
       characters, catchy soundtrack, and thrilling races, "Sonic R" delivers an exciting and 
@@ -866,31 +766,28 @@
       </a>
     </div>
   </div>
-
     <!-- col 3 - lg -->
     <div class="d-none d-lg-flex col-lg-2">
     <img src="../assets/PC - Sonic R.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
+  </div>
+  <!-- col 1 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Sonic R</p>
-      <p class="largFont">
+      <div>
+        <p class="title">Sonic R</p>
+        <p class="largFont">
       <b>Age:</b> 6+<br>
       <b>Score:</b> 7/10<br>
-      </p>
+    </p>
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 20$<br>
+        <b>Price:</b> 20$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+  </div>
+  <!-- col 2 - md -->
+  <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
     <p>
       Race through colorful and imaginative tracks, 
       collect power-ups, and outmaneuver opponents to cross the finish line first. With its iconic 
@@ -900,17 +797,14 @@
     <div> <img src="../assets/Sonic_Team_Logo.png" class="standartSize_md"></div>
     <div>
       <a href="https://www.metacritic.com/game/pc/sonic-r" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
+        <img src="../assets/metacritic.png" class="metacritic_md">
       </a>
     </div>
   </div>
-
     <!-- col 3 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/PC - Sonic R.jpg" width="100%"  height="220px" >
+      <img src="../assets/PC - Sonic R.jpg" width="100%"  height="220px" >
     </div>
-
-
     <!-- col 1+2 - sm -->
     <div class="col-7 d-md-none">
     <div class="flexColumn height100">
@@ -925,42 +819,33 @@
         <div class="title nonTextDecoration"> <b>price:</b> 20$</div>
         <a href="https://www.metacritic.com/game/pc/sonic-r" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
       </div>
-      </div>
     </div>
-    </div>
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/PC - Sonic R.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 7 -->
   </div>
-
-
-
-
-
-    <!-- row 8 -->
-    <div data-price=50 data-score=10 class="row AllProductsBorderPC normalProd">
-      <!-- col 1 - lg -->
+</div>
+<!-- col 3 - sm -->
+<div class="d-md-none col-5 d-flex fixSmallimg">
+  <img src="../assets/PC - Sonic R.jpg" width="100%"  height="220px" >
+</div>
+<!-- end of row 7 -->
+</div>
+<!-- row 8 -->
+<div data-price=50 data-score=10 class="row AllProductsBorderPC normalProd">
+  <!-- col 1 - lg -->
       <div class="d-none d-lg-flex col-lg-2 flexColumn">
-      <div>
-        <p class="title">World Of Warcraft</p>
-        <p class="largFont">
-        <b>Age:</b> 8+<br>
-        <b>Score:</b> 10/10<br>
-        </p>
-      </div>
+        <div>
+          <p class="title">World Of Warcraft</p>
+          <p class="largFont">
+            <b>Age:</b> 8+<br>
+            <b>Score:</b> 10/10<br>
+          </p>
+        </div>
       <div class="marginTopAuto">
         <p>
-        <b>Price:</b> 50$<br>
+          <b>Price:</b> 50$<br>
         </p>
         <button class="AddToCartButton">Add To Cart</button>
       </div>
       </div>
-  
       <!-- col 2 - lg -->
       <div class="d-none d-lg-block col-lg-8 positionRelative">
       <p>
@@ -973,12 +858,10 @@
         </a>
       </div>
     </div>
-  
       <!-- col 3 - lg -->
       <div class="d-none d-lg-flex col-lg-2">
       <img src="../assets/PC - World Of Warcraft.jpg" width="100%"  height="220px">
       </div>
-  
       <!-- col 1 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
       <div>
@@ -990,18 +873,17 @@
       </div>
       <div class="marginTopAuto">
         <p>
-        <b>Price:</b> 50$<br>
+          <b>Price:</b> 50$<br>
         </p>
         <button class="AddToCartButton">Add To Cart</button>
       </div>
-      </div>
-  
-      <!-- col 2 - md -->
+    </div>
+    <!-- col 2 - md -->
       <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-      <p>
-        Embark on the craziest journey of your life in World Of Warcraft. Invite a friend to join for
-        free with Friend’s Pass and work together across a huge variety of gleefully disruptive
-        gameplay challenges. Winner of GAME OF THE YEAR at the Game Awards 2021.
+        <p>
+          Embark on the craziest journey of your life in World Of Warcraft. Invite a friend to join for
+          free with Friend’s Pass and work together across a huge variety of gleefully disruptive
+          gameplay challenges. Winner of GAME OF THE YEAR at the Game Awards 2021.
       </p>
       <div> <img src="../assets/Blizzard_Entertainment_Logo_2015.svg.png" class="standartSize_md"></div>
       <div>
@@ -1010,12 +892,10 @@
         </a>
       </div>
     </div>
-  
-      <!-- col 3 - md -->
+    <!-- col 3 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 ">
       <img src="../assets/PC - World Of Warcraft.jpg" width="100%"  height="220px" >
       </div>
-  
       <!-- col 1+2 - sm -->
       <div class="col-7 d-md-none">
       <div class="flexColumn height100">
@@ -1033,38 +913,30 @@
         </div>
       </div>
       </div>
-          
       <!-- col 3 - sm -->
       <div class="d-md-none col-5 d-flex fixSmallimg">
       <img src="../assets/PC - World Of Warcraft.jpg" width="100%"  height="220px" >
       </div>
-  
       <!-- end of row 8 -->
     </div>
-
-
-
-
-
-  <!-- row 9 -->
-  <div data-price=60 data-score=9 class="row AllProductsBorderPC normalProd">
+    <!-- row 9 -->
+    <div data-price=60 data-score=9 class="row AllProductsBorderPC normalProd">
     <!-- col 1 - lg -->
     <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">The Last Of Us Part 1</p>
-      <p class="largFont">
+      <div>
+        <p class="title">The Last Of Us Part 1</p>
+        <p class="largFont">
       <b>Age:</b> 13+<br>
       <b>Score:</b> 9/10<br>
-      </p>
+    </p>
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 60$<br>
+        <b>Price:</b> 60$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
-    </div>
-
+  </div>
     <!-- col 2 - lg -->
     <div class="d-none d-lg-block col-lg-8 positionRelative">
     <p>
@@ -1080,12 +952,10 @@
       </a>
     </div>
   </div>
-
     <!-- col 3 - lg -->
     <div class="d-none d-lg-flex col-lg-2">
     <img src="../assets/PC - TLOS part 1.jpg" width="100%"  height="220px">
     </div>
-
     <!-- col 1 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
     <div>
@@ -1093,16 +963,15 @@
       <p class="largFont">
       <b>Age:</b> 13+<br>
       <b>Score:</b> 9/10<br>
-      </p>
+    </p>
     </div>
     <div class="marginTopAuto">
       <p>
-      <b>Price:</b> 60$<br>
+        <b>Price:</b> 60$<br>
       </p>
       <button class="AddToCartButton">Add To Cart</button>
     </div>
     </div>
-
     <!-- col 2 - md -->
     <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
     <p>
@@ -1114,17 +983,14 @@
     <div> <img src="../assets/NaughtyDog.png" id="NaughtyDog_md"></div>
     <div>
       <a href="https://www.metacritic.com/game/playstation-5/the-last-of-us-part-i" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
+        <img src="../assets/metacritic.png" class="metacritic_md">
       </a>
     </div>
   </div>
-
     <!-- col 3 - md -->
     <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/PC - TLOS part 1.jpg" width="100%"  height="220px" >
+      <img src="../assets/PC - TLOS part 1.jpg" width="100%"  height="220px" >
     </div>
-
-
     <!-- col 1+2 - sm -->
     <div class="col-7 d-md-none">
     <div class="flexColumn height100">
@@ -1143,42 +1009,32 @@
       </div>
     </div>
     </div>
-
-
-        
     <!-- col 3 - sm -->
     <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/PC - TLOS part 1.jpg" width="100%"  height="220px" >
+      <img src="../assets/PC - TLOS part 1.jpg" width="100%"  height="220px" >
     </div>
-
     <!-- end of row 9 -->
   </div>
-
-
-
-
-
-    <!-- row 10 -->
-    <div data-price=40 data-score=9 class="row AllProductsBorderPC normalProd">
-      <!-- col 1 - lg -->
-      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+  <!-- row 10 -->
+  <div data-price=40 data-score=9 class="row AllProductsBorderPC normalProd">
+    <!-- col 1 - lg -->
+    <div class="d-none d-lg-flex col-lg-2 flexColumn">
       <div>
         <p class="title">Zoo Tycoon 2</p>
         <p class="largFont">
         <b>Age:</b> 8+<br>
         <b>Score:</b> 9/10<br>
-        </p>
-      </div>
+      </p>
+    </div>
       <div class="marginTopAuto">
         <p>
         <b>Price:</b> 40$<br>
         </p>
         <button class="AddToCartButton">Add To Cart</button>
       </div>
-      </div>
-  
-      <!-- col 2 - lg -->
-      <div class="d-none d-lg-block col-lg-8 positionRelative">
+    </div>
+    <!-- col 2 - lg -->
+    <div class="d-none d-lg-block col-lg-8 positionRelative">
       <p>
         "Zoo Tycoon 2" is a simulation game that allows players to create and manage their own 
         virtual zoo. Design and customize exhibits, adopt a variety of animals, and ensure their 
@@ -1190,33 +1046,30 @@
       <div> <img src="../assets/Macsoft_logo.png" class="standartSize_lg"></div>
       <div>
         <a href="https://www.metacritic.com/game/pc/zoo-tycoon-2" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
         </a>
       </div>
     </div>
-  
       <!-- col 3 - lg -->
       <div class="d-none d-lg-flex col-lg-2">
       <img src="../assets/PC - Zoo Taycoon 2.jpg" width="100%"  height="220px">
       </div>
-  
       <!-- col 1 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-      <div>
-        <p class="title">Zoo Tycoon 2</p>
-        <p class="largFont">
-        <b>Age:</b> 8+<br>
-        <b>Score:</b> 9/10<br>
-        </p>
-      </div>
-      <div class="marginTopAuto">
-        <p>
+        <div>
+          <p class="title">Zoo Tycoon 2</p>
+          <p class="largFont">
+            <b>Age:</b> 8+<br>
+            <b>Score:</b> 9/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
         <b>Price:</b> 40$<br>
-        </p>
-        <button class="AddToCartButton">Add To Cart</button>
+      </p>
+      <button class="AddToCartButton">Add To Cart</button>
+    </div>
       </div>
-      </div>
-  
       <!-- col 2 - md -->
       <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
       <p>
@@ -1229,18 +1082,16 @@
       <div> <img src="../assets/Macsoft_logo.png" class="standartSize_md"></div>
       <div>
         <a href="https://www.metacritic.com/game/pc/zoo-tycoon-2" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_md">
+          <img src="../assets/metacritic.png" class="metacritic_md">
         </a>
       </div>
     </div>
-  
-      <!-- col 3 - md -->
-      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+    <!-- col 3 - md -->
+    <div class="d-none d-md-flex d-lg-none col-md-3 ">
       <img src="../assets/PC - Zoo Taycoon 2.jpg" width="100%"  height="220px" >
-      </div>
-
-      <!-- col 1+2 - sm -->
-      <div class="col-7 d-md-none">
+    </div>
+    <!-- col 1+2 - sm -->
+    <div class="col-7 d-md-none">
       <div class="flexColumn height100">
         <p class="title">Zoo Tycoon 2</p>
         <p>
@@ -1256,61 +1107,59 @@
         </div>
       </div>
       </div>
-
-
       <!-- col 3 - sm -->
       <div class="d-md-none col-5 d-flex fixSmallimg">
       <img src="../assets/PC - Zoo Taycoon 2.jpg" width="100%"  height="220px" >
       </div>
-  
       <!-- end of row 10 -->
     </div>
   </div>
-</main>
+  </main>
 
-<!--    Fotter   -->
-<footer class="footerStyle blackBackgrond">
-  <div class="container-fluid">
-    <div class="row justify-content-space-between blackBackgrond">
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
-        </ul>
+  <footer class="footerStyle blackBackgrond">
+    <div class="container-fluid">
+      <div class="row justify-content-space-between blackBackgrond">
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+          </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footerColumn">
+            <li class="footer_title"><b>Customer Service</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
+          </ul>
         </div>
         <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Customer Service</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Download our app</b></li>
-          <br>
-          <br>
-          <div class="row">
-            <div class="col">
-            <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
-            <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Download our app</b></li>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col">
+                <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+                <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+              </div>
+              <div class="col">
+                <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+              </div>
             </div>
-            <div class="col">
-              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
-            </div>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- JS links -->
+  <script src="../JavaScript/JS_JQuery.js"></script>
+  <script src="../JavaScript/JS_JQuery2.js"></script>
   <script src="../JavaScript/JS_Product.js"></script>
   <script src="../JavaScript/JS_General.js"></script>
 </body>

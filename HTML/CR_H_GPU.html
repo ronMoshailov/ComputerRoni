@@ -4,19 +4,15 @@
 <head>
   <title> ComputeRoni </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-  <!-- css links -->
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/products.css" />
   <link rel="stylesheet" href="../CSS/Hardware.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/bootstrap.css" />
+  <link rel="stylesheet" href="../CSS/bootstrap2.css" />
 </head>
 
 <body class="Rubix">
-  <!-- upper black information -->
+
   <header>
     <!-- upper black information -->
     <div class="container-fluid ">
@@ -66,7 +62,6 @@
       </div>
     </div>
     </nav>
-
     <!-- mobile nav -->
     <nav class="mobile-nav" style="display: flex;">
       <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
@@ -91,11 +86,6 @@
            <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
       </div>
   	</nav>
-
-
-
-    
-    
     <!-- Cart -->
     <div class="container-fluid"  style="background-color: black;">
       <div class="row">
@@ -106,349 +96,346 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
-    </div>
-  </div>
-</header>
-  
-<main>
-  <br>
-
-  <!-- navigation path -->
-  <div class="container ">
-    <!-- row 0 -->
-    <div class="row">
-      <div class="Rubix" id="direction">
-      <a class="nonTextDecoration" href="index.html">Home</a>
-      <i id="arrowRight"></i>
-      <a class="nonTextDecoration" id="rightDirection" href="CR_H_GPU.html">GPU</a>
       </div>
     </div>
+  </header>
+  
+  <main>
     <br>
+    <!-- navigation path -->
+    <div class="container ">
+      <!-- row 0 -->
       <div class="row">
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
-      </div>
-      </div>
-      <br>
-      <div class="row ">
-        <div class="col-sm-4 col-12">
-            Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterGPUProducts()" />
-        </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterGPUProducts()" />
-        </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterGPUProducts()" />
+        <div class="Rubix" id="direction">
+        <a class="nonTextDecoration" href="index.html">Home</a>
+        <i id="arrowRight"></i>
+        <a class="nonTextDecoration" id="rightDirection" href="CR_H_GPU.html">GPU</a>
         </div>
       </div>
       <br>
-  </div>
-  
-  <!-- all the table -->
-  <div class="container allHardware">
-  <!-- row 1 -->
-  <div data-price=1399 data-brand="Palit" class="row borderForRowGPU normalProd">
-  <div class="col-8">
-    <p>
-        <p class="title">Palit GeForce GTX 1660 Ti StormX 6GB GDDR6</p>
+        <div class="row">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
+        </div>
+        </div>
         <br>
-        Brand : Palit<br>
-        Model : GeForce GTX 1660 Ti StormX<br>
-        Video Memory: 6GB GDDR6<br>
-        Interface: PCI-E 3.0 x 16<br>
-        Cores: 1500 MHz<br>
-        Engine Clock: 1770 MHz<br>
-        Memory Speed: 12 Gbps<br>
-        Display Connectors: DVI; HDMI; DisplayPort<br>
-        Features: NVIDIA G-SYNC; NVIDIA CUDA Technology<br>
-        Dimensions: 168 x 122 x 40 mm<br>
-        Warranty: 1 Year<br>
+        <div class="row ">
+          <div class="col-sm-4 col-12">
+              Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterGPUProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterGPUProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterGPUProducts()" />
+          </div>
+        </div>
         <br>
-        price: 1399.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_01.jpg" class="productDisplay">
+    </div>
+    <!-- all the table -->
+    <div class="container allHardware">
+    <!-- row 1 -->
+    <div data-price=1399 data-brand="Palit" class="row borderForRowGPU normalProd">
+    <div class="col-8">
+      <p>
+          <p class="title">Palit GeForce GTX 1660 Ti StormX 6GB GDDR6</p>
+          <br>
+          Brand : Palit<br>
+          Model : GeForce GTX 1660 Ti StormX<br>
+          Video Memory: 6GB GDDR6<br>
+          Interface: PCI-E 3.0 x 16<br>
+          Cores: 1500 MHz<br>
+          Engine Clock: 1770 MHz<br>
+          Memory Speed: 12 Gbps<br>
+          Display Connectors: DVI; HDMI; DisplayPort<br>
+          Features: NVIDIA G-SYNC; NVIDIA CUDA Technology<br>
+          Dimensions: 168 x 122 x 40 mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 1399.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_01.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 2 -->
-    <div data-price=1899 data-brand="Palit" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Palit GeForce RTX 3070 GamingPro LHR 8GB GDDR6</p>
-        <br>
-        Brand : Palit<br>
-        Model : GeForce RTX 3070 GamingPro LHR<br>
-        Video Memory: 8GB GDDR6<br>
-        Interface: PCI-E 4.0<br>
-        Cores: 5888<br>
-        Engine Clock: Boost 1725 MHz<br>
-        Memory Speed: 14 Gbps<br>
-        Display Connectors: 1 x HDMI 2.1; 3 x DisplayPort 1.4a<br>
-        Features: NVIDIA Ampere Architecture; NVIDIA DLSS; NVIDIA Adaptive Shading; NVIDIA Highlights; NVIDIA FreeStyle; NVIDIA G-SYNC; NVIDIA SHIELD ready<br>
-        Dimensions: 294 x 112 x 60 mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 1899.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_02.jpg" class="productDisplay">
+      <!-- row 2 -->
+      <div data-price=1899 data-brand="Palit" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Palit GeForce RTX 3070 GamingPro LHR 8GB GDDR6</p>
+          <br>
+          Brand : Palit<br>
+          Model : GeForce RTX 3070 GamingPro LHR<br>
+          Video Memory: 8GB GDDR6<br>
+          Interface: PCI-E 4.0<br>
+          Cores: 5888<br>
+          Engine Clock: Boost 1725 MHz<br>
+          Memory Speed: 14 Gbps<br>
+          Display Connectors: 1 x HDMI 2.1; 3 x DisplayPort 1.4a<br>
+          Features: NVIDIA Ampere Architecture; NVIDIA DLSS; NVIDIA Adaptive Shading; NVIDIA Highlights; NVIDIA FreeStyle; NVIDIA G-SYNC; NVIDIA SHIELD ready<br>
+          Dimensions: 294 x 112 x 60 mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 1899.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_02.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 3 -->
-    <div data-price=339 data-brand="MSI" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Palit GeForce GTX 1660 Ti StormX 6GB GDDR6</p>
-        <br>
-        Brand : MSI<br>
-        Model : GeForce GT 1030 OC<br>
-        Video Memory: 2GB GDDR4<br>
-        Interface: PCI-E 3.0<br>
-        Cores: 384<br>
-        Engine Clock: Boost up to 1518MHz<br>
-        Memory Speed: -<br>
-        Display Connectors: HDMI; DisplayPort 1.4<br>
-        Features: -<br>
-        Dimensions: 159 x 69 x 19 mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 339.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_03.jpg" class="productDisplay">
+      <!-- row 3 -->
+      <div data-price=339 data-brand="MSI" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Palit GeForce GTX 1660 Ti StormX 6GB GDDR6</p>
+          <br>
+          Brand : MSI<br>
+          Model : GeForce GT 1030 OC<br>
+          Video Memory: 2GB GDDR4<br>
+          Interface: PCI-E 3.0<br>
+          Cores: 384<br>
+          Engine Clock: Boost up to 1518MHz<br>
+          Memory Speed: -<br>
+          Display Connectors: HDMI; DisplayPort 1.4<br>
+          Features: -<br>
+          Dimensions: 159 x 69 x 19 mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 339.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_03.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 4 -->
-    <div data-price=4399 data-brand="Palit" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Palit GeForce GTX 1660 Ti StormX 6GB GDDR6</p>
-        <br>
-        Brand : Palit<br>
-        Model : GeForce RTX 4080 GamingPro<br>
-        Video Memory: 16GB GDDR6X<br>
-        Interface: PCI-E 4.0<br>
-        Cores: 9728 MHz<br>
-        Engine Clock: Boost 2505 MHz<br>
-        Memory Speed: 22.4 Gbps<br>
-        Display Connectors: HDMI 2.1; 3 x DisplayPort 1.4a<br>
-        Features: NVIDIA Ampere Architecture; NVIDIA DLSS; NVIDIA Adaptive Shading; Real-Time Ray Tracing; NVIDIA FreeStyle; NVIDIA G-SYNC;<br>
-        Dimensions: 328.9 x 132.9 x 63.4 mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 4399.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_04.jpg" class="productDisplay">
+      <!-- row 4 -->
+      <div data-price=4399 data-brand="Palit" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Palit GeForce GTX 1660 Ti StormX 6GB GDDR6</p>
+          <br>
+          Brand : Palit<br>
+          Model : GeForce RTX 4080 GamingPro<br>
+          Video Memory: 16GB GDDR6X<br>
+          Interface: PCI-E 4.0<br>
+          Cores: 9728 MHz<br>
+          Engine Clock: Boost 2505 MHz<br>
+          Memory Speed: 22.4 Gbps<br>
+          Display Connectors: HDMI 2.1; 3 x DisplayPort 1.4a<br>
+          Features: NVIDIA Ampere Architecture; NVIDIA DLSS; NVIDIA Adaptive Shading; Real-Time Ray Tracing; NVIDIA FreeStyle; NVIDIA G-SYNC;<br>
+          Dimensions: 328.9 x 132.9 x 63.4 mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 4399.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_04.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 5 -->
-    <div data-price=399 data-brand="Biostar" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Biostar Radeon RX550 4GB GDDR5</p>
-        <br>
-        Brand : Biostar<br>
-        Model : Radeon RX550<br>
-        Video Memory: 4GB GDDR5<br>
-        Interface: PCI-E 3.0<br>
-        Cores: 512 MHz<br>
-        Engine Clock: Boost up to 1071MHz<br>
-        Memory Speed: -<br>
-        Display Connectors: DVI; HDMI; DisplayPort<br>
-        Features: -<br>
-        Dimensions: -<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 399.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_05.jpg" class="productDisplay">
+      <!-- row 5 -->
+      <div data-price=399 data-brand="Biostar" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Biostar Radeon RX550 4GB GDDR5</p>
+          <br>
+          Brand : Biostar<br>
+          Model : Radeon RX550<br>
+          Video Memory: 4GB GDDR5<br>
+          Interface: PCI-E 3.0<br>
+          Cores: 512 MHz<br>
+          Engine Clock: Boost up to 1071MHz<br>
+          Memory Speed: -<br>
+          Display Connectors: DVI; HDMI; DisplayPort<br>
+          Features: -<br>
+          Dimensions: -<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 399.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_05.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 6 -->
-    <div data-price=1599 data-brand="Palit" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Palit GeForce RTX 3060 Ti Dual 8GB LHR</p>
-        <br>
-        Brand : Palit<br>
-        Model : GeForce RTX 3060 Ti Dual LHR<br>
-        Video Memory: 8GB GDDR6<br>
-        Interface: PCI-E 4.0<br>
-        Cores: 1410 MHz<br>
-        Engine Clock: 1665 MHz<br>
-        Memory Speed: 14 Gbps<br>
-        Display Connectors: HDMI 2.1; DP1.4a x 3;<br>
-        Features: NVIDIA TXAA Technology; NVIDIA G-SYNC; NVIDIA FreeStyle;NVIDIA PhysX-ready;NVIDIA DLSS;<br>
-        Dimensions: 247x120x40mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 1599.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_06.jpg" class="productDisplay">
+      <!-- row 6 -->
+      <div data-price=1599 data-brand="Palit" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Palit GeForce RTX 3060 Ti Dual 8GB LHR</p>
+          <br>
+          Brand : Palit<br>
+          Model : GeForce RTX 3060 Ti Dual LHR<br>
+          Video Memory: 8GB GDDR6<br>
+          Interface: PCI-E 4.0<br>
+          Cores: 1410 MHz<br>
+          Engine Clock: 1665 MHz<br>
+          Memory Speed: 14 Gbps<br>
+          Display Connectors: HDMI 2.1; DP1.4a x 3;<br>
+          Features: NVIDIA TXAA Technology; NVIDIA G-SYNC; NVIDIA FreeStyle;NVIDIA PhysX-ready;NVIDIA DLSS;<br>
+          Dimensions: 247x120x40mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 1599.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_06.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 7 -->
-    <div data-price=3299 data-brand="Palit" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Palit GeForce RTX™ 4070 Ti GameRock 12GB GDDR6X</p>
-        <br>
-        Brand : Palit<br>
-        Model : GeForce RTX™ 4070 Ti GameRock<br>
-        Video Memory: 12GB GDDR6X<br>
-        Interface: PCI-E 4.0<br>
-        Cores: 7680 MHz<br>
-        Engine Clock: Base: 2310 MHz / Boost: 2610 MHz<br>
-        Memory Speed: 21 Gbps<br>
-        Display Connectors: DP1.4a x 3<br>
-        Features: NVIDIA DLSS 3; NVIDIA Adaptive Shading; Real-Time Ray Tracing; NVIDIA FreeStyle; NVIDIA G-SYNC;<br>
-        Dimensions: 328.9 x 137.0 x 64.4 mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 3299.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_07.jpg" class="productDisplay">
+      <!-- row 7 -->
+      <div data-price=3299 data-brand="Palit" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Palit GeForce RTX™ 4070 Ti GameRock 12GB GDDR6X</p>
+          <br>
+          Brand : Palit<br>
+          Model : GeForce RTX™ 4070 Ti GameRock<br>
+          Video Memory: 12GB GDDR6X<br>
+          Interface: PCI-E 4.0<br>
+          Cores: 7680 MHz<br>
+          Engine Clock: Base: 2310 MHz / Boost: 2610 MHz<br>
+          Memory Speed: 21 Gbps<br>
+          Display Connectors: DP1.4a x 3<br>
+          Features: NVIDIA DLSS 3; NVIDIA Adaptive Shading; Real-Time Ray Tracing; NVIDIA FreeStyle; NVIDIA G-SYNC;<br>
+          Dimensions: 328.9 x 137.0 x 64.4 mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 3299.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_07.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 8 -->
-    <div data-price=1599 data-brand="Sapphire" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">Sapphire Pulse Radeon RX 6700 Gaming OC 10GB GDDR6</p>
-        <br>
-        Brand : Sapphire<br>
-        Model : Pulse Radeon RX 6700 Gaming OC<br>
-        Video Memory: 10GB GDDR6<br>
-        Interface: PCI-E 4.0<br>
-        Cores: 2304 MHz<br>
-        Engine Clock: Boost 2495 MHz<br>
-        Memory Speed: 16 Gbps<br>
-        Display Connectors: 1 x HDMI 2.1; 3 x DisplayPort 1.4<br>
-        Features: AMD RDNA™ 2 Gaming Architecture; DirectX® 12 Ultimate; Hardware Raytracing; Smart Access Memory<br>
-        Dimensions: 260 x 119.85 x 49mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 1599.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_08.jpg" class="productDisplay">
+      <!-- row 8 -->
+      <div data-price=1599 data-brand="Sapphire" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">Sapphire Pulse Radeon RX 6700 Gaming OC 10GB GDDR6</p>
+          <br>
+          Brand : Sapphire<br>
+          Model : Pulse Radeon RX 6700 Gaming OC<br>
+          Video Memory: 10GB GDDR6<br>
+          Interface: PCI-E 4.0<br>
+          Cores: 2304 MHz<br>
+          Engine Clock: Boost 2495 MHz<br>
+          Memory Speed: 16 Gbps<br>
+          Display Connectors: 1 x HDMI 2.1; 3 x DisplayPort 1.4<br>
+          Features: AMD RDNA™ 2 Gaming Architecture; DirectX® 12 Ultimate; Hardware Raytracing; Smart Access Memory<br>
+          Dimensions: 260 x 119.85 x 49mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 1599.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_08.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 9 -->
-    <div data-price=2499 data-brand="XFX" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">XFX Radeon RX 6800 XT Speedster MERC319 16GB GDDR6</p>
-        <br>
-        Brand : XFX<br>
-        Model : Radeon RX 6800 XT Speedster MERC 319<br>
-        Video Memory: 16GB GDDR6<br>
-        Interface: PCI-E 4.0<br>
-        Cores: 4608 MHz<br>
-        Engine Clock: Boost 2250 MHz<br>
-        Memory Speed: 16 Gbps<br>
-        Display Connectors: 1 x HDMI 2.1; 3 x DisplayPort 1.4a<br>
-        Features: FidelityFX; Radeon Anti-Lag; Displayport 1.4 w/ DSC; AMD Eyefinity multi-display technology<br>
-        Dimensions: 340 x 138 x 54 mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 2499.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/GPU_09.jpg" class="productDisplay">
+      <!-- row 9 -->
+      <div data-price=2499 data-brand="XFX" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">XFX Radeon RX 6800 XT Speedster MERC319 16GB GDDR6</p>
+          <br>
+          Brand : XFX<br>
+          Model : Radeon RX 6800 XT Speedster MERC 319<br>
+          Video Memory: 16GB GDDR6<br>
+          Interface: PCI-E 4.0<br>
+          Cores: 4608 MHz<br>
+          Engine Clock: Boost 2250 MHz<br>
+          Memory Speed: 16 Gbps<br>
+          Display Connectors: 1 x HDMI 2.1; 3 x DisplayPort 1.4a<br>
+          Features: FidelityFX; Radeon Anti-Lag; Displayport 1.4 w/ DSC; AMD Eyefinity multi-display technology<br>
+          Dimensions: 340 x 138 x 54 mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 2499.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/GPU_09.jpg" class="productDisplay">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- row 10 -->
-    <div data-price=1499 data-brand="XFX" class="row borderForRowGPU normalProd">
-      <div class="col-8">
-        <p>
-        <p class="title">XFX Speedster SWFT 309</p>
-        <br>
-        Brand : XFX<br>
-        Model : Radeon RX 6700<br>
-        Video Memory: 10GB GDDR6<br>
-        Interface: PCI-E 4.0<br>
-        Cores: 2304 MHz<br>
-        Engine Clock: Boost 2425 MHz<br>
-        Memory Speed: 16 Gbps<br>
-        Display Connectors: 3 x DisplayPort 1.4, 1 x HDMI 2.1<br>
-        Features: NVIDIA Ampere Architecture; NVIDIA DLSS; NVIDIA Adaptive Shading; Real-Time Ray Tracing; NVIDIA FreeStyle; NVIDIA G-SYNC;<br>
-        Dimensions: 304 x 123 x 42 mm<br>
-        Warranty: 1 Year<br>
-        <br>
-        price: 1499.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-      </p>
+      <!-- row 10 -->
+      <div data-price=1499 data-brand="XFX" class="row borderForRowGPU normalProd">
+        <div class="col-8">
+          <p>
+          <p class="title">XFX Speedster SWFT 309</p>
+          <br>
+          Brand : XFX<br>
+          Model : Radeon RX 6700<br>
+          Video Memory: 10GB GDDR6<br>
+          Interface: PCI-E 4.0<br>
+          Cores: 2304 MHz<br>
+          Engine Clock: Boost 2425 MHz<br>
+          Memory Speed: 16 Gbps<br>
+          Display Connectors: 3 x DisplayPort 1.4, 1 x HDMI 2.1<br>
+          Features: NVIDIA Ampere Architecture; NVIDIA DLSS; NVIDIA Adaptive Shading; Real-Time Ray Tracing; NVIDIA FreeStyle; NVIDIA G-SYNC;<br>
+          Dimensions: 304 x 123 x 42 mm<br>
+          Warranty: 1 Year<br>
+          <br>
+          price: 1499.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+        </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+        <div class = "imageOfTheProduct">
+          <img src="../assets/GPU_10.jpg" class="productDisplay">
+        </div>
+        </div>
       </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-      <div class = "imageOfTheProduct">
-        <img src="../assets/GPU_10.jpg" class="productDisplay">
       </div>
-      </div>
-    </div>
-    </div>
   </main>
   
-  <!--    Fotter   -->
   <footer class="footerStyle blackBackgrond">
     <div class="container-fluid">
     <div class="row justify-content-space-between blackBackgrond">
@@ -491,11 +478,9 @@
   </footer>
   
   <!-- JS links -->
+  <script src="../JavaScript/JS_JQuery.js"></script>
+  <script src="../JavaScript/JS_JQuery2.js"></script>
   <script src="../JavaScript/JS_Hardware.js"></script>
   <script src="../JavaScript/JS_General.js"></script>
 </body>
-
-
-
-
 </html>

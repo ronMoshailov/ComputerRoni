@@ -4,14 +4,10 @@
 <head>
   <title> ComputeRoni </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-  <!-- css links -->
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/products.css" />
   <link rel="stylesheet" href="../CSS/games.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../CSS/bootstrap.css" />
 </head>
 
 <body class="Rubix">
@@ -65,7 +61,6 @@
       </div>
     </div>
     </nav>
-
     <!-- mobile nav -->
     <nav class="mobile-nav" style="display: flex;">
       <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
@@ -90,11 +85,6 @@
            <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
       </div>
   	</nav>
-
-
-
-    
-    
     <!-- Cart -->
     <div class="container-fluid"  style="background-color: black;">
       <div class="row">
@@ -105,1056 +95,66 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
   
-<main>
-  <br>
-  <!-- all the table -->
-  <div class="container ">
-
-    <!-- row 0 -->
-    <div class="row">
-    <!-- navigation path -->
-    <div class="Rubix" id="direction">
-      <a class="nonTextDecoration" href="index.html">Home</a>
-      <i id="arrowRight"></i>
-      <a class="nonTextDecoration" id="rightDirection" href="CR_XboxSeries.html">Xbox Series</a>
-    </div>
-    </div>
+  <main>
     <br>
-  
-    <div class="row">
-  
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonXboxSeries" id="btnLowToHigh">Sort By Price: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonXboxSeries" id="btnHighToLow">Sort By Price: High -> Low</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonXboxSeries" id="btnScoreLowToHigh">Sort By Score: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-      <button class="sortButtonXboxSeries" id="btnScoreHighToLow">Sort By Score: High -> Low</button>
-      </div>
-  
-    </div>
-    <br>
-
-    <div class="row">
-      <div class="col-6">
-          Min Score: <input type="text" id="minScoreFilter" placeholder="Min score" oninput="filterXboxSeriesProducts()" />
-      </div>
-      <div class="col-6">
-          Max Score: <input type="text" id="maxScoreFilter" placeholder="Max score" oninput="filterXboxSeriesProducts()" />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6 my-4">
-          Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterXboxSeriesProducts()" />
-      </div>
-      <div class="col-6 my-4">
-          Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterXboxSeriesProducts()" />
-      </div>
-    </div>
-    <br>
-  
-  </div>
-
-  <div class="container allGames">
-  <!-- row 1 -->
-  <div data-price=50 data-score=9 class="row firstProductXboxSeries AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Aragami 2</p>
-      <p class="largFont">
-      <b>Age:</b> 13+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-      <p>
-      American Ninja Warrior" is an exhilarating and challenging game that brings the 
-      excitement of the popular TV show to your gaming console. Step into the shoes of 
-      elite athletes as you navigate and conquer a series of demanding obstacle courses 
-      inspired by the real-life challenges from the show.
-      </p>
-      <div> <img src="../assets/linceWorks.jpg" class="standartSize_lg"></div>
-      <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/aragami-2" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-      </div>
-    </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - Aragami 2.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Aragami 2</p>
-      <p class="largFont">
-      <b>Age:</b> 13+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      American Ninja Warrior" is an exhilarating and challenging game that brings the 
-      excitement of the popular TV show to your gaming console. Step into the shoes of 
-      elite athletes as you navigate and conquer a series of demanding obstacle courses 
-      inspired by the real-life challenges from the show.
-    </p>
-    <div> <img src="../assets/linceWorks.jpg" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/aragami-2" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - Aragami 2.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Aragami 2</p>
-      <p>
-      Step into the shoes of 
-      elite athletes as you navigate and conquer a series of demanding obstacle courses 
-      inspired by the real-life challenges from the show.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/aragami-2" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+    <!-- all the table -->
+    <div class="container ">
+      <!-- row 0 -->
+      <div class="row">
+      <!-- navigation path -->
+      <div class="Rubix" id="direction">
+        <a class="nonTextDecoration" href="index.html">Home</a>
+        <i id="arrowRight"></i>
+        <a class="nonTextDecoration" id="rightDirection" href="CR_XboxSeries.html">Xbox Series</a>
       </div>
       </div>
-    </div>
-    </div>
-
-
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - Aragami 2.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 1 -->
-  </div>
-
-
-  <!-- row 2 -->
-  <div data-price=60 data-score=9 class="row AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Atlas Fallen</p>
-      <p class="largFont">
-      <b>Age:</b> 12+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-      <p>
-      Rise from the dust and glide the sands of a timeless land, filled with ancient dangers, 
-      mysteries and fragments of the past. Hunt legendary monsters with powerful sand-infused 
-      weapons and abilities in spectacular, super-powered combat.
-      </p>
-      <div> <img src="../assets/Deck13.png" class="standartSize_lg"></div>
-      <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/atlas-fallen" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
+      <br>
+      <div class="row">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonXboxSeries" id="btnLowToHigh">Sort By Price: Low -> High</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonXboxSeries" id="btnHighToLow">Sort By Price: High -> Low</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonXboxSeries" id="btnScoreLowToHigh">Sort By Score: Low -> High</button>
+        </div>
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+        <button class="sortButtonXboxSeries" id="btnScoreHighToLow">Sort By Score: High -> Low</button>
+        </div>
       </div>
-    </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - Atlas Fallen.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Atlas Fallen</p>
-      <p class="largFont">
-      <b>Age:</b> 12+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Rise from the dust and glide the sands of a timeless land, filled with ancient dangers, 
-      mysteries and fragments of the past. Hunt legendary monsters with powerful sand-infused 
-      weapons and abilities in spectacular, super-powered combat.
-    </p>
-    <div> <img src="../assets/Deck13.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/atlas-fallen" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - Atlas Fallen.jpg" width="100%"  height="220px" >
-    </div>
-
-     <!-- col 1+2 - sm -->
-     <div class="col-7 d-md-none">
-     <div class="flexColumn height100">
-       <p class="title">Atlas Fallen</p>
-       <p>
-      Rise from the dust and glide the sands of a timeless land, filled with ancient dangers, 
-      mysteries and fragments of the past.
-      </p>
-       <div class="justify-content-space-between flex marginTopAuto" >
-       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-       <div class="flexColumn">
-         <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-         <a href="https://www.metacritic.com/game/xbox-series-x/atlas-fallen" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-       </div>
-       </div>
-     </div>
-     </div>
-  
-
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - Atlas Fallen.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 2 -->
-  </div>
-
-
-
-
-
-  <!-- row 3 -->
-  <div data-price=60 data-score=10 class="row AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Elden Ring</p>
-      <p class="largFont">
-      <b>Age:</b> 13+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      "Elden Ring" is a highly anticipated open-world action RPG created by Hidetaka 
-      Miyazaki and George R.R. Martin. Explore a vast, shattered land known as the 
-      Elden Ring, encountering breathtaking landscapes, challenging combat, and colossal 
-      bosses.
-    </p>
-    <div> <img src="../assets/FromSoftware.png" id="fromSoftware_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/elden-ring" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - Elden Ring.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Elden Ring</p>
-      <p class="largFont">
-      <b>Age:</b> 13+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Elden Ring" is a highly anticipated open-world action RPG created by Hidetaka 
-      Miyazaki and George R.R. Martin. Explore a vast, shattered land known as the 
-      Elden Ring, encountering breathtaking landscapes, challenging combat, and colossal 
-      bosses.
-    </p>
-    <div> <img src="../assets/FromSoftware.png" id="fromSoftware_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/elden-ring" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - Elden Ring.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-     <div class="flexColumn height100">
-     <p class="title">Elden Ring</p>
-     <p>
-      Explore a vast, shattered land known as the Elden Ring, encountering breathtaking landscapes, 
-      challenging combat, and colossal bosses.
-     </p>
-     <div class="justify-content-space-between flex marginTopAuto" >
-       <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-       <div class="flexColumn">
-       <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-       <a href="https://www.metacritic.com/game/xbox-series-x/elden-ring" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-       </div>
-     </div>
-     </div>
-   </div>
-
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - Elden Ring.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 3 -->
-  </div>
-
-
-
-  <!-- row 4 -->
-  <div data-price=60 data-score=10 class="row AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Game Pass Service</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      The Game Pass service is a subscription-based gaming service that offers unlimited access to 
-      a vast library of games. With a Game Pass subscription, players can enjoy a wide range of 
-      titles across different genres and platforms, including Xbox consoles and PC. From popular 
-      AAA titles to indie gems, the Game Pass service provides gamers with the flexibility to 
-      explore and play a diverse collection of games without the need for individual purchases. 
-      Stay updated with the latest releases and discover new favorites with the Game Pass service, 
-      offering a convenient and cost-effective way to enjoy a variety of gaming experiences.
-    </p>
-    <!--<div> <img src="../assets/DICE.jpeg" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>-->
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - Game Pass.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Game Pass Service</p>
-      <p class="largFont">
-      <b>Age:</b> 6+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 65$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      The Game Pass service is a subscription-based gaming service that offers unlimited access to 
-      a vast library of games. With a Game Pass subscription, players can enjoy a wide range of 
-      titles across different genres and platforms, including Xbox consoles and PC.
-    </p>
-    <!--<div> <img src="../assets/DICE.jpeg" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>-->
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - Game Pass.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Game Pass Service</p>
-      <p>
-      The Game Pass service is a subscription-based gaming service that offers unlimited access 
-      to a vast library of games.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 25$</div>
-        <!--<a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>-->
+      <br>
+      <div class="row">
+        <div class="col-6">
+            Min Score: <input type="text" id="minScoreFilter" placeholder="Min score" oninput="filterXboxSeriesProducts()" />
+        </div>
+        <div class="col-6">
+            Max Score: <input type="text" id="maxScoreFilter" placeholder="Max score" oninput="filterXboxSeriesProducts()" />
+        </div>
       </div>
+      <div class="row">
+        <div class="col-6 my-4">
+            Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterXboxSeriesProducts()" />
+        </div>
+        <div class="col-6 my-4">
+            Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterXboxSeriesProducts()" />
+        </div>
       </div>
+      <br>
     </div>
-    </div>
-
-  
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - Game Pass.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 4 -->
-  </div>
-
-
-  <!-- row 5 -->
-  <div data-price=60 data-score=8 class="row AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Halo Infinite</p>
-      <p class="largFont">
-      <b>Age:</b> 12+<br>
-      <b>Score:</b> 8/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      "Halo Infinite" is a thrilling stealth-action game that puts players in the shoes of 
-      supernatural assassins in a dystopian world. Choose to play as Empress Emily Kaldwin or 
-      Corvo Attano, each with their own unique abilities and playstyles, as you navigate a stunning 
-      and immersive city filled with political intrigue. Engage in a mix of stealth, combat, and 
-      exploration to uncover the truth and decide the fate of the empire.
-    </p>
-    <div> <img src="../assets/343_Industries_logo.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/halo-infinite" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - Halo Infinite.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Halo Infinite</p>
-      <p class="largFont">
-      <b>Age:</b> 12+<br>
-      <b>Score:</b> 8/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      "Halo Infinite" is a thrilling stealth-action game that puts players in the shoes of 
-      supernatural assassins in a dystopian world. Choose to play as Empress Emily Kaldwin or 
-      Corvo Attano, each with their own unique abilities and playstyles.
-    </p>
-    <div> <img src="../assets/343_Industries_logo.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/halo-infinite" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - Halo Infinite.jpg" width="100%"  height="220px" >
-    </div>
-
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Halo Infinite</p>
-      <p>
-      Choose to play as Empress Emily Kaldwin or 
-      Corvo Attano, each with their own unique abilities and playstyles.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/halo-infinite" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - Halo Infinite.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 5 -->
-  </div>
-
-
-
-
-  <!-- row 6 -->
-  <div data-price=60 data-score=10 class="row AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">Hogwarts Legacy</p>
-      <p class="largFont">
-      <b>Age:</b> 10+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      "Hogwarts Legacy" is an exhilarating open-world racing game that takes players on a 
-      breathtaking journey through the vibrant and diverse landscapes of Mexico. Experience the 
-      thrill of high-speed races, explore a vast and detailed world, and showcase your driving 
-      skills in a variety of exciting events. With its stunning visuals, extensive car roster, and 
-      dynamic weather system, "Hogwarts Legacy" offers an immersive and thrilling racing experience.
-    </p>
-    <div> <img src="../assets/Avalanche Software.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/hogwarts-legacy" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - Hogwarts Legacy.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">Hogwarts Legacy</p>
-      <p class="largFont">
-      <b>Age:</b> 10+<br>
-      <b>Score:</b> 10/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 60$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Hogwarts Legacy" is a highly anticipated action role-playing game set in the magical 
-      world of Harry Potter. Step into the shoes of a young wizard or witch attending Hogwarts 
-      School of Witchcraft and Wizardry in the late 1800s.
-    </p>
-    <div> <img src="../assets/Avalanche Software.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/hogwarts-legacy" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - Hogwarts Legacy.jpg" width="100%"  height="220px" >
-    </div>
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">Hogwarts Legacy</p>
-      <p>
-      Step into the shoes of a young wizard or witch attending Hogwarts 
-      School of Witchcraft and Wizardry in the late 1800s.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/hogwarts-legacy" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - Hogwarts Legacy.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 6 -->
-  </div>
-
-
-
-
-
-  <!-- row 7 -->
-  <div data-price=40 data-score=9 class="row AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">S.T.A.L.K.E.R. 2</p>
-      <p class="largFont">
-      <b>Age:</b> 13+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 40$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      "S.T.A.L.K.E.R. 2" is an action-packed open-world game that takes place in the sprawling city of Los 
-      Santos. Step into the shoes of three protagonists as they navigate a world filled with 
-      heists, missions, and a vast array of activities. With its immersive storyline, stunning 
-      graphics, and a massive open world to explore, "S.T.A.L.K.E.R. 2" offers players an unparalleled 
-      experience of freedom and mayhem.
-    </p>
-    <div> <img src="../assets/GSC_Game_World.png" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/stalker-2-heart-of-chernobyl" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - S.T.A.L.K.E.R.2.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">S.T.A.L.K.E.R. 2</p>
-      <p class="largFont">
-      <b>Age:</b> 13+<br>
-      <b>Score:</b> 9/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 40$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Step into the shoes of three protagonists as they navigate a world filled with 
-      heists, missions, and a vast array of activities. With its immersive storyline, stunning 
-      graphics, and a massive open world to explore, "S.T.A.L.K.E.R. 2" offers players an unparalleled 
-      experience of freedom and mayhem.
-    </p>
-    <div> <img src="../assets/GSC_Game_World.png" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/stalker-2-heart-of-chernobyl" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - S.T.A.L.K.E.R.2.jpg" width="100%"  height="220px" >
-    </div>
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">S.T.A.L.K.E.R. 2</p>
-      <p>
-      Step into the shoes of three protagonists as they navigate a world filled with 
-      heists, missions, and a vast array of activities.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/stalker-2-heart-of-chernobyl" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - S.T.A.L.K.E.R.2.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 7 -->
-  </div>
-
-
-
-
-
-    <!-- row 8 -->
-    <div data-price=40 data-score=8 class="row AllProductsBorderXboxSeries normalProd">
+    <div class="container allGames">
+    <!-- row 1 -->
+    <div data-price=50 data-score=9 class="row firstProductXboxSeries AllProductsBorderXboxSeries normalProd">
       <!-- col 1 - lg -->
       <div class="d-none d-lg-flex col-lg-2 flexColumn">
       <div>
-        <p class="title">Steelrising</p>
+        <p class="title">Aragami 2</p>
         <p class="largFont">
-        <b>Age:</b> 7+<br>
-        <b>Score:</b> 8/10<br>
-        </p>
-      </div>
-      <div class="marginTopAuto">
-        <p>
-        <b>Price:</b> 40$<br>
-        </p>
-        <button class="AddToCartButton">Add To Cart</button>
-      </div>
-      </div>
-  
-      <!-- col 2 - lg -->
-      <div class="d-none d-lg-block col-lg-8 positionRelative">
-      <p>
-        "Steelrising" is an action-packed, alternate-history RPG set in a steampunk version of 
-        18th-century Paris. Players assume the role of Aegis, an automaton created to fight 
-        against the tyrannical King Louis XVI. With a blend of fast-paced combat, intricate 
-        customization options, and a captivating story, "Steelrising" offers a unique and 
-        immersive experience where players navigate through a beautifully crafted world.
-      </p>
-      <div> <img src="../assets/SpidersLogo.png" class="standartSize_lg"></div>
-      <div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/steelrising" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
-        </a>
-      </div>
-    </div>
-  
-      <!-- col 3 - lg -->
-      <div class="d-none d-lg-flex col-lg-2">
-      <img src="../assets/Xbox Series - Steelrising.jpg" width="100%"  height="220px">
-      </div>
-  
-      <!-- col 1 - md -->
-      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-      <div>
-        <p class="title">Steelrising</p>
-        <p class="largFont">
-        <b>Age:</b> 7+<br>
-        <b>Score:</b> 8/10<br>
-        </p>
-      </div>
-      <div class="marginTopAuto">
-        <p>
-        <b>Price:</b> 40$<br>
-        </p>
-        <button class="AddToCartButton">Add To Cart</button>
-      </div>
-      </div>
-  
-      <!-- col 2 - md -->
-      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-      <p>
-        Players assume the role of Aegis, an automaton created to fight 
-        against the tyrannical King Louis XVI. With a blend of fast-paced combat, intricate 
-        customization options, and a captivating story, "Steelrising" offers a unique and 
-        immersive experience.
-      </p>
-      <div> <img src="../assets/SpidersLogo.png" class="standartSize_md"></div>
-      <div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/steelrising" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_md">
-        </a>
-      </div>
-    </div>
-  
-      <!-- col 3 - md -->
-      <div class="d-none d-md-flex d-lg-none col-md-3 ">
-      <img src="../assets/Xbox Series - Steelrising.jpg" width="100%"  height="220px" >
-      </div>
-  
-      <!-- col 1+2 - sm -->
-      <div class="col-7 d-md-none">
-      <div class="flexColumn height100">
-        <p class="title">Steelrising</p>
-        <p>
-        Players assume the role of Aegis, an automaton created to fight 
-        against the tyrannical King Louis XVI.
-        </p>
-        <div class="justify-content-space-between flex marginTopAuto" >
-        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-        <div class="flexColumn">
-          <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
-          <a href="https://www.metacritic.com/game/xbox-series-x/steelrising" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-        </div>
-        </div>
-      </div>
-      </div>
-          
-      <!-- col 3 - sm -->
-      <div class="d-md-none col-5 d-flex fixSmallimg">
-      <img src="../assets/Xbox Series - Steelrising.jpg" width="100%"  height="220px" >
-      </div>
-  
-      <!-- end of row 8 -->
-    </div>
-
-
-
-
-
-  <!-- row 9 -->
-  <div data-price=50 data-score=8 class="row AllProductsBorderXboxSeries normalProd">
-    <!-- col 1 - lg -->
-    <div class="d-none d-lg-flex col-lg-2 flexColumn">
-    <div>
-      <p class="title">The Callisto Protocol</p>
-      <p class="largFont">
-      <b>Age:</b> 14+<br>
-      <b>Score:</b> 8/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - lg -->
-    <div class="d-none d-lg-block col-lg-8 positionRelative">
-    <p>
-      "The Callisto Protocol" is a highly anticipated survival horror game set in a chilling and 
-      atmospheric futuristic setting. Developed by the creators of the renowned Dead Space series, 
-      this game promises a terrifying and immersive experience. Players find themselves in the 
-      depths of a maximum-security prison on Jupiter's moon, Callisto, as they unravel dark 
-      mysteries and face unimaginable horrors. Prepare to be immersed in a gripping narrative, 
-      intense gameplay, and stunning visuals in "The Callisto Protocol."
-    </p>
-    <div> <img src="../assets/Striking_Distance_Studios.jpg" class="standartSize_lg"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/the-callisto-protocol" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_lg">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - lg -->
-    <div class="d-none d-lg-flex col-lg-2">
-    <img src="../assets/Xbox Series - The Callisto Protocol.jpg" width="100%"  height="220px">
-    </div>
-
-    <!-- col 1 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
-    <div>
-      <p class="title">The Callisto Protocol</p>
-      <p class="largFont">
-      <b>Age:</b> 14+<br>
-      <b>Score:</b> 8/10<br>
-      </p>
-    </div>
-    <div class="marginTopAuto">
-      <p>
-      <b>Price:</b> 50$<br>
-      </p>
-      <button class="AddToCartButton">Add To Cart</button>
-    </div>
-    </div>
-
-    <!-- col 2 - md -->
-    <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
-    <p>
-      Developed by the creators of the renowned Dead Space series, 
-      this game promises a terrifying and immersive experience. Players find themselves in the 
-      depths of a maximum-security prison on Jupiter's moon, Callisto, as they unravel dark 
-      mysteries and face unimaginable horrors.
-    </p>
-    <div> <img src="../assets/Striking_Distance_Studios.jpg" class="standartSize_md"></div>
-    <div>
-      <a href="https://www.metacritic.com/game/xbox-series-x/the-callisto-protocol" target="_blank">
-      <img src="../assets/metacritic.png" class="metacritic_md">
-      </a>
-    </div>
-  </div>
-
-    <!-- col 3 - md -->
-    <div class="d-none d-md-flex d-lg-none col-md-3 ">
-    <img src="../assets/Xbox Series - The Callisto Protocol.jpg" width="100%"  height="220px" >
-    </div>
-
-
-    <!-- col 1+2 - sm -->
-    <div class="col-7 d-md-none">
-    <div class="flexColumn height100">
-      <p class="title">The Callisto Protocol</p>
-      <p>
-      Developed by the creators of the renowned Dead Space series, 
-      this game promises a terrifying and immersive experience.
-      </p>
-      <div class="justify-content-space-between flex marginTopAuto" >
-      <button class="AddToCartButton marginTopAuto">Add To Cart</button>
-      <div class="flexColumn">
-        <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/the-callisto-protocol" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
-      </div>
-      </div>
-    </div>
-    </div>
-
-
-        
-    <!-- col 3 - sm -->
-    <div class="d-md-none col-5 d-flex fixSmallimg">
-    <img src="../assets/Xbox Series - The Callisto Protocol.jpg" width="100%"  height="220px" >
-    </div>
-
-    <!-- end of row 9 -->
-  </div>
-
-
-
-
-
-    <!-- row 10 -->
-    <div data-price=50 data-score=9 class="row AllProductsBorderXboxSeries normalProd">
-      <!-- col 1 - lg -->
-      <div class="d-none d-lg-flex col-lg-2 flexColumn">
-      <div>
-        <p class="title">Assassin's Creed Mirage</p>
-        <p class="largFont">
-        <b>Age:</b> 12+<br>
+        <b>Age:</b> 13+<br>
         <b>Score:</b> 9/10<br>
         </p>
       </div>
@@ -1165,36 +165,31 @@
         <button class="AddToCartButton">Add To Cart</button>
       </div>
       </div>
-  
       <!-- col 2 - lg -->
       <div class="d-none d-lg-block col-lg-8 positionRelative">
-      <p>
-        Mirage is an action-adventure stealth game intended to be reminiscent of older Assassin's 
-        Creed titles, being more linear and story-focused and reducing the number of role-playing 
-        elements present in recent installments of the series. The game is set principally in 
-        Baghdad, which is divided into four districts, but also features Alamut, the fortress 
-        headquarters of the Hidden Ones. Parkour, close-quarter combat, and stealth are core 
-        elements of the gameplay.
-      </p>
-      <div> <img src="../assets/ubisoftMontreal.png" class="standartSize_lg"></div>
-      <div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/assassins-creed-mirage" target="_blank">
-        <img src="../assets/metacritic.png" class="metacritic_lg">
+        <p>
+        American Ninja Warrior" is an exhilarating and challenging game that brings the 
+        excitement of the popular TV show to your gaming console. Step into the shoes of 
+        elite athletes as you navigate and conquer a series of demanding obstacle courses 
+        inspired by the real-life challenges from the show.
+        </p>
+        <div> <img src="../assets/linceWorks.jpg" class="standartSize_lg"></div>
+        <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/aragami-2" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
         </a>
+        </div>
       </div>
-    </div>
-  
       <!-- col 3 - lg -->
       <div class="d-none d-lg-flex col-lg-2">
-      <img src="../assets/Xbox Series - Assassin's Creed Mirage.png" width="100%"  height="220px">
+      <img src="../assets/Xbox Series - Aragami 2.jpg" width="100%"  height="220px">
       </div>
-  
       <!-- col 1 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
       <div>
-        <p class="title">Assassin's Creed Mirage</p>
+        <p class="title">Aragami 2</p>
         <p class="largFont">
-        <b>Age:</b> 12+<br>
+        <b>Age:</b> 13+<br>
         <b>Score:</b> 9/10<br>
         </p>
       </div>
@@ -1205,102 +200,956 @@
         <button class="AddToCartButton">Add To Cart</button>
       </div>
       </div>
-  
       <!-- col 2 - md -->
       <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
       <p>
-        Mirage is an action-adventure stealth game intended to be reminiscent of older Assassin's 
-        Creed titles, being more linear and story-focused and reducing the number of role-playing 
-        elements present in recent installments of the series.
+        American Ninja Warrior" is an exhilarating and challenging game that brings the 
+        excitement of the popular TV show to your gaming console. Step into the shoes of 
+        elite athletes as you navigate and conquer a series of demanding obstacle courses 
+        inspired by the real-life challenges from the show.
       </p>
-      <div> <img src="../assets/ubisoftMontreal.png" class="standartSize_md"></div>
+      <div> <img src="../assets/linceWorks.jpg" class="standartSize_md"></div>
       <div>
-        <a href="https://www.metacritic.com/game/xbox-series-x/assassins-creed-mirage" target="_blank">
+        <a href="https://www.metacritic.com/game/xbox-series-x/aragami-2" target="_blank">
         <img src="../assets/metacritic.png" class="metacritic_md">
         </a>
       </div>
     </div>
-  
       <!-- col 3 - md -->
       <div class="d-none d-md-flex d-lg-none col-md-3 ">
-      <img src="../assets/Xbox Series - Assassin's Creed Mirage.png" width="100%"  height="220px" >
+      <img src="../assets/Xbox Series - Aragami 2.jpg" width="100%"  height="220px" >
       </div>
-
       <!-- col 1+2 - sm -->
       <div class="col-7 d-md-none">
       <div class="flexColumn height100">
-        <p class="title">Assassin's Creed Mirage</p>
+        <p class="title">Aragami 2</p>
         <p>
-        Mirage is an action-adventure stealth game intended to be reminiscent of older Assassin's 
-        Creed titles.
+        Step into the shoes of 
+        elite athletes as you navigate and conquer a series of demanding obstacle courses 
+        inspired by the real-life challenges from the show.
         </p>
         <div class="justify-content-space-between flex marginTopAuto" >
         <button class="AddToCartButton marginTopAuto">Add To Cart</button>
         <div class="flexColumn">
           <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
-          <a href="https://www.metacritic.com/game/xbox-series-x/assassins-creed-mirage" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+          <a href="https://www.metacritic.com/game/xbox-series-x/aragami-2" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
         </div>
         </div>
       </div>
       </div>
-
-
       <!-- col 3 - sm -->
       <div class="d-md-none col-5 d-flex fixSmallimg">
-      <img src="../assets/Xbox Series - Assassin's Creed Mirage.png" width="100%"  height="220px" >
+      <img src="../assets/Xbox Series - Aragami 2.jpg" width="100%"  height="220px" >
       </div>
-  
-      <!-- end of row 10 -->
+      <!-- end of row 1 -->
     </div>
-  </div>
-</main>
+    <!-- row 2 -->
+    <div data-price=60 data-score=9 class="row AllProductsBorderXboxSeries normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Atlas Fallen</p>
+        <p class="largFont">
+        <b>Age:</b> 12+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+        <p>
+        Rise from the dust and glide the sands of a timeless land, filled with ancient dangers, 
+        mysteries and fragments of the past. Hunt legendary monsters with powerful sand-infused 
+        weapons and abilities in spectacular, super-powered combat.
+        </p>
+        <div> <img src="../assets/Deck13.png" class="standartSize_lg"></div>
+        <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/atlas-fallen" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+        </div>
+      </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox Series - Atlas Fallen.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Atlas Fallen</p>
+        <p class="largFont">
+        <b>Age:</b> 12+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Rise from the dust and glide the sands of a timeless land, filled with ancient dangers, 
+        mysteries and fragments of the past. Hunt legendary monsters with powerful sand-infused 
+        weapons and abilities in spectacular, super-powered combat.
+      </p>
+      <div> <img src="../assets/Deck13.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/atlas-fallen" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox Series - Atlas Fallen.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Atlas Fallen</p>
+        <p>
+        Rise from the dust and glide the sands of a timeless land, filled with ancient dangers, 
+        mysteries and fragments of the past.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/atlas-fallen" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox Series - Atlas Fallen.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 2 -->
+    </div>
+    <!-- row 3 -->
+    <div data-price=60 data-score=10 class="row AllProductsBorderXboxSeries normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Elden Ring</p>
+        <p class="largFont">
+        <b>Age:</b> 13+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        "Elden Ring" is a highly anticipated open-world action RPG created by Hidetaka 
+        Miyazaki and George R.R. Martin. Explore a vast, shattered land known as the 
+        Elden Ring, encountering breathtaking landscapes, challenging combat, and colossal 
+        bosses.
+      </p>
+      <div> <img src="../assets/FromSoftware.png" id="fromSoftware_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/elden-ring" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox Series - Elden Ring.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Elden Ring</p>
+        <p class="largFont">
+        <b>Age:</b> 13+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Elden Ring" is a highly anticipated open-world action RPG created by Hidetaka 
+        Miyazaki and George R.R. Martin. Explore a vast, shattered land known as the 
+        Elden Ring, encountering breathtaking landscapes, challenging combat, and colossal 
+        bosses.
+      </p>
+      <div> <img src="../assets/FromSoftware.png" id="fromSoftware_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/elden-ring" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox Series - Elden Ring.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+      <p class="title">Elden Ring</p>
+      <p>
+        Explore a vast, shattered land known as the Elden Ring, encountering breathtaking landscapes, 
+        challenging combat, and colossal bosses.
+      </p>
+      <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+        <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/elden-ring" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+      </div>
+      </div>
+    </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox Series - Elden Ring.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 3 -->
+    </div>
+    <!-- row 4 -->
+    <div data-price=60 data-score=10 class="row AllProductsBorderXboxSeries normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Game Pass Service</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        The Game Pass service is a subscription-based gaming service that offers unlimited access to 
+        a vast library of games. With a Game Pass subscription, players can enjoy a wide range of 
+        titles across different genres and platforms, including Xbox consoles and PC. From popular 
+        AAA titles to indie gems, the Game Pass service provides gamers with the flexibility to 
+        explore and play a diverse collection of games without the need for individual purchases. 
+        Stay updated with the latest releases and discover new favorites with the Game Pass service, 
+        offering a convenient and cost-effective way to enjoy a variety of gaming experiences.
+      </p>
+      <!--<div> <img src="../assets/DICE.jpeg" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>-->
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox Series - Game Pass.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Game Pass Service</p>
+        <p class="largFont">
+        <b>Age:</b> 6+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 65$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        The Game Pass service is a subscription-based gaming service that offers unlimited access to 
+        a vast library of games. With a Game Pass subscription, players can enjoy a wide range of 
+        titles across different genres and platforms, including Xbox consoles and PC.
+      </p>
+      <!--<div> <img src="../assets/DICE.jpeg" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>-->
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox Series - Game Pass.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Game Pass Service</p>
+        <p>
+        The Game Pass service is a subscription-based gaming service that offers unlimited access 
+        to a vast library of games.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 25$</div>
+          <!--<a href="https://www.metacritic.com/game/xbox-one/battlefield-2042" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>-->
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox Series - Game Pass.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 4 -->
+    </div>
+    <!-- row 5 -->
+    <div data-price=60 data-score=8 class="row AllProductsBorderXboxSeries normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Halo Infinite</p>
+        <p class="largFont">
+        <b>Age:</b> 12+<br>
+        <b>Score:</b> 8/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        "Halo Infinite" is a thrilling stealth-action game that puts players in the shoes of 
+        supernatural assassins in a dystopian world. Choose to play as Empress Emily Kaldwin or 
+        Corvo Attano, each with their own unique abilities and playstyles, as you navigate a stunning 
+        and immersive city filled with political intrigue. Engage in a mix of stealth, combat, and 
+        exploration to uncover the truth and decide the fate of the empire.
+      </p>
+      <div> <img src="../assets/343_Industries_logo.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/halo-infinite" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox Series - Halo Infinite.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Halo Infinite</p>
+        <p class="largFont">
+        <b>Age:</b> 12+<br>
+        <b>Score:</b> 8/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        "Halo Infinite" is a thrilling stealth-action game that puts players in the shoes of 
+        supernatural assassins in a dystopian world. Choose to play as Empress Emily Kaldwin or 
+        Corvo Attano, each with their own unique abilities and playstyles.
+      </p>
+      <div> <img src="../assets/343_Industries_logo.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/halo-infinite" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox Series - Halo Infinite.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Halo Infinite</p>
+        <p>
+        Choose to play as Empress Emily Kaldwin or 
+        Corvo Attano, each with their own unique abilities and playstyles.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/halo-infinite" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox Series - Halo Infinite.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 5 -->
+    </div>
+    <!-- row 6 -->
+    <div data-price=60 data-score=10 class="row AllProductsBorderXboxSeries normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">Hogwarts Legacy</p>
+        <p class="largFont">
+        <b>Age:</b> 10+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        "Hogwarts Legacy" is an exhilarating open-world racing game that takes players on a 
+        breathtaking journey through the vibrant and diverse landscapes of Mexico. Experience the 
+        thrill of high-speed races, explore a vast and detailed world, and showcase your driving 
+        skills in a variety of exciting events. With its stunning visuals, extensive car roster, and 
+        dynamic weather system, "Hogwarts Legacy" offers an immersive and thrilling racing experience.
+      </p>
+      <div> <img src="../assets/Avalanche Software.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/hogwarts-legacy" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox Series - Hogwarts Legacy.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">Hogwarts Legacy</p>
+        <p class="largFont">
+        <b>Age:</b> 10+<br>
+        <b>Score:</b> 10/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 60$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Hogwarts Legacy" is a highly anticipated action role-playing game set in the magical 
+        world of Harry Potter. Step into the shoes of a young wizard or witch attending Hogwarts 
+        School of Witchcraft and Wizardry in the late 1800s.
+      </p>
+      <div> <img src="../assets/Avalanche Software.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/hogwarts-legacy" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox Series - Hogwarts Legacy.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">Hogwarts Legacy</p>
+        <p>
+        Step into the shoes of a young wizard or witch attending Hogwarts 
+        School of Witchcraft and Wizardry in the late 1800s.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 60$</div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/hogwarts-legacy" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox Series - Hogwarts Legacy.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 6 -->
+    </div>
+    <!-- row 7 -->
+    <div data-price=40 data-score=9 class="row AllProductsBorderXboxSeries normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">S.T.A.L.K.E.R. 2</p>
+        <p class="largFont">
+        <b>Age:</b> 13+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        "S.T.A.L.K.E.R. 2" is an action-packed open-world game that takes place in the sprawling city of Los 
+        Santos. Step into the shoes of three protagonists as they navigate a world filled with 
+        heists, missions, and a vast array of activities. With its immersive storyline, stunning 
+        graphics, and a massive open world to explore, "S.T.A.L.K.E.R. 2" offers players an unparalleled 
+        experience of freedom and mayhem.
+      </p>
+      <div> <img src="../assets/GSC_Game_World.png" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/stalker-2-heart-of-chernobyl" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox Series - S.T.A.L.K.E.R.2.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">S.T.A.L.K.E.R. 2</p>
+        <p class="largFont">
+        <b>Age:</b> 13+<br>
+        <b>Score:</b> 9/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 40$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Step into the shoes of three protagonists as they navigate a world filled with 
+        heists, missions, and a vast array of activities. With its immersive storyline, stunning 
+        graphics, and a massive open world to explore, "S.T.A.L.K.E.R. 2" offers players an unparalleled 
+        experience of freedom and mayhem.
+      </p>
+      <div> <img src="../assets/GSC_Game_World.png" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/stalker-2-heart-of-chernobyl" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox Series - S.T.A.L.K.E.R.2.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">S.T.A.L.K.E.R. 2</p>
+        <p>
+        Step into the shoes of three protagonists as they navigate a world filled with 
+        heists, missions, and a vast array of activities.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/stalker-2-heart-of-chernobyl" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox Series - S.T.A.L.K.E.R.2.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 7 -->
+    </div>
+      <!-- row 8 -->
+      <div data-price=40 data-score=8 class="row AllProductsBorderXboxSeries normalProd">
+        <!-- col 1 - lg -->
+        <div class="d-none d-lg-flex col-lg-2 flexColumn">
+        <div>
+          <p class="title">Steelrising</p>
+          <p class="largFont">
+          <b>Age:</b> 7+<br>
+          <b>Score:</b> 8/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 40$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - lg -->
+        <div class="d-none d-lg-block col-lg-8 positionRelative">
+        <p>
+          "Steelrising" is an action-packed, alternate-history RPG set in a steampunk version of 
+          18th-century Paris. Players assume the role of Aegis, an automaton created to fight 
+          against the tyrannical King Louis XVI. With a blend of fast-paced combat, intricate 
+          customization options, and a captivating story, "Steelrising" offers a unique and 
+          immersive experience where players navigate through a beautifully crafted world.
+        </p>
+        <div> <img src="../assets/SpidersLogo.png" class="standartSize_lg"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/steelrising" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - lg -->
+        <div class="d-none d-lg-flex col-lg-2">
+        <img src="../assets/Xbox Series - Steelrising.jpg" width="100%"  height="220px">
+        </div>
+        <!-- col 1 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+        <div>
+          <p class="title">Steelrising</p>
+          <p class="largFont">
+          <b>Age:</b> 7+<br>
+          <b>Score:</b> 8/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 40$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - md -->
+        <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+        <p>
+          Players assume the role of Aegis, an automaton created to fight 
+          against the tyrannical King Louis XVI. With a blend of fast-paced combat, intricate 
+          customization options, and a captivating story, "Steelrising" offers a unique and 
+          immersive experience.
+        </p>
+        <div> <img src="../assets/SpidersLogo.png" class="standartSize_md"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/steelrising" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_md">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 ">
+        <img src="../assets/Xbox Series - Steelrising.jpg" width="100%"  height="220px" >
+        </div>
+        <!-- col 1+2 - sm -->
+        <div class="col-7 d-md-none">
+        <div class="flexColumn height100">
+          <p class="title">Steelrising</p>
+          <p>
+          Players assume the role of Aegis, an automaton created to fight 
+          against the tyrannical King Louis XVI.
+          </p>
+          <div class="justify-content-space-between flex marginTopAuto" >
+          <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+          <div class="flexColumn">
+            <div class="title nonTextDecoration"> <b>price:</b> 40$</div>
+            <a href="https://www.metacritic.com/game/xbox-series-x/steelrising" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+          </div>
+          </div>
+        </div>
+        </div>
+        <!-- col 3 - sm -->
+        <div class="d-md-none col-5 d-flex fixSmallimg">
+        <img src="../assets/Xbox Series - Steelrising.jpg" width="100%"  height="220px" >
+        </div>
+        <!-- end of row 8 -->
+      </div>
+    <!-- row 9 -->
+    <div data-price=50 data-score=8 class="row AllProductsBorderXboxSeries normalProd">
+      <!-- col 1 - lg -->
+      <div class="d-none d-lg-flex col-lg-2 flexColumn">
+      <div>
+        <p class="title">The Callisto Protocol</p>
+        <p class="largFont">
+        <b>Age:</b> 14+<br>
+        <b>Score:</b> 8/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - lg -->
+      <div class="d-none d-lg-block col-lg-8 positionRelative">
+      <p>
+        "The Callisto Protocol" is a highly anticipated survival horror game set in a chilling and 
+        atmospheric futuristic setting. Developed by the creators of the renowned Dead Space series, 
+        this game promises a terrifying and immersive experience. Players find themselves in the 
+        depths of a maximum-security prison on Jupiter's moon, Callisto, as they unravel dark 
+        mysteries and face unimaginable horrors. Prepare to be immersed in a gripping narrative, 
+        intense gameplay, and stunning visuals in "The Callisto Protocol."
+      </p>
+      <div> <img src="../assets/Striking_Distance_Studios.jpg" class="standartSize_lg"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/the-callisto-protocol" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_lg">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - lg -->
+      <div class="d-none d-lg-flex col-lg-2">
+      <img src="../assets/Xbox Series - The Callisto Protocol.jpg" width="100%"  height="220px">
+      </div>
+      <!-- col 1 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+      <div>
+        <p class="title">The Callisto Protocol</p>
+        <p class="largFont">
+        <b>Age:</b> 14+<br>
+        <b>Score:</b> 8/10<br>
+        </p>
+      </div>
+      <div class="marginTopAuto">
+        <p>
+        <b>Price:</b> 50$<br>
+        </p>
+        <button class="AddToCartButton">Add To Cart</button>
+      </div>
+      </div>
+      <!-- col 2 - md -->
+      <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+      <p>
+        Developed by the creators of the renowned Dead Space series, 
+        this game promises a terrifying and immersive experience. Players find themselves in the 
+        depths of a maximum-security prison on Jupiter's moon, Callisto, as they unravel dark 
+        mysteries and face unimaginable horrors.
+      </p>
+      <div> <img src="../assets/Striking_Distance_Studios.jpg" class="standartSize_md"></div>
+      <div>
+        <a href="https://www.metacritic.com/game/xbox-series-x/the-callisto-protocol" target="_blank">
+        <img src="../assets/metacritic.png" class="metacritic_md">
+        </a>
+      </div>
+    </div>
+      <!-- col 3 - md -->
+      <div class="d-none d-md-flex d-lg-none col-md-3 ">
+      <img src="../assets/Xbox Series - The Callisto Protocol.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- col 1+2 - sm -->
+      <div class="col-7 d-md-none">
+      <div class="flexColumn height100">
+        <p class="title">The Callisto Protocol</p>
+        <p>
+        Developed by the creators of the renowned Dead Space series, 
+        this game promises a terrifying and immersive experience.
+        </p>
+        <div class="justify-content-space-between flex marginTopAuto" >
+        <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+        <div class="flexColumn">
+          <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/the-callisto-protocol" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- col 3 - sm -->
+      <div class="d-md-none col-5 d-flex fixSmallimg">
+      <img src="../assets/Xbox Series - The Callisto Protocol.jpg" width="100%"  height="220px" >
+      </div>
+      <!-- end of row 9 -->
+    </div>
+      <!-- row 10 -->
+      <div data-price=50 data-score=9 class="row AllProductsBorderXboxSeries normalProd">
+        <!-- col 1 - lg -->
+        <div class="d-none d-lg-flex col-lg-2 flexColumn">
+        <div>
+          <p class="title">Assassin's Creed Mirage</p>
+          <p class="largFont">
+          <b>Age:</b> 12+<br>
+          <b>Score:</b> 9/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 50$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - lg -->
+        <div class="d-none d-lg-block col-lg-8 positionRelative">
+        <p>
+          Mirage is an action-adventure stealth game intended to be reminiscent of older Assassin's 
+          Creed titles, being more linear and story-focused and reducing the number of role-playing 
+          elements present in recent installments of the series. The game is set principally in 
+          Baghdad, which is divided into four districts, but also features Alamut, the fortress 
+          headquarters of the Hidden Ones. Parkour, close-quarter combat, and stealth are core 
+          elements of the gameplay.
+        </p>
+        <div> <img src="../assets/ubisoftMontreal.png" class="standartSize_lg"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/assassins-creed-mirage" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_lg">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - lg -->
+        <div class="d-none d-lg-flex col-lg-2">
+        <img src="../assets/Xbox Series - Assassin's Creed Mirage.png" width="100%"  height="220px">
+        </div>
+        <!-- col 1 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 flexColumn ">
+        <div>
+          <p class="title">Assassin's Creed Mirage</p>
+          <p class="largFont">
+          <b>Age:</b> 12+<br>
+          <b>Score:</b> 9/10<br>
+          </p>
+        </div>
+        <div class="marginTopAuto">
+          <p>
+          <b>Price:</b> 50$<br>
+          </p>
+          <button class="AddToCartButton">Add To Cart</button>
+        </div>
+        </div>
+        <!-- col 2 - md -->
+        <div class="d-none d-md-block d-lg-none col-md-6 positionRelative">
+        <p>
+          Mirage is an action-adventure stealth game intended to be reminiscent of older Assassin's 
+          Creed titles, being more linear and story-focused and reducing the number of role-playing 
+          elements present in recent installments of the series.
+        </p>
+        <div> <img src="../assets/ubisoftMontreal.png" class="standartSize_md"></div>
+        <div>
+          <a href="https://www.metacritic.com/game/xbox-series-x/assassins-creed-mirage" target="_blank">
+          <img src="../assets/metacritic.png" class="metacritic_md">
+          </a>
+        </div>
+      </div>
+        <!-- col 3 - md -->
+        <div class="d-none d-md-flex d-lg-none col-md-3 ">
+        <img src="../assets/Xbox Series - Assassin's Creed Mirage.png" width="100%"  height="220px" >
+        </div>
+        <!-- col 1+2 - sm -->
+        <div class="col-7 d-md-none">
+        <div class="flexColumn height100">
+          <p class="title">Assassin's Creed Mirage</p>
+          <p>
+          Mirage is an action-adventure stealth game intended to be reminiscent of older Assassin's 
+          Creed titles.
+          </p>
+          <div class="justify-content-space-between flex marginTopAuto" >
+          <button class="AddToCartButton marginTopAuto">Add To Cart</button>
+          <div class="flexColumn">
+            <div class="title nonTextDecoration"> <b>price:</b> 50$</div>
+            <a href="https://www.metacritic.com/game/xbox-series-x/assassins-creed-mirage" target="_blank"> <img src="../assets/metacritic.png" class="metacritic_sm"> </a>
+          </div>
+          </div>
+        </div>
+        </div>
+        <!-- col 3 - sm -->
+        <div class="d-md-none col-5 d-flex fixSmallimg">
+        <img src="../assets/Xbox Series - Assassin's Creed Mirage.png" width="100%"  height="220px" >
+        </div>
+        <!-- end of row 10 -->
+      </div>
+    </div>
+  </main>
 
-<!--    Fotter   -->
-<footer class="footerStyle blackBackgrond">
-  <div class="container-fluid">
-    <div class="row justify-content-space-between blackBackgrond">
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
-        </ul>
+  <footer class="footerStyle blackBackgrond">
+    <div class="container-fluid">
+      <div class="row justify-content-space-between blackBackgrond">
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+          </ul>
+          </div>
+          <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Customer Service</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
+          </ul>
         </div>
         <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Customer Service</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Download our app</b></li>
-          <br>
-          <br>
-          <div class="row">
-            <div class="col">
-            <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
-            <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Download our app</b></li>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col">
+              <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+              <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+              </div>
+              <div class="col">
+                <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+              </div>
             </div>
-            <div class="col">
-              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
-            </div>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-
-
+  </footer>
 
   <!-- JS links -->
+  <script src="../JavaScript/JS_JQuery.js"></script>
+  <script src="../JavaScript/JS_JQuery2.js"></script>
   <script src="../JavaScript/JS_Product.js"></script>
   <script src="../JavaScript/JS_General.js"></script>
 </body>

@@ -4,17 +4,14 @@
 <head>
   <title> ComputeRoni </title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-  <!-- css links -->
   <link rel="stylesheet" href="../CSS/general.css" />
   <link rel="stylesheet" href="../CSS/Hardware.css" />
   <link rel="stylesheet" href="../CSS/products.css" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="../CSS/bootstrap.css" />
 </head>
 
 <body class="Rubix">
+
   <header>
     <!-- upper black information -->
     <div class="container-fluid ">
@@ -64,7 +61,6 @@
       </div>
     </div>
     </nav>
-
     <!-- mobile nav -->
     <nav class="mobile-nav" style="display: flex;">
       <button class="hamburgerClose" style="background-color:#12002F;border: white 1px solid; position:absolute; left:0;top: 0;"></button>
@@ -89,11 +85,6 @@
            <a class="GamesLink"  style="cursor: none; text-decoration: none;" href="CR_PC.html">PC</a>
       </div>
   	</nav>
-
-
-
-    
-    
     <!-- Cart -->
     <div class="container-fluid"  style="background-color: black;">
       <div class="row">
@@ -104,385 +95,373 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3"><a href="CR_Cart.html"><img class="img-fluid myCart" src="../assets/Cart.png"></a></div>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
   
-<main>
-  <br>
-
-  <!-- all the table -->
-  <div class="container ">
-
-    <!-- row 0 -->
-    <div class="row">
-      <!-- navigation path -->
-      <div class="Rubix" id="direction">
-      <a class="nonTextDecoration" href="index.html">Home</a>
-      <i id="arrowRight"></i>
-      <a class="nonTextDecoration" id="rightDirection" href="CR_H_CPU.html">CPU</a>
-      </div>
-    </div>
+  <main>
     <br>
+    <!-- all the table -->
+    <div class="container ">
+      <!-- row 0 -->
       <div class="row">
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
-      </div>
-      <div class="col-lg-3 col-6 py-2 textAlignCenter">
-        <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
-      </div>
+        <!-- navigation path -->
+        <div class="Rubix" id="direction">
+        <a class="nonTextDecoration" href="index.html">Home</a>
+        <i id="arrowRight"></i>
+        <a class="nonTextDecoration" id="rightDirection" href="CR_H_CPU.html">CPU</a>
+        </div>
       </div>
       <br>
-      <div class="row filterButtons">
-        <div class="col-sm-4 col-12">
-            Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterCPUProducts()" />
+        <div class="row">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnLowToHigh">Sort By Price: Low -> High</button>
         </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterCPUProducts()" />
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnHighToLow">Sort By Price: High -> Low</button>
         </div>
-        <div class="col-sm-4 col-12">
-            Min price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterCPUProducts()" />
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameAtoZ">Sort By Brand: A -> Z</button>
         </div>
-      </div>
-    <br>
-    
-  </div>
-  
-  <div class="container allHardware">
-    <!-- row 1 -->
-    <div data-price=339 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel Core i3-10100 Tray Up to 4.30 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 10<br>
-        Number of Cores: 4<br>
-        Processor Base Frequency: 3.6 GHz<br>
-        Max Turbo Frequency: 4.3 GHz<br>
-        Cache : 6MB Intel Smart Cache<br>
-        TDP : 65[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 339.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i3-10100.jpg" class="productDisplay">
+        <div class="col-lg-3 col-6 py-2 textAlignCenter">
+          <button class="sortButtonHardware" id="btnNameZtoA">Sort By Brand: Z -> A</button>
         </div>
-      </div>
+        </div>
+        <br>
+        <div class="row filterButtons">
+          <div class="col-sm-4 col-12">
+              Filter by brand: <input type="text" id="brandFilter" placeholder="Filter by brand" oninput="filterCPUProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Min price: <input type="text" id="minPriceFilter" placeholder="Min price" oninput="filterCPUProducts()" />
+          </div>
+          <div class="col-sm-4 col-12">
+              Max price: <input type="text" id="maxPriceFilter" placeholder="Max price" oninput="filterCPUProducts()" />
+          </div>
+        </div>
+      <br>
     </div>
-
-    <!-- row 2 -->
-    <div data-price=55 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel i3-4170 BOX 3.70 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 4<br>
-        Number of Cores: 2<br>
-        Processor Base Frequency: 3.7 GHz<br>
-        Max Turbo Frequency: - <br>
-        Cache : 8MB<br>
-        TDP : 84[W]<br>
-        Warranty : 1 Year<br>
-        <br>
-        price: 55.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i3-4170.jpg" class="productDisplay">
-        </div>
-        </div>
-    </div>
-
-    <!-- row 3 -->
-    <div data-price=599 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel Core i5-12400 Tray 4.40 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 12<br>
-        Number of Cores: 6<br>
-        Processor Base Frequency: 2.5 GHz<br>
-        Max Turbo Frequency: 4.4 GHz<br>
-        Cache : 18 MB Intel® Smart Cache<br>
-        TDP : 65[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 599.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i5-12400.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-
-    <!-- row 4 -->
-    <div data-price=899 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel i5-12600KF Box 4.90 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 12<br>
-        Number of Cores: 10<br>
-        Processor Base Frequency: 3.7 GHz<br>
-        Max Turbo Frequency: 4.9 GHz<br>
-        Cache : 20MB Intel Smart Cache<br>
-        TDP : 125[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 899.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i5-12600KF.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-
-    <!-- row 5 -->
-    <div data-price=829 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel i7-10700F Box 4.80 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 10<br>
-        Number of Cores: 8<br>
-        Processor Base Frequency: 2.9 GHz<br>
-        Max Turbo Frequency: 4.8 GHz<br>
-        Cache : 16 MB Intel® Smart Cache<br>
-        TDP : 65[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 829.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i7-10700F.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-
-    <!-- row 6 -->
-    <div data-price=1099 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel i7-12700F Tray 4.90 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 12<br>
-        Number of Cores: 12<br>
-        Processor Base Frequency: 2.1 GHz<br>
-        Max Turbo Frequency: 4.9 GHz<br>
-        Cache : 25 MB Intel® Smart Cache<br>
-        TDP : 65[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 1099.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i7-12700F.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-
-    <!-- row 7 -->
-    <div data-price=1399 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel i7-12700KF Box 5.0 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 12<br>
-        Number of Cores: 16<br>
-        Processor Base Frequency: 3.6 GHz<br>
-        Max Turbo Frequency: 5.0 GHz<br>
-        Cache : 25 MB Intel® Smart Cache<br>
-        TDP : 125[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 1399.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i7-12700KF.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-
-    <!-- row 8 -->
-    <div data-price=1399 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel Core i7-13700F Box 5.20 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 13<br>
-        Number of Cores: 16<br>
-        Processor Base Frequency: 2.1 GHz<br>
-        Max Turbo Frequency: 5.2 GHz<br>
-        Cache : 30 MB Intel® Smart Cache<br>
-        TDP : 65[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 1399.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i7-13700F.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-
-    <!-- row 9 -->
-    <div data-price=1749 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel i9-12900KF Box 5.20 GHz</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 12<br>
-        Number of Cores: 16<br>
-        Processor Base Frequency: 3.2 GHz<br>
-        Max Turbo Frequency: 5.2 <br>
-        Cache : 30 MB<br>
-        TDP : 125[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 1749.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i9-12900KF.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-
-    <!-- row 10 -->
-    <div data-price=65 data-brand="Intel" class="row borderForRowCPU normalProd">
-      <div class="col-8 FontSize17px">
-        <p>
-        <p class="title">Intel Core i7-960</p>
-        <br>
-        <br>
-        Brand : Intel<br>
-        Gen: 1<br>
-        Number of Cores: 4<br>
-        Processor Base Frequency: 3.2 GHz<br>
-        Max Turbo Frequency: - <br>
-        Cache : 8 MB<br>
-        TDP : 65[W]<br>
-        Warranty : 1 Year.<br>
-        <br>
-        price: 65.00$<br>
-        <br>
-        <button class="AddToCartButton">Add To Cart</button>
-        </p>
-      </div>
-      <div class="col-4 d-flex align-items-center justify-content-center">
-        <div class = "imageOfTheProduct">
-          <img src="../assets/CPU - Intel Core i7-960.jpg" class="productDisplay">
-        </div>
-      </div>
-    </div>
-  <!-- close the container of all the products -->
-  </div>
-</main>
-
-<!--    Fotter   -->
-<footer class="footerStyle blackBackgrond">
-  <div class="container-fluid">
-    <div class="row justify-content-space-between blackBackgrond">
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+    <div class="container allHardware">
+      <!-- row 1 -->
+      <div data-price=339 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel Core i3-10100 Tray Up to 4.30 GHz</p>
           <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+          <br>
+          Brand : Intel<br>
+          Gen: 10<br>
+          Number of Cores: 4<br>
+          Processor Base Frequency: 3.6 GHz<br>
+          Max Turbo Frequency: 4.3 GHz<br>
+          Cache : 6MB Intel Smart Cache<br>
+          TDP : 65[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 339.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i3-10100.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div data-price=55 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel i3-4170 BOX 3.70 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 4<br>
+          Number of Cores: 2<br>
+          Processor Base Frequency: 3.7 GHz<br>
+          Max Turbo Frequency: - <br>
+          Cache : 8MB<br>
+          TDP : 84[W]<br>
+          Warranty : 1 Year<br>
+          <br>
+          price: 55.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i3-4170.jpg" class="productDisplay">
+          </div>
+          </div>
+      </div>
+      <!-- row 3 -->
+      <div data-price=599 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel Core i5-12400 Tray 4.40 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 12<br>
+          Number of Cores: 6<br>
+          Processor Base Frequency: 2.5 GHz<br>
+          Max Turbo Frequency: 4.4 GHz<br>
+          Cache : 18 MB Intel® Smart Cache<br>
+          TDP : 65[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 599.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i5-12400.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 4 -->
+      <div data-price=899 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel i5-12600KF Box 4.90 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 12<br>
+          Number of Cores: 10<br>
+          Processor Base Frequency: 3.7 GHz<br>
+          Max Turbo Frequency: 4.9 GHz<br>
+          Cache : 20MB Intel Smart Cache<br>
+          TDP : 125[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 899.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i5-12600KF.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 5 -->
+      <div data-price=829 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel i7-10700F Box 4.80 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 10<br>
+          Number of Cores: 8<br>
+          Processor Base Frequency: 2.9 GHz<br>
+          Max Turbo Frequency: 4.8 GHz<br>
+          Cache : 16 MB Intel® Smart Cache<br>
+          TDP : 65[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 829.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i7-10700F.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 6 -->
+      <div data-price=1099 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel i7-12700F Tray 4.90 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 12<br>
+          Number of Cores: 12<br>
+          Processor Base Frequency: 2.1 GHz<br>
+          Max Turbo Frequency: 4.9 GHz<br>
+          Cache : 25 MB Intel® Smart Cache<br>
+          TDP : 65[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 1099.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i7-12700F.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 7 -->
+      <div data-price=1399 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel i7-12700KF Box 5.0 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 12<br>
+          Number of Cores: 16<br>
+          Processor Base Frequency: 3.6 GHz<br>
+          Max Turbo Frequency: 5.0 GHz<br>
+          Cache : 25 MB Intel® Smart Cache<br>
+          TDP : 125[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 1399.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i7-12700KF.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 8 -->
+      <div data-price=1399 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel Core i7-13700F Box 5.20 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 13<br>
+          Number of Cores: 16<br>
+          Processor Base Frequency: 2.1 GHz<br>
+          Max Turbo Frequency: 5.2 GHz<br>
+          Cache : 30 MB Intel® Smart Cache<br>
+          TDP : 65[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 1399.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i7-13700F.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 9 -->
+      <div data-price=1749 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel i9-12900KF Box 5.20 GHz</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 12<br>
+          Number of Cores: 16<br>
+          Processor Base Frequency: 3.2 GHz<br>
+          Max Turbo Frequency: 5.2 <br>
+          Cache : 30 MB<br>
+          TDP : 125[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 1749.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i9-12900KF.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+      <!-- row 10 -->
+      <div data-price=65 data-brand="Intel" class="row borderForRowCPU normalProd">
+        <div class="col-8 FontSize17px">
+          <p>
+          <p class="title">Intel Core i7-960</p>
+          <br>
+          <br>
+          Brand : Intel<br>
+          Gen: 1<br>
+          Number of Cores: 4<br>
+          Processor Base Frequency: 3.2 GHz<br>
+          Max Turbo Frequency: - <br>
+          Cache : 8 MB<br>
+          TDP : 65[W]<br>
+          Warranty : 1 Year.<br>
+          <br>
+          price: 65.00$<br>
+          <br>
+          <button class="AddToCartButton">Add To Cart</button>
+          </p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div class = "imageOfTheProduct">
+            <img src="../assets/CPU - Intel Core i7-960.jpg" class="productDisplay">
+          </div>
+        </div>
+      </div>
+    <!-- close the container of all the products -->
+    </div>
+  </main>
+
+  <footer class="footerStyle blackBackgrond">
+    <div class="container-fluid">
+      <div class="row justify-content-space-between blackBackgrond">
+        <div class="col-12 col-md-4">
+          <ul class="footerColumn">
+            <li class="footer_title"><b>Information and terms of servicecancel order</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_orders.html" target="_blank">cancel order</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_shipping_policy.html" target="_blank">Shipping policy</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_warranty_policies.html" target="_blank">Warranty policies</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <ul class="footerColumn">
+            <li class="footer_title"><b>Customer Service</b></li>
+            <br>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
+            <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-4">
           <ul class="footerColumn">
-          <li class="footer_title"><b>Customer Service</b></li>
-          <br>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_laboratory_price_list.html" target="_blank">Laboratory price list</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_cancel_or_change.html" target="_blank">Request to cancel or change an order I made</a></li>
-          <li> <a class="nonTextDecoration text-white footerHover" href="footer_HTML/footer_return_or_exchange_product.html" target="_blank">Return or exchange of a product</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4">
-        <ul class="footerColumn">
-          <li class="footer_title"><b>Download our app</b></li>
-          <br>
-          <br>
-          <div class="row">
-            <div class="col">
-              <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
-              <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+            <li class="footer_title"><b>Download our app</b></li>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col">
+                <li> <a href="https://www.apple.com/app-store" target="_blank"> <img src="../assets/downloadApp.png" class="app appDesign"></a> </li>
+                <li> <a href="https://play.google.com/store/games?hl=iw&pli=1" target="_blank"> <img src="../assets/DownloadGooglePlay.png" class="app appDesign"> </a> </li>
+              </div>
+              <div class="col">
+                <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
+              </div>
             </div>
-            <div class="col">
-              <img src="../assets/downloadBarcodr.png" id="barcodeDesign" class="app">
-            </div>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
   </footer>
   
   <!-- JS links -->
-<script src="../JavaScript/JS_Hardware.js"></script>
-<script src="../JavaScript/JS_General.js"></script>
+  <script src="../JavaScript/JS_JQuery.js"></script>
+  <script src="../JavaScript/JS_JQuery2.js"></script>
+  <script src="../JavaScript/JS_Hardware.js"></script>
+  <script src="../JavaScript/JS_General.js"></script>
 </body>
 
 
