@@ -171,6 +171,13 @@ footer ul{
 /* footer */
 
 /* mobile */
+.hamburgerClose{
+  background-color:#12002F;
+  border: white 1px solid; 
+  position:absolute; 
+  left:0;
+  top: 0;
+}
 .hamburger, .hamburgerClose{
   width:40px !important;
   cursor:pointer;
@@ -178,7 +185,7 @@ footer ul{
   z-index:5;
 }
 .hamburger{
-  background-color: rgb(71, 46, 211);
+  background-color: rgb(16, 0, 108);
 }
 
 .mobile-nav{
@@ -190,13 +197,6 @@ justify-content: space-around ;
   height:5px !important;
   background-color:#FFF;
   margin:5px 2px !important;
-  transition:0.5s;
-}
-.hamburger.is-active:before{
-  transform:rotate(45deg) translate(8px, 6px)
-} 
-.hamburger.is-active:after{
-  transform:rotate(-45deg) translate(9px, -8px)
 }
 .hamburgerClose:after{
   transform:rotate(-45deg) translate(4px, -3px);
@@ -204,9 +204,7 @@ justify-content: space-around ;
 .hamburgerClose:before{
   transform:rotate(45deg) translate(5px, 3px);
 }
-.hamburger.is-active .bar{
-  opacity:0
-}
+
   .mobile-nav{
   position:fixed;
   top:0;
@@ -244,12 +242,14 @@ margin-top: 30px !important;
 max-height: 60px;
 }
 
-
 .mobile-nav a:hover{
   background-color:#311a63;
   color:white;
 }
-
+.HardwareLink, .GamesLink{
+  cursor: none; 
+  text-decoration: none;
+}
 /********************************************************************/
 /* general style */
 /********************************************************************/
@@ -346,14 +346,9 @@ h2{
   margin-right: auto;
 }
 
-/********************************************************************/
-/* bootstrap style */
-/********************************************************************/
-
-
-
-
-
+.blackBackground{
+  background-color: black;
+}
 /********************************************************************/
 /* Custom sizes */
 /********************************************************************/
