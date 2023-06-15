@@ -16,7 +16,7 @@ $(document).ready(function() {
     localStorage.setItem('cartItems', JSON.stringify(storedItems));
 
     // Provide feedback to the user
-    alert('normal Item added to cart.');
+    // alert('normal Item added to cart.');
   }
 
   function handleAddToCartButtonClickSP() {

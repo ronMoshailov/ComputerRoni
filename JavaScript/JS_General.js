@@ -11,7 +11,7 @@ $(document).ready(function() {
       // Store the updated array in the local storage
       localStorage.setItem('cartItems', JSON.stringify(storedItems));
       // Provide feedback to the user
-      alert('normal Item added to cart.');
+    //   alert('normal Item added to cart.');
     }
     function handleAddToCartButtonClickSP() {
         // Get the parent row element of the clicked button
@@ -23,7 +23,7 @@ $(document).ready(function() {
         // Store the updated array in the local storage
         localStorage.setItem('cartItemsSP', JSON.stringify(storedItemsSO));
         // Provide feedback to the user
-        alert('special Item added to cart.');
+        // alert('special Item added to cart.');
       }
     // Attach click event handler to all AddToCartButton buttons
     $('.AddToCartButton').click(handleAddToCartButtonClick);
