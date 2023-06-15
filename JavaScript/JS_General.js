@@ -67,16 +67,15 @@ $(document).ready(function() {
         }, 1000);
     }
 });
+
 window.onload = function () {
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
     const close_btn = document.querySelector('.hamburgerClose');
     menu_btn.addEventListener('click', function () {
-      menu_btn.classList.toggle('is-active');
       mobile_menu.classList.toggle('is-active');
     });
     close_btn.addEventListener('click', function () {
-      menu_btn.classList.remove('is-active');
       mobile_menu.classList.remove('is-active');
     });
 }

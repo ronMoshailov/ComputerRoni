@@ -23,7 +23,7 @@
   font-size: large;
 }
 .fade-outAdded {
-  animation: fadeOut 5s ease-out;
+  animation: fadeOut 3s ease-out;
 }
 @keyframes fadeOut {
   0% { opacity: 1; }

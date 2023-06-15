@@ -378,9 +378,6 @@ h2{
       margin-top: 5px;
       border-top: none !important;
     }
-    .A div{
-      background-color: none !important;
-    }
 }
 
 @media(max-width:570px){

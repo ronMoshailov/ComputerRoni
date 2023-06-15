@@ -23,6 +23,6 @@
       setTimeout(function() {
         popup.style.display = "none";
         popup.classList.remove("fade-outAdded");
-      }, 5000); // Adjust the duration (in milliseconds) as needed
+      }, 3000); // Adjust the duration (in milliseconds) as needed
     }, 0); // Delay to ensure proper animation
   }
