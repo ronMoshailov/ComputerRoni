@@ -8,6 +8,7 @@ ComputerRoni is a conceptual e-commerce site built to demonstrate frontend devel
 
 ![image](https://github.com/user-attachments/assets/6e8cabfd-0fea-4088-a172-472be54fdb41)
 
+![image](https://github.com/user-attachments/assets/7bdcc295-4f1c-4cd9-8f5d-9f66c6decd1a)
 
 ### Features
 
