@@ -1,12 +1,13 @@
 # ComputerRoni
 
-Welcome to the official repository of ComputerRoni, your ultimate destination for computers, gaming consoles, and video games. This repository houses the final project for the "Front-End" course, showcasing a dynamic and interactive shopping experience.
+Welcome to the official repository of ComputerRoni, a simulated storefront for computers, gaming consoles, and video games. This repository houses the final project for the "Front-End" course, designed to showcase a dynamic and interactive shopping experience that is purely demonstrative.
 
 ## Project Overview
 
-ComputerRoni combines the latest in web technologies with a passion for gaming and technology, offering a wide range of products to satisfy all your tech and gaming needs.
+ComputerRoni is a conceptual e-commerce site built to demonstrate frontend development skills, including the use of HTML5, CSS3, and JavaScript. It features a mock inventory of tech and gaming products and offers a hands-on example of web development techniques.
 
-![image](https://github.com/user-attachments/assets/eff3f077-1288-4180-a842-224290486b67)
+![image](https://github.com/user-attachments/assets/6e8cabfd-0fea-4088-a172-472be54fdb41)
+
 
 ### Features
 
@@ -15,8 +16,7 @@ ComputerRoni combines the latest in web technologies with a passion for gaming a
 - **Secure Transactions**: Shop with confidence through our robust and secure checkout system.
 - **Responsive Customer Support**: Get quick assistance and resolve queries with our dedicated support team.
 
-![image](https://github.com/user-attachments/assets/0e9a7337-b988-442d-9c11-4460b94ae496)
-
+![image](https://github.com/user-attachments/assets/fc763545-0500-4f4d-aafa-529e87dda1e6)
 
 
 ### Technologies Used
@@ -51,18 +51,6 @@ To view the project:
 
 ## Usage
 Explore the various sections of our store to experience features like product filters, detailed product descriptions, and an interactive shopping cart.
-
-## Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-1) Fork the Project
-2) Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3) Commit your Changes (git commit -m 'Add some AmazingFeature')
-4) Push to the Branch (git push origin feature/AmazingFeature)
-5) Open a Pull Request
-
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Contact
 Should you have any feedback or questions, feel free to reach out to me at moshailovron@gmail.com.
