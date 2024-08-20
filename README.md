@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9015ee09-2478-4b78-b868-b0f2aa21de1f)# ComputerRoni
+# ComputerRoni
 
 Welcome to the official repository of ComputerRoni, your ultimate destination for computers, gaming consoles, and video games. This repository houses the final project for the "Front-End" course, showcasing a dynamic and interactive shopping experience.
 
@@ -6,12 +6,18 @@ Welcome to the official repository of ComputerRoni, your ultimate destination fo
 
 ComputerRoni combines the latest in web technologies with a passion for gaming and technology, offering a wide range of products to satisfy all your tech and gaming needs.
 
+![image](https://github.com/user-attachments/assets/eff3f077-1288-4180-a842-224290486b67)
+
 ### Features
 
 - **Extensive Product Catalog**: Explore our vast selection of high-performance desktops, portable laptops, the latest gaming consoles, and an expansive variety of video games.
 - **Intuitive Navigation**: Experience seamless browsing with a user-friendly interface designed to enhance your shopping experience.
 - **Secure Transactions**: Shop with confidence through our robust and secure checkout system.
 - **Responsive Customer Support**: Get quick assistance and resolve queries with our dedicated support team.
+
+![image](https://github.com/user-attachments/assets/0e9a7337-b988-442d-9c11-4460b94ae496)
+
+
 
 ### Technologies Used
 
